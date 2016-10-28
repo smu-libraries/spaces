@@ -7,28 +7,30 @@ This project makes use of [Accelerated Mobile Pages (AMP)](https://www.ampprojec
 ## Build
 
 1. Install [Node.js](https://nodejs.org). The project was developed using v7.0.0.
-2. Install [Gulp](http://gulpjs.com):
-
-```
-$ npm install -g gulp
-```
-
-3. Set up the repository and build the site:
+2. Set up the repository and build the site:
 
 ```
 $ git clone https://github.com/smu-libraries/nolita.git
 $ cd nolita
 $ npm install
-$ gulp build
+$ npm run build
 ```
 
-4. If everything went well, the site (as static HTML pages) should now be found in the `dest` folder.
+3. If everything went well, the site (as static HTML pages) should now be found in the `public` folder. To run a local server for testing, use the command:
+
+```
+$ npm start
+```
+
+4. The local server should be running the site at [http://localhost:3000](http://localhost:3000).
 
 ## License
 
-Except where otherwise noted, this project is licensed under the CC-BY-4.0 license. See [LICENSE.md](LICENSE.md) for more information.
+Except where otherwise noted, this project is licensed under the CC-BY-4.0 license. See [LICENSE.txt](LICENSE.txt) for more information.
 
-The project source is adapted from the [AMP by Example](https://ampbyexample.com) project, which is released under the Apache-2.0 license. See linked [LICENSE](https://github.com/ampproject/amp-by-example/blob/master/LICENSE) file for more information. The following list of files are copied or modified from the AMP by Example project:
+This project uses sample code from the [Accelerated Mobile Pages Project](https://www.ampproject.org) (in particular, the [AMP by Example](https://ampbyexample.com) and [amphtml-validator](https://www.npmjs.com/package/amphtml-validator) sub-projects), which is released under the Apache-2.0 license. See linked [LICENSE](https://github.com/ampproject/amphtml/blob/master/LICENSE) file for more information. The following list of files are copied or modified from the AMP by Example project:
 
+- images/ic_chevron_left_black_24dp_1x.png
+- images/ic_chevron_left_black_24dp_2x.png
 - images/ic_menu_white_1x_web_24dp.png
 - images/ic_menu_white_2x_web_24dp.png

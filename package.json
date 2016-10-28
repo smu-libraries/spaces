@@ -1,0 +1,24 @@
+{
+  "name": "nolita",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "amphtml-validator": "^1.0.14",
+    "express": "^4.14.0",
+    "fs-extra": "^0.30.0",
+    "hjs": "~0.0.6",
+    "hogan.js": "^3.0.2",
+    "html-minifier": "^3.1.0",
+    "morgan": "^1.7.0"
+  },
+  "scripts": {
+    "build:clean": "node ./tasks/build_clean.js",
+    "build:hogan": "node ./tasks/build_hogan.js",
+    "build:minify": "node ./tasks/build_minify.js",
+    "build:copy": "node ./tasks/build_copy.js",
+    "build": "npm run build:clean && npm run build:hogan && npm run build:minify && npm run build:copy",
+    "validate": "node ./tasks/validate.js",
+    "start": "node ./index.js"
+  }
+}

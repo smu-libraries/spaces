@@ -1,0 +1,8 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Library",
+  "name":  "Kwa Geok Choo Law Library",
+  "email":  "liblaw@smu.edu.sg",
+  "parentOrganization": "SMU Libraries",
+  "branchCode": "KGC"
+}
