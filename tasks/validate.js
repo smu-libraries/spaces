@@ -8,10 +8,11 @@ let path = require('path');
 var amphtmlValidator = require('amphtml-validator');
 let fse = require('fs-extra');
 
+let input_folder = 'public';
 amphtmlValidator.getInstance().then(function (validator) {
-  fse.readdirSync('public').forEach((file) => {
+  fse.readdirSync(input_folder).forEach((file) => {
     if (path.extname(file) === '.html') {  /** only process HTML files */
-      let input_path = path.join('public', file);
+      let input_path = path.join(input_folder, file);
       let content = fse.readFileSync(input_path, 'utf8');
       var result = validator.validateString(content);
       ((result.status === 'PASS') ? console.log : console.error)(result.status);
