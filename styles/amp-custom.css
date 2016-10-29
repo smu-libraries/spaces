@@ -1,3 +1,65 @@
 body {
   background-color: #333;
 }
+
+#sidebar {
+  width: 300px;
+}
+
+#sidebar .banner {
+  padding: 24px 24px 24px 12px;
+  background-color: white;
+}
+
+#sidebar .close {
+  float: right;
+  cursor: pointer;
+}
+
+#sidebar .close:hover {
+  background-color: #ccc;
+}
+
+#sidebar section:not([expanded]) .show-less, #sidebar section[expanded] .show-more {
+  display: none;
+}
+
+#sidebar h4 {
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 0 0 12px;
+  border: 0;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  line-height: 40px;
+}
+
+#sidebar .item a {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 10px 24px 10px 32px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #333;
+}
+
+#sidebar .item .selected {
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+}
+
+#hamburger {
+  align-self: flex-start;
+  padding: 12px;
+  margin: 12px;
+  cursor: pointer;
+}
+
+#hamburger .logo {
+  padding-left: 24px;
+}
