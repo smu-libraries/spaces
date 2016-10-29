@@ -7,5 +7,5 @@
 let ghpages = require('gh-pages');
 
 ghpages.publish('public', (err) => {
-  console.error(err);
+  if (err) console.error(err);
 });
