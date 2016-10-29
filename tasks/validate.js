@@ -1,10 +1,16 @@
+/**
+ * @file Validates the HTML files for compliance to AMP.
+ *
+ * There is no error checking -- script fails at the first error. Stick to lowercase file names and extensions. Use UTF-8 file encoding.
+ */
+
 let path = require('path');
 var amphtmlValidator = require('amphtml-validator');
 let fse = require('fs-extra');
 
 amphtmlValidator.getInstance().then(function (validator) {
   fse.readdirSync('public').forEach((file) => {
-    if (path.extname(file) === '.html') {
+    if (path.extname(file) === '.html') {  /** only process HTML files */
       let input_path = path.join('public', file);
       let content = fse.readFileSync(input_path, 'utf8');
       var result = validator.validateString(content);
