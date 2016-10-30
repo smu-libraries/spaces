@@ -4,42 +4,42 @@
     <amp-img class="logo" srcset="./images/logo_black.svg" width="200px" height="32px" alt="SMU Libraries"></amp-img>
   </div>
   <amp-accordion>
-    <section expanded>
+    <section {{# main }}expanded{{/ main }}>
       <h4>
         <div class="show-more category">Li Ka Shing Library</div>
         <div class="show-less category expanded">Li Ka Shing Library</div>
       </h4>
       <div>
         <div class="item">
-          <a href="./main_overview.html">Overview</a>
+          <a {{# main_overview }}class="selected"{{/ main_overview }} href="./main_overview.html">Overview</a>
         </div>
         <div class="item">
-          <a href="./main_hive.html">Hive</a>
+          <a {{# main_hive }}class="selected"{{/ main_hive }} href="./main_hive.html">Hive</a>
         </div>
         <div class="item">
-          <a href="./main_investment_studio.html">Investment Studio</a>
+          <a {{# main_investment_studio }}class="selected"{{/ main_investment_studio }} href="./main_investment_studio.html">Investment Studio</a>
         </div>
         <div class="item">
-          <a href="./main_learning_commons.html">Learning Commons</a>
+          <a {{# main_learning_commons }}class="selected"{{/ main_learning_commons }} href="./main_learning_commons.html">Learning Commons</a>
         </div>
         <div class="item">
-          <a href="./main_learning_labs.html">Learning Labs</a>
+          <a {{# main_learning_labs }}class="selected"{{/ main_learning_labs }} href="./main_learning_labs.html">Learning Labs</a>
         </div>
         <div class="item">
-          <a href="./main_lounge.html">Lounge</a>
+          <a {{# main_lounge }}class="selected"{{/ main_lounge }} href="./main_lounge.html">Lounge</a>
         </div>
         <div class="item">
-          <a href="./main_postgraduate_lounge_suite.html">Postgraduate Lounge/Suite</a>
+          <a {{# main_postgraduate_lounge_suite }}class="selected"{{/ main_postgraduate_lounge_suite }} href="./main_postgraduate_lounge_suite.html">Postgraduate Lounge/Suite</a>
         </div>
       </div>
     </section>
-    <section expanded>
+    <section {{# kgc }}expanded{{/ kgc }}>
       <h4>
         <div class="show-more category">Kwa Geok Choo Law Library</div>
         <div class="show-less category expanded">Kwa Geok Choo Law Library</div>
       </h4>
       <div class="item">
-        <a href="./kgc_overview.html">Overview</a>
+        <a {{# kgc_overview }}class="selected"{{/ kgc_overview }} href="./kgc_overview.html">Overview</a>
       </div>
     </section>
   </amp-accordion>

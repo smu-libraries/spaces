@@ -1,0 +1,34 @@
+{
+  "templates/main_overview.mustache": {
+    "main": true,
+    "main_overview": true
+  },
+  "templates/main_hive.mustache": {
+    "main": true,
+    "main_hive": true
+  },
+  "templates/main_investment_studio.mustache": {
+    "main": true,
+    "main_investment_studio": true
+  },
+  "templates/main_learning_commons.mustache": {
+    "main": true,
+    "main_learning_commons": true
+  },
+  "templates/main_learning_labs.mustache": {
+    "main": true,
+    "main_learning_labs": true
+  },
+  "templates/main_lounge.mustache": {
+    "main": true,
+    "main_lounge": true
+  },
+  "templates/main_postgraduate_lounge_suite.mustache": {
+    "main": true,
+    "main_postgraduate_lounge_suite": true
+  },
+  "templates/kgc_overview.mustache": {
+    "kgc": true,
+    "kgc_overview": true
+  }
+}

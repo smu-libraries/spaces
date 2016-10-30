@@ -44,7 +44,7 @@ class Builder {
   }
 
   /**
-   * Renders the templates in the given folder and output to the chosen destination. This method is usually called as the final step, after adding all the necessary partials using {@link addTemplates}. This function expects the templates to have the file extension ".mustache". All the output files will be saved with the file extension ".html".
+   * Renders the templates in the given folder and output to the chosen destination. This method is usually called as the final step, after adding all the necessary partials using {@link addTemplates}. This function expects the templates to have the file extension ".mustache". All the output files will be saved with the file extension ".html". Any context data to be rendered must be inside a file named "contexts.json" in the input folder -- use the template name as the key to refer to the context data for that template.
    *
    * @param {string} input_folder - The folder to check for mustache templates. The search is not recursive.
    * @param {string} output_folder - The folder to save the rendered HTML files.
@@ -56,11 +56,19 @@ class Builder {
     /** Check the output folder */
     fse.ensureDirSync(output_folder);
 
+    /** Retrieve the context data if available */
+    let contexts = {};
+    let contexts_path = path.join(input_folder, 'contexts.json');
+    if (fse.existsSync(contexts_path)) {
+      contexts = JSON.parse(fse.readFileSync(contexts_path));
+    }
+
     fse.readdirSync(input_folder).forEach((file) => {
       if (path.extname(file) === '.mustache') {  /** only do mustache files */
         let output_path = path.join(output_folder, file).replace(/\.mustache$/, '.html');
         let input_path = path.join(input_folder, file).replace(/\\/g, '/');  /** the replacement is necessary because we use / as path delimiter */
-        let rendered_output = this.templates[input_path].render({}, this.templates);
+        let context = input_path in contexts ? contexts[input_path] : {};
+        let rendered_output = this.templates[input_path].render(context, this.templates);
         fse.writeFileSync(output_path, rendered_output);
       }
     }, this);
