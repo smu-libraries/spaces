@@ -1,5 +1,6 @@
 body {
   background-color: #333;
+  font-family: sans-serif;
 }
 
 #sidebar {
@@ -26,7 +27,7 @@ body {
 
 #sidebar h4 {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 0 0 12px;
   border: 0;
   background-color: #333;
@@ -62,4 +63,31 @@ header {
 
 #hamburger .logo {
   padding-left: 24px;
+}
+
+.carousel .slide > amp-img > img {
+  object-fit: contain;
+}
+
+.carousel .title {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ddd;
+}
+
+.carousel .title h1 {
+  margin: 0;
+}
+
+.carousel .caption {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ddd;
+  max-width: 80%;
 }
