@@ -65,6 +65,48 @@ header {
   padding-left: 24px;
 }
 
+#welcome {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 500px;
+}
+
+#welcome a {
+  text-decoration: none;
+}
+
+#welcome .left_panel {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 0 0 50%;
+  background: url('./images/test_red.jpg') no-repeat center;
+  cursor: pointer;
+}
+
+#welcome .right_panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: rgba(0, 0, 255, 0.4);
+}
+
+#welcome h1 {
+  padding: 12px 24px 12px 24px;
+  color: #ddd;
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+#welcome .left_panel h1 {
+  margin: 24px 0 24px 24px;
+}
+
+#welcome .right_panel h1 {
+  margin: 24px 24px 24px 0;
+  text-align: right;
+}
+
 .carousel .slide > amp-img > img {
   object-fit: contain;
 }
