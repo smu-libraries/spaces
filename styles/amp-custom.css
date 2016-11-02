@@ -25,6 +25,18 @@ body {
   display: none;
 }
 
+#sidebar .show-more:before {
+  content: '▶';
+  display: inline-block;
+  width: 24px;
+}
+
+#sidebar .show-less:before {
+  content: '▼';
+  display: inline-block;
+  width: 24px;
+}
+
 #sidebar h4 {
   font-weight: 700;
   font-size: 16px;
