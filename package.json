@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "command-line-args": "^3.0.2",
     "express": "^4.14.0",
     "fs-extra": "^1.0.0",
     "gh-pages": "^0.11.0",
@@ -13,12 +14,14 @@
     "morgan": "^1.7.0"
   },
   "scripts": {
-    "build:clean": "node ./tasks/build_clean.js",
-    "build:hogan": "node ./tasks/build_hogan.js",
-    "build:minify": "node ./tasks/build_minify.js",
-    "build:copy": "node ./tasks/build_copy.js",
+    "build:clean": "node ./tasks/build_clean.js -c out_hogan public",
+    "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o out_hogan",
+    "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o public",
+    "build:minify": "node ./tasks/build_minify.js -i out_hogan -o public",
+    "build:copy": "node ./tasks/build_copy.js -s images -d public/images",
     "build": "npm run build:clean && npm run build:hogan && npm run build:minify && npm run build:copy",
-    "publish:github": "node ./tasks/publish_github.js",
+    "build:debug": "npm run build:clean && npm run build:hogan_debug && npm run build:copy",
+    "publish:github": "node ./tasks/publish_github.js -p public",
     "start": "node ./index.js"
   }
 }

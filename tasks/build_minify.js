@@ -1,12 +1,28 @@
 /**
- * @file Minifies the pages (including inline CSS and JavaScript) and images.
+ * @file Minifies the pages (including inline CSS and JavaScript) and images in the given folder.
+ *
+ * Usage: node build_minify.js (--in|-i) <input> (--out|-o) <output>
  *
  * There is no error checking -- script fails at the first error. Stick to lowercase file names and extensions. Use UTF-8 file encoding.
  */
 
 let path = require('path');
+let command_line_args = require('command-line-args');
 let fse = require('fs-extra');
 let minify = require('html-minifier').minify;
+
+let args = command_line_args([
+  {
+    name: 'in',
+    alias: 'i',
+    type: String
+  },
+  {
+    name: 'out',
+    alias: 'o',
+    type: String
+  }
+]);
 
 /**
  * Represents the builder that minifies the files.
@@ -80,4 +96,8 @@ class Builder {
 }
 
 /** The actual script */
-new Builder().minify('out_hogan', 'public');
+if (!args.in || !args.out) {
+  throw new Error('Usage: node build_minify.js (--in|-i) <input> (--out|-o) <output>');
+}
+
+new Builder().minify(args.in, args.out);

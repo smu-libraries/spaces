@@ -1,12 +1,41 @@
 /**
- * @file Compiles and renders the pages using Hogan.js.
+ * @file Compiles and renders the templates in the given folder using Hogan.js.
+ *
+ * Usage: node build_hogan.js [(--ext|-e) <file_extension> ...] [(--partial|-p) <partial_folder> ...] (--template|-t) <template_folder> (--out|-o) <output_folder>
  *
  * There is no error checking -- script fails at the first error. Stick to lowercase file names and extensions. Use UTF-8 file encoding.
  */
 
 let path = require('path');
+let command_line_args = require('command-line-args');
 let fse = require('fs-extra');
 let Hogan = require('hogan.js');
+
+let args = command_line_args([
+  {
+    name: 'partial',
+    alias: 'p',
+    type: String,
+    multiple: true
+  },
+  {
+    name: 'template',
+    alias: 't',
+    type: String
+  },
+  {
+    name: 'ext',
+    alias: 'e',
+    type: String,
+    multiple: true,
+    defaultValue: ['.css', '.json', '.mustache']
+  },
+  {
+    name: 'out',
+    alias: 'o',
+    type: String
+  }
+]);
 
 /**
  * Represents the builder that collects templates and perform the rendering.
@@ -77,8 +106,12 @@ class Builder {
 }
 
 /** The actual script */
-new Builder()
-  .addTemplates('schema', ['.json'])
-  .addTemplates('styles', ['.css'])
-  .addTemplates('templates/partials', ['.mustache'])
-  .renderPages('templates', 'out_hogan');
+if (!args.template || !args.out) {
+  throw new Error('Usage: node build_hogan.js [(--ext|-e) <file_extension> ...] [(--partial|-p) <partial_folder> ...] (--template|-t) <folder> (--out|-o) <output_folder>');
+}
+
+let builder = new Builder();
+args.partial.forEach((folder) => {
+  builder.addTemplates(folder, args.ext)
+});
+builder.renderPages(args.template, args.out);
