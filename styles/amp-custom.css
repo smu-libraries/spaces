@@ -67,6 +67,8 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
@@ -123,35 +125,32 @@ header {
   text-align: right;
 }
 
-.carousel {
-  top: -5px;
-}
-
 .carousel .slide > amp-img > img {
   object-fit: contain;
 }
 
 .carousel .title {
   position: absolute;
-  top: 96px;
-  left: 24px;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.4);
+  top: 0px;
+  right: 0px;
+  padding: 24px 36px 12px 12px;
   color: #ddd;
+  z-index: 2;
 }
 
 .carousel .title h1 {
   margin: 0;
+  font-size: 24px;
 }
 
 .carousel .caption {
   position: absolute;
   bottom: 24px;
-  left: 24px;
-  padding: 12px;
-  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  right: 0;
+  padding: 12px 36px 12px 36px;
+  background: rgba(0, 0, 0, 0.7);
   color: #ddd;
-  max-width: 80%;
 }
 
 @media only screen and (max-height: 360px) and (orientation: landscape) {
@@ -243,5 +242,15 @@ header {
 
   .carousel h1 {
     font-size: 24px;
+  }
+}
+
+@media only screen and (min-width: 740px) {
+  .carousel {
+    top: 15px;
+  }
+
+  .carousel .title {
+    padding: 9px 36px 12px 12px;
   }
 }
