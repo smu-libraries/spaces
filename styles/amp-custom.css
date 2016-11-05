@@ -62,6 +62,15 @@ body {
   font-weight: 700;
 }
 
+#sidebar .footer {
+  margin: 12px 0 0 -12px;
+}
+
+#sidebar a .icon {
+  display: inline-block;
+  width: 24px;
+}
+
 header {
   display: flex;
   position: fixed;
