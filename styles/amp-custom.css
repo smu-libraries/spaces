@@ -108,7 +108,7 @@ header {
   display: flex;
   flex-direction: column-reverse;
   flex: 0 0 50%;
-  background: url('images/test_red_low.jpg') no-repeat center;
+  background: url('images/red_1_1.jpg') no-repeat center;
   cursor: pointer;
 }
 
