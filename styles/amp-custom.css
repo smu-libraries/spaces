@@ -26,13 +26,13 @@ body {
 }
 
 #sidebar .show-more:before {
-  content: '▶';
+  content: '▷';
   display: inline-block;
   width: 24px;
 }
 
 #sidebar .show-less:before {
-  content: '▼';
+  content: '▽';
   display: inline-block;
   width: 24px;
 }
