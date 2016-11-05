@@ -30,5 +30,13 @@
   "templates/kgc_overview.mustache": {
     "kgc": true,
     "kgc_overview": true
+  },
+  "templates/kgc_atrium.mustache": {
+    "kgc": true,
+    "kgc_atrium": true
+  },
+  "templates/kgc_learning_labs.mustache": {
+    "kgc": true,
+    "kgc_learning_labs": true
   }
 }
