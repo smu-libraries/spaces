@@ -11,16 +11,21 @@
     "hjs": "~0.0.6",
     "hogan.js": "^3.0.2",
     "html-minifier": "^3.1.0",
+    "imagemin": "^5.2.2",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-optipng": "^5.2.1",
+    "imagemin-svgo": "^5.2.0",
     "morgan": "^1.7.0"
   },
   "scripts": {
     "build:clean": "node ./tasks/build_clean.js -c out_hogan public",
     "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o out_hogan",
     "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o public",
-    "build:minify": "node ./tasks/build_minify.js -i out_hogan -o public",
-    "build:copy": "node ./tasks/build_copy.js -s images -d public/images",
-    "build": "npm run build:clean && npm run build:hogan && npm run build:minify && npm run build:copy",
-    "build:debug": "npm run build:clean && npm run build:hogan_debug && npm run build:copy",
+    "build:minify_html": "node ./tasks/build_minify.js -i out_hogan -o public",
+    "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
+    "build:copy_images": "node ./tasks/build_copy.js -s images -d public/images",
+    "build": "npm run build:clean && npm run build:hogan && npm run build:minify_html && npm run build:minify_images",
+    "build:debug": "npm run build:clean && npm run build:hogan_debug && npm run build:copy_images",
     "publish:github": "node ./tasks/publish_github.js -p public",
     "start": "node ./index.js"
   }

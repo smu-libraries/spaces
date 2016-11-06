@@ -10,6 +10,10 @@ let path = require('path');
 let command_line_args = require('command-line-args');
 let fse = require('fs-extra');
 let minify = require('html-minifier').minify;
+let imagemin = require('imagemin');
+let imagemin_jpegtran = require('imagemin-jpegtran');
+let imagemin_optipng = require('imagemin-optipng');
+let imagemin_svgo = require('imagemin-svgo');
 
 let args = command_line_args([
   {
@@ -51,6 +55,14 @@ class Builder {
         case '.jpg':
         case '.png':
         case '.svg':
+          imagemin([input_path], output_folder, {
+            plugins: [
+              imagemin_jpegtran({ progressive: true }),
+              imagemin_optipng(),
+              imagemin_svgo()
+            ]
+          });
+          break;
         default:
           /** The default action is to simply copy */
           fse.copySync(input_path, output_path);
@@ -83,16 +95,6 @@ class Builder {
     let matches = /(^[^]*<script type="application\/ld\+json">)([^]*)(<\/script>[^]*$)/.exec(input);
     return matches ? matches[1] + JSON.stringify(JSON.parse(matches[2])) + matches[3] : input;
   }
-
-  /**
-   * @todo Minifies a raster image buffer in JPG or PNG format.
-   */
-  minifyRaster(input) {}
-
-  /**
-   * @todo Minified a vector image string in SVG format.
-   */
-  minifySvg(input) {}
 }
 
 /** The actual script */
