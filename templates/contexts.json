@@ -27,6 +27,10 @@
     "main": true,
     "main_postgraduate_lounge_suite": true
   },
+  "templates/main_quiet_room.mustache": {
+    "main": true,
+    "main_quiet_room": true
+  },
   "templates/kgc_overview.mustache": {
     "kgc": true,
     "kgc_overview": true
