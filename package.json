@@ -24,8 +24,9 @@
     "build:minify_html": "node ./tasks/build_minify.js -i out_hogan -o public",
     "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
     "build:copy_images": "node ./tasks/build_copy.js -s images -d public/images",
-    "build": "npm run build:clean && npm run build:hogan && npm run build:minify_html && npm run build:minify_images",
-    "build:debug": "npm run build:clean && npm run build:hogan_debug && npm run build:copy_images",
+    "build:copy_static": "node ./tasks/build_copy.js -s static -d public",
+    "build": "npm run build:clean && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:copy_static",
+    "build:debug": "npm run build:clean && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static",
     "publish:github": "node ./tasks/publish_github.js -p public",
     "start": "node ./index.js"
   }
