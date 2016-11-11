@@ -27,9 +27,13 @@
     "main": true,
     "main_postgraduate_lounge_suite": true
   },
-  "templates/main_quiet_room.mustache": {
+  "templates/main_rooftop_garden.mustache": {
     "main": true,
-    "main_quiet_room": true
+    "main_rooftop_garden": true
+  },
+  "templates/main_study_booths.mustache": {
+    "main": true,
+    "main_study_booths": true
   },
   "templates/kgc_overview.mustache": {
     "kgc": true,
@@ -39,8 +43,24 @@
     "kgc": true,
     "kgc_atrium": true
   },
+  "templates/kgc_learning_commons.mustache": {
+    "kgc": true,
+    "kgc_learning_commons": true
+  },
   "templates/kgc_learning_labs.mustache": {
     "kgc": true,
     "kgc_learning_labs": true
+  },
+  "templates/kgc_lounge.mustache": {
+    "kgc": true,
+    "kgc_lounge": true
+  },
+  "templates/kgc_postgraduate_suite.mustache": {
+    "kgc": true,
+    "kgc_postgraduate_suite": true
+  },
+  "templates/kgc_terrace": {
+    "kgc": true,
+    "kgc_terrace": true
   }
 }
