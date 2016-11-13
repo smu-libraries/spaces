@@ -1,9 +1,7 @@
 {{< templates/partials/layout.mustache }}
   {{$ title_text }}SMU Libraries{{/ title_text }}
   {{$ css }}
-    header {
-      position: relative;
-    }
+    {{> styles/index.css }}
   {{/ css }}
   {{$ head }}
     {{> templates/partials/schema_smu_libraries.mustache }}

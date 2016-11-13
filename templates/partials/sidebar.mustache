@@ -4,71 +4,30 @@
     <amp-img class="logo" srcset="images/logo_color.svg" width="200px" height="32px" alt="SMU Libraries"></amp-img>
   </div>
   <amp-accordion>
-    <section {{# main }}expanded{{/ main }}>
+    <section {{# main_expanded }}expanded{{/ main_expanded }}>
       <h4>
         <div class="show-more category">Li Ka Shing Library</div>
         <div class="show-less category expanded">Li Ka Shing Library</div>
       </h4>
       <div>
-        {{# maina }}
-          <a href="main_{{ page }}.html">{{ title }}</a>
-        {{/ maina }}
-        <div class="item">
-          <a {{# main_overview }}class="selected"{{/ main_overview }} href="main_overview.html">Overview</a>
-        </div>
-        <div class="item">
-          <a {{# main_hive }}class="selected"{{/ main_hive }} href="main_hive.html">Hive (Level 2)</a>
-        </div>
-        <div class="item">
-          <a {{# main_investment_studio }}class="selected"{{/ main_investment_studio }} href="main_investment_studio.html">Investment Studio (Level 3)</a>
-        </div>
-        <div class="item">
-          <a {{# main_learning_commons }}class="selected"{{/ main_learning_commons }} href="main_learning_commons.html">Learning Commons (Level 2)</a>
-        </div>
-        <div class="item">
-          <a {{# main_learning_labs }}class="selected"{{/ main_learning_labs }} href="main_learning_labs.html">Learning Labs (Level 5)</a>
-        </div>
-        <div class="item">
-          <a {{# main_lounge }}class="selected"{{/ main_lounge }} href="main_lounge.html">Lounge (Level 2)</a>
-        </div>
-        <div class="item">
-          <a {{# main_postgraduate_lounge_suite }}class="selected"{{/ main_postgraduate_lounge_suite }} href="main_postgraduate_lounge_suite.html">Postgraduate Lounge/Suite (Level 5)</a>
-        </div>
-        <div class="item">
-          <a {{# main_rooftop_garden }}class="selected"{{/ main_rooftop_garden }} href="main_rooftop_garden.html">Rooftop Garden (Level 5)</a>
-        </div>
-        <div class="item">
-          <a {{# main_study_booths }}class="selected"{{/ main_study_booths }} href="main_study_booths.html">Study Booths (Level 4)</a>
-        </div>
+        {{# main_links }}
+          <div class="item">
+            <a class="{{ class }}" href="{{ url }}">{{ text }}</a>
+          </div>
+        {{/ main_links }}
       </div>
     </section>
-    <section {{# kgc }}expanded{{/ kgc }}>
+    <section {{# kgc_expanded }}expanded{{/ kgc_expanded }}>
       <h4>
         <div class="show-more category">Kwa Geok Choo Law Library</div>
         <div class="show-less category expanded">Kwa Geok Choo Law Library</div>
       </h4>
       <div>
-        <div class="item">
-          <a {{# kgc_overview }}class="selected"{{/ kgc_overview }} href="kgc_overview.html">Overview</a>
-        </div>
-        <div class="item">
-          <a {{# kgc_atrium }}class="selected"{{/ kgc_atrium }} href="kgc_atrium.html">Atrium (Level 3)</a>
-        </div>
-        <div class="item">
-          <a {{# kgc_learning_commons }}class="selected"{{/ kgc_learning_commons }} href="kgc_learning_commons.html">Learning Commons (Level 3)</a>
-        </div>
-        <div class="item">
-          <a {{# kgc_learning_labs }}class="selected"{{/ kgc_learning_labs }} href="kgc_learning_labs.html">Learning Labs (Level 3)</a>
-        </div>
-        <div class="item">
-          <a {{# kgc_lounge }}class="selected"{{/ kgc_lounge }} href="kgc_lounge.html">Lounge (Level 3)</a>
-        </div>
-        <div class="item">
-          <a {{# kgc_postgraduate_suite }}class="selected"{{/ kgc_postgraduate_suite }} href="kgc_postgraduate_suite.html">Postgraduate Suite (Level 4)</a>
-        </div>
-        <div class="item">
-          <a {{# kgc_terrace }}class="selected"{{/ kgc_terrace }} href="kgc_terrace.html">Terrace (Level 5)</a>
-        </div>
+        {{# kgc_links }}
+          <div class="item">
+            <a class="{{ class }}" href="{{ url }}">{{ text }}</a>
+          </div>
+        {{/ kgc_links }}
       </div>
     </section>
   </amp-accordion>

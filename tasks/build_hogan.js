@@ -73,7 +73,7 @@ class Builder {
   }
 
   /**
-   * Renders the templates in the given folder and output to the chosen destination. This method is usually called as the final step, after adding all the necessary partials using {@link addTemplates}. This function expects the templates to have the file extension ".mustache". All the output files will be saved with the file extension ".html". Any context data to be rendered must be inside a file named "contexts.json" in the input folder -- use the template name as the key to refer to the context data for that template.
+   * Renders the templates in the given folder and output to the chosen destination. This method is usually called as the final step, after adding all the necessary partials using {@link addTemplates}. This function expects the templates to have the file extension ".mustache". All the output files will be saved with the file extension ".html". Any context data to be rendered must be inside a file named "contexts.json" in the input folder -- use the template name as the key to refer to the context data for that template. A context can include additional contexts from other templates, by using an "includes" array to list all the templates to be included. Watch out for circular dependencies!
    *
    * @param {string} input_folder - The folder to check for mustache templates. The search is not recursive.
    * @param {string} output_folder - The folder to save the rendered HTML files.
@@ -91,6 +91,18 @@ class Builder {
     if (fse.existsSync(contexts_path)) {
       contexts = JSON.parse(fse.readFileSync(contexts_path));
     }
+
+    /** Merge in context for partials if requested */
+    /** TODO: Pull partials from the template directly rather than having to explicitly do an include */
+    Object.keys(contexts).forEach((template) => {
+      if ('includes' in contexts[template]) {
+        let merged_context = contexts[template];
+        contexts[template]['includes'].forEach((include) => {
+          Object.assign(merged_context, contexts[include]);
+        });
+        contexts[template] = merged_context;
+      }
+    });
 
     fse.readdirSync(input_folder).forEach((file) => {
       if (path.extname(file) === '.mustache') {  /** only do mustache files */

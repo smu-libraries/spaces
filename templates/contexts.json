@@ -1,66 +1,155 @@
 {
+  "templates/index.mustache": {
+    "includes": ["templates/partials/sidebar.mustache"]
+  },
   "templates/main_overview.mustache": {
-    "main": true,
-    "main_overview": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_hive.mustache": {
-    "main": true,
-    "main_hive": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_investment_studio.mustache": {
-    "main": true,
-    "main_investment_studio": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_learning_commons.mustache": {
-    "main": true,
-    "main_learning_commons": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_learning_labs.mustache": {
-    "main": true,
-    "main_learning_labs": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_lounge.mustache": {
-    "main": true,
-    "main_lounge": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_postgraduate_lounge_suite.mustache": {
-    "main": true,
-    "main_postgraduate_lounge_suite": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_rooftop_garden.mustache": {
-    "main": true,
-    "main_rooftop_garden": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/main_study_booths.mustache": {
-    "main": true,
-    "main_study_booths": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "main_expanded": true
   },
   "templates/kgc_overview.mustache": {
-    "kgc": true,
-    "kgc_overview": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "kgc_expanded": true
   },
   "templates/kgc_atrium.mustache": {
-    "kgc": true,
-    "kgc_atrium": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "kgc_expanded": true
   },
   "templates/kgc_learning_commons.mustache": {
-    "kgc": true,
-    "kgc_learning_commons": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "kgc_expanded": true
   },
   "templates/kgc_learning_labs.mustache": {
-    "kgc": true,
-    "kgc_learning_labs": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "kgc_expanded": true
   },
   "templates/kgc_lounge.mustache": {
-    "kgc": true,
-    "kgc_lounge": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "kgc_expanded": true
   },
   "templates/kgc_postgraduate_suite.mustache": {
-    "kgc": true,
-    "kgc_postgraduate_suite": true
+    "includes": ["templates/partials/sidebar.mustache"],
+    "kgc_expanded": true
   },
-  "templates/kgc_terrace": {
-    "kgc": true,
-    "kgc_terrace": true
+  "templates/kgc_terrace.mustache": {
+    "includes": ["templates/partials/sidebar.mustache"],
+    "kgc_expanded": true
+  },
+  "templates/partials/sidebar.mustache": {
+    "main_links": [
+      {
+        "class": "main_overview",
+        "url": "main_overview.html",
+        "text": "Overview"
+      },
+      {
+        "class": "main_hive",
+        "url": "main_hive.html",
+        "text": "Hive (Level 2)"
+      },
+      {
+        "class": "main_investment_studio",
+        "url": "main_investment_studio.html",
+        "text": "Investment Studio (Level 3)"
+      },
+      {
+        "class": "main_learning_commons",
+        "url": "main_learning_commons.html",
+        "text": "Learning Commons (Level 2)"
+      },
+      {
+        "class": "main_learning_labs",
+        "url": "main_learning_labs.html",
+        "text": "Learning Labs (Level 5)"
+      },
+      {
+        "class": "main_lounge",
+        "url": "main_lounge.html",
+        "text": "Lounge (Level 2)"
+      },
+      {
+        "class": "main_postgraduate_lounge_suite",
+        "url": "main_postgraduate_lounge_suite.html",
+        "text": "Postgraduate Lounge/Suite (Level 5)"
+      },
+      {
+        "class": "main_rooftop_garden",
+        "url": "main_rooftop_garden.html",
+        "text": "Rooftop Garden (Level 5)"
+      },
+      {
+        "class": "main_study_booths",
+        "url": "main_study_booths.html",
+        "text": "Study Booths (Level 4)"
+      }
+    ],
+    "kgc_links": [
+      {
+        "class": "kgc_overview",
+        "url": "kgc_overview.html",
+        "text": "Overview"
+      },
+      {
+        "class": "kgc_atrium",
+        "url": "kgc_atrium.html",
+        "text": "Atrium (Level 3)"
+      },
+      {
+        "class": "kgc_learning_commons",
+        "url": "kgc_learning_commons.html",
+        "text": "Learning Commons (Level 3)"
+      },
+      {
+        "class": "kgc_learning_labs",
+        "url": "kgc_learning_labs.html",
+        "text": "Learning Labs (Level 3)"
+      },
+      {
+        "class": "kgc_lounge",
+        "url": "kgc_lounge.html",
+        "text": "Lounge (Level 3)"
+      },
+      {
+        "class": "kgc_postgraduate_suite",
+        "url": "kgc_postgraduate_suite.html",
+        "text": "Postgraduate Suite (Level 4)"
+      },
+      {
+        "class": "kgc_terrace",
+        "url": "kgc_terrace.html",
+        "text": "Terrace (Level 5)"
+      }
+    ]
   }
 }
