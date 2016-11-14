@@ -58,7 +58,7 @@
     "includes": ["templates/partials/sidebar.mustache"],
     "kgc_expanded": true
   },
-  "templates/kgc_postgraduate_suite.mustache": {
+  "templates/kgc_postgraduate_lounge.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
     "kgc_expanded": true
   },
@@ -141,9 +141,9 @@
         "text": "Lounge (Level 3)"
       },
       {
-        "class": "kgc_postgraduate_suite",
-        "url": "kgc_postgraduate_suite.html",
-        "text": "Postgraduate Suite (Level 4)"
+        "class": "kgc_postgraduate_lounge",
+        "url": "kgc_postgraduate_lounge.html",
+        "text": "Postgraduate Lounge (Level 4)"
       },
       {
         "class": "kgc_terrace",
