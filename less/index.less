@@ -2,4 +2,71 @@
 
 header {
   position: relative;
+
+  #hamburger .logo {
+    @media screen {
+      @media (max-width: 480px) and (orientation: portrait) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+#welcome {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 500px;
+
+  @media screen {
+    @media (max-width: 480px) and (orientation: portrait) {
+      flex-direction: column;
+    }
+
+    @media (max-height: 480px) and (orientation: landscape) {
+      min-height: 250px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    h1 {
+      padding: @default-padding @double-padding @default-padding @double-padding;
+      color: @dark-foreground;
+      background-color: @light-overlay;
+    }
+
+    &.left_panel {
+      display: flex;
+      flex-direction: column-reverse;
+      flex: 0 0 50%;
+      background: url('images/red_1_1.jpg') no-repeat center;
+      cursor: pointer;
+
+      @media screen {
+        @media (max-width: 480px) and (orientation: portrait) {
+          height: 250px;
+        }
+      }
+
+      h1 {
+        margin: @double-margin 0 @double-margin @double-margin;
+      }
+    }
+
+    &.right_panel {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background: url('images/blue_1_1.jpg') no-repeat center;
+      cursor: pointer;
+
+      h1 {
+        margin: @double-margin @double-margin @double-margin 0;
+        text-align: right;
+      }
+    }
+  }
 }
