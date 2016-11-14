@@ -111,84 +111,84 @@
     "main_links": [
       {
         "class": "main_overview",
-        "url": "main_overview.html",
+        "href": "main_overview.html",
         "text": "Overview"
       },
       {
         "class": "main_hive",
-        "url": "main_hive.html",
+        "href": "main_hive.html",
         "text": "Hive (Level 2)"
       },
       {
         "class": "main_investment_studio",
-        "url": "main_investment_studio.html",
+        "href": "main_investment_studio.html",
         "text": "Investment Studio (Level 3)"
       },
       {
         "class": "main_learning_commons",
-        "url": "main_learning_commons.html",
+        "href": "main_learning_commons.html",
         "text": "Learning Commons (Level 2)"
       },
       {
         "class": "main_learning_labs",
-        "url": "main_learning_labs.html",
+        "href": "main_learning_labs.html",
         "text": "Learning Labs (Level 5)"
       },
       {
         "class": "main_lounge",
-        "url": "main_lounge.html",
+        "href": "main_lounge.html",
         "text": "Lounge (Level 2)"
       },
       {
         "class": "main_postgraduate_lounge_suite",
-        "url": "main_postgraduate_lounge_suite.html",
+        "href": "main_postgraduate_lounge_suite.html",
         "text": "Postgraduate Lounge/Suite (Level 5)"
       },
       {
         "class": "main_rooftop_garden",
-        "url": "main_rooftop_garden.html",
+        "href": "main_rooftop_garden.html",
         "text": "Rooftop Garden (Level 5)"
       },
       {
         "class": "main_study_booths",
-        "url": "main_study_booths.html",
+        "href": "main_study_booths.html",
         "text": "Study Booths (Level 4)"
       }
     ],
     "kgc_links": [
       {
         "class": "kgc_overview",
-        "url": "kgc_overview.html",
+        "href": "kgc_overview.html",
         "text": "Overview"
       },
       {
         "class": "kgc_atrium",
-        "url": "kgc_atrium.html",
+        "href": "kgc_atrium.html",
         "text": "Atrium (Level 3)"
       },
       {
         "class": "kgc_learning_commons",
-        "url": "kgc_learning_commons.html",
+        "href": "kgc_learning_commons.html",
         "text": "Learning Commons (Level 3)"
       },
       {
         "class": "kgc_learning_labs",
-        "url": "kgc_learning_labs.html",
+        "href": "kgc_learning_labs.html",
         "text": "Learning Labs (Level 3)"
       },
       {
         "class": "kgc_lounge",
-        "url": "kgc_lounge.html",
+        "href": "kgc_lounge.html",
         "text": "Lounge (Level 3)"
       },
       {
         "class": "kgc_postgraduate_lounge",
-        "url": "kgc_postgraduate_lounge.html",
+        "href": "kgc_postgraduate_lounge.html",
         "text": "Postgraduate Lounge (Level 4)"
       },
       {
         "class": "kgc_terrace",
-        "url": "kgc_terrace.html",
+        "href": "kgc_terrace.html",
         "text": "Terrace (Level 5)"
       }
     ]
