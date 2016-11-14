@@ -15,18 +15,20 @@
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
+    "less": "^2.7.1",
     "morgan": "^1.7.0"
   },
   "scripts": {
-    "build:clean": "node ./tasks/build_clean.js -c out_hogan public",
+    "build:clean": "node ./tasks/build_clean.js -c styles out_hogan public",
+    "build:less": "node ./tasks/build_less.js -i less -o styles",
     "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o out_hogan",
     "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o public",
     "build:minify_html": "node ./tasks/build_minify.js -i out_hogan -o public",
     "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
     "build:copy_images": "node ./tasks/build_copy.js -s images -d public/images",
     "build:copy_static": "node ./tasks/build_copy.js -s static -d public",
-    "build": "npm run build:clean && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:copy_static",
-    "build:debug": "npm run build:clean && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static",
+    "build": "npm run build:clean && npm run build:less && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:copy_static",
+    "build:debug": "npm run build:clean && npm run build:less && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static",
     "publish:github": "node ./tasks/publish_github.js -p public",
     "start": "node ./index.js"
   }
