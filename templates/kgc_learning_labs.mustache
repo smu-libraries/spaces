@@ -1,5 +1,7 @@
 {{< templates/partials/layout.mustache }}
-  {{$ title_text }}Learning Labs - Kwa Geok Choo Law Library{{/ title_text }}
+  {{$ title_text }}
+    SMU Libraries :: Kwa Geok Choo Law Library :: Learning Labs
+  {{/ title_text }}
   {{$ css }}
     {{> styles/kgc_learning_labs.css }}
   {{/ css }}
@@ -7,6 +9,6 @@
     {{> templates/partials/schema_kgc.mustache }}
   {{/ head }}
   {{$ body }}
-    <h1>Learning Labs - Kwa Geok Choo Law Library</h1>
+    {{> templates/partials/carousel.mustache }}
   {{/ body }}
 {{/ templates/partials/layout.mustache }}
