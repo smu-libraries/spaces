@@ -19,11 +19,11 @@
     "morgan": "^1.7.0"
   },
   "scripts": {
-    "build:clean": "node ./tasks/build_clean.js -c styles out_hogan public",
+    "build:clean": "node ./tasks/build_clean.js -c styles html public",
     "build:less": "node ./tasks/build_less.js -i less -o styles",
-    "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o out_hogan",
+    "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o html",
     "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o public",
-    "build:minify_html": "node ./tasks/build_minify.js -i out_hogan -o public",
+    "build:minify_html": "node ./tasks/build_minify.js -i html -o public",
     "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
     "build:copy_images": "node ./tasks/build_copy.js -s images -d public/images",
     "build:copy_static": "node ./tasks/build_copy.js -s static -d public",
