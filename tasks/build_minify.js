@@ -47,10 +47,15 @@ class Builder {
       let output_path = path.join(output_folder, file);
       switch (path.extname(file)) {
         case '.html':
-          let content = fse.readFileSync(input_path, 'utf8');
-          content = this.minifyHtml(content);
-          content = this.minifyLdJson(content);
-          fse.writeFileSync(output_path, content);
+          let html_content = fse.readFileSync(input_path, 'utf8');
+          html_content = this.minifyHtml(html_content);
+          html_content = this.minifyEmbeddedJson(html_content);
+          fse.writeFileSync(output_path, html_content);
+          break;
+        case '.json':
+          let json_content = fse.readFileSync(input_path, 'utf8');
+          json_content = this.minifyJson(json_content);
+          fse.writeFileSync(output_path, json_content);
           break;
         case '.jpg':
         case '.png':
@@ -87,13 +92,23 @@ class Builder {
   }
 
   /**
-   * Minifies a HTML string with an embedded ld+json script by removing the whitespace in the JSON data.
+   * Minifies a HTML string with an embedded JSON script by removing the whitespace in the JSON data.
    *
    * @param input {string} - The HTML string to minify.
    */
-  minifyLdJson(input) {
-    let matches = /(^[^]*<script type="application\/ld\+json">)([^]*)(<\/script>[^]*$)/.exec(input);
-    return matches ? matches[1] + JSON.stringify(JSON.parse(matches[2])) + matches[3] : input;
+  minifyEmbeddedJson(input) {
+    return input.replace(/(<script type="application\/(ld\+)?json">)([^]*?)(<\/script>)/g, ((m0, m1, m2, m3, m4) => {
+      return m1 + this.minifyJson(m3) + m4;
+    }).bind(this));
+  }
+
+  /**
+   * Minifies a JSON string by removing the whitespace.
+   *
+   * @param input {string} - The JSON string to minify.
+   */
+  minifyJson(input) {
+    return JSON.stringify(JSON.parse(input));
   }
 }
 

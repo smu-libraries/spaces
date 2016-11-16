@@ -26,11 +26,12 @@
     "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o public",
     "build:minify_html": "node ./tasks/build_minify.js -i html -o public",
     "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
+    "build:minify_static": "node ./tasks/build_minify.js -i static -o public",
     "build:copy_images": "node ./tasks/build_copy.js -s images -d public/images",
     "build:copy_static": "node ./tasks/build_copy.js -s static -d public",
     "build:sw": "node ./tasks/build_sw.js -r public",
-    "build": "npm run build:clean && npm run build:less && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:copy_static && npm run build:sw",
-    "build:debug": "npm run build:clean && npm run build:less && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static",
+    "build": "npm run build:clean && npm run build:less && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:minify_static && npm run build:sw",
+    "build:debug": "npm run build:clean && npm run build:less && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static && npm run build:sw",
     "publish:github": "node ./tasks/publish_github.js -p public",
     "start": "node ./index.js"
   }
