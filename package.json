@@ -16,7 +16,8 @@
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
     "less": "^2.7.1",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "sw-precache": "^4.2.1"
   },
   "scripts": {
     "build:clean": "node ./tasks/build_clean.js -c styles html public",
@@ -27,7 +28,8 @@
     "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
     "build:copy_images": "node ./tasks/build_copy.js -s images -d public/images",
     "build:copy_static": "node ./tasks/build_copy.js -s static -d public",
-    "build": "npm run build:clean && npm run build:less && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:copy_static",
+    "build:sw": "node ./tasks/build_sw.js -r public",
+    "build": "npm run build:clean && npm run build:less && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:copy_static && npm run build:sw",
     "build:debug": "npm run build:clean && npm run build:less && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static",
     "publish:github": "node ./tasks/publish_github.js -p public",
     "start": "node ./index.js"
