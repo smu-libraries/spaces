@@ -7,11 +7,12 @@
           <h1>{{ title }}</h1>
         </div>
       {{/ title }}
-      {{# caption }}
-        <div class="caption">
-          {{{ caption }}}
+      <div class="caption">
+        {{{ caption }}}
+        <div class="page">
+          {{ pager }}
         </div>
-      {{/ caption }}
+      </div>
     </div>
   {{/ slides }}
 </amp-carousel>
