@@ -7,18 +7,18 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/red_1_1.jpg",
+        "src": "images/main_1.jpg",
         "alt": "Li Ka Shing Library",
         "title": "Li Ka Shing Library",
         "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
-        "src": "images/green_1_1.jpg",
+        "src": "images/main_2.jpg",
         "alt": "Li Ka Shing Library",
         "caption": "The quick brown fox <strong>jumps</strong> over the lazy dog."
       },
       {
-        "src": "images/blue_1_1.jpg",
+        "src": "images/main_3.jpg",
         "alt": "Li Ka Shing Library"
       }
     ]
@@ -53,31 +53,140 @@
   },
   "templates/main_investment_studio.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true
+    "main_expanded": true,
+    "slides": [
+      {
+        "src": "images/main_investment_studio_2.jpg",
+        "alt": "Investment Studio",
+        "title": "Investment Studio"
+      },
+      {
+        "src": "images/main_investment_studio_3.jpg",
+        "alt": "Investment Studio"
+      },
+      {
+        "src": "images/main_investment_studio_4.jpg",
+        "alt": "Investment Studio"
+      },
+      {
+        "src": "images/main_investment_studio_5.jpg",
+        "alt": "Investment Studio"
+      }
+    ]
   },
   "templates/main_learning_commons.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true
+    "main_expanded": true,
+    "slides": [
+      {
+        "src": "images/main_learning_commons_1.jpg",
+        "alt": "Learning Commons",
+        "title": "Learning Commons"
+      },
+      {
+        "src": "images/main_learning_commons_2.jpg",
+        "alt": "Learning Commons"
+      },
+      {
+        "src": "images/main_learning_commons_3.jpg",
+        "alt": "Learning Commons"
+      }
+    ]
   },
   "templates/main_learning_labs.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true
+    "main_expanded": true,
+    "slides": [
+      {
+        "src": "images/main_learning_labs_2.jpg",
+        "alt": "Learning Labs",
+        "title": "Learning Labs"
+      },
+      {
+        "src": "images/main_learning_labs_3.jpg",
+        "alt": "Learning Labs"
+      }
+    ]
   },
   "templates/main_lounge.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true
+    "main_expanded": true,
+    "slides": [
+      {
+        "src": "images/main_lounge_1.jpg",
+        "alt": "Lounge",
+        "title": "Lounge"
+      },
+      {
+        "src": "images/main_lounge_2.jpg",
+        "alt": "Lounge"
+      },
+      {
+        "src": "images/main_lounge_3.jpg",
+        "alt": "Lounge"
+      },
+      {
+        "src": "images/main_lounge_4.jpg",
+        "alt": "Lounge"
+      },
+      {
+        "src": "images/main_lounge_5.jpg",
+        "alt": "Lounge"
+      }
+    ]
   },
   "templates/main_postgraduate_lounge_suite.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true
+    "main_expanded": true,
+    "slides": [
+      {
+        "src": "images/main_postgraduate_lounge_suite_1.jpg",
+        "alt": "Postgraduate Lounge/Suite",
+        "title": "Postgraduate Lounge/Suite"
+      }
+    ]
   },
   "templates/main_rooftop_garden.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true
+    "main_expanded": true,
+    "slides": [
+      {
+        "src": "images/main_rooftop_garden_1.jpg",
+        "alt": "Rooftop Garden",
+        "title": "Rooftop Garden"
+      },
+      {
+        "src": "images/main_rooftop_garden_2.jpg",
+        "alt": "Rooftop Garden"
+      },
+      {
+        "src": "images/main_rooftop_garden_3.jpg",
+        "alt": "Rooftop Garden"
+      },
+      {
+        "src": "images/main_rooftop_garden_4.jpg",
+        "alt": "Rooftop Garden"
+      }
+    ]
   },
   "templates/main_study_booths.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true
+    "main_expanded": true,
+    "slides": [
+      {
+        "src": "images/main_study_booths_1.jpg",
+        "alt": "Study Booths",
+        "title": "Study Booths"
+      },
+      {
+        "src": "images/main_study_booths_2.jpg",
+        "alt": "Study Booths"
+      },
+      {
+        "src": "images/main_study_booths_3.jpg",
+        "alt": "Study Booths"
+      }
+    ]
   },
   "templates/kgc_overview.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
