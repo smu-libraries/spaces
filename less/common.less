@@ -2,8 +2,8 @@
 @dark-foreground: #dddddd;
 @light-background: white;
 @light-foreground: #333333;
-@smu-blue: #2e2a5b;
-@smu-gold: #957749;
+@smu-blue: #1a2c6b;
+@smu-gold: #917641;
 @dark-overlay: fadeout(black, 20%);
 @light-overlay: fadeout(black, 80%);
 @default-margin: 12px;
@@ -12,19 +12,16 @@
 @default-padding: 12px;
 @double-padding: @default-padding * 2;
 @triple-padding: @default-padding * 3;
-@sidebar-icon-width: 24px;
+@sidebar-icon-width: @double-padding;
 
 @selected: {  /* ruleset for active link in the sidebar */
-  margin-left: @default-margin;
   padding-left: @default-padding;
-  font-weight: bold;
-  background-color: #eeeeee;
-  color:@smu-gold;
 
   &:before {
-    content: '➜';
+    content: '■';
     display: inline-block;
     width: @sidebar-icon-width;
+    font-weight: normal;
   }
 };
 
@@ -39,7 +36,7 @@ body {
 
   .banner {
     padding: @double-margin @double-margin @double-margin @default-margin;
-    background-color: @light-background;
+    background-color: @smu-blue;
   }
 
   .close {
@@ -57,13 +54,13 @@ body {
     }
 
     .show-more:before {
-      content: '▷';
+      content: '▶';
       display: inline-block;
       width: @sidebar-icon-width;
     }
 
     .show-less:before {
-      content: '▽';
+      content: '▼';
       display: inline-block;
       width: @sidebar-icon-width;
     }
@@ -73,8 +70,8 @@ body {
       font-size: 16px;
       padding: 0 0 0 @default-padding;
       border: 0;
-      background-color: @smu-gold;
-      color: white;
+      background-color: white;
+      color: @smu-blue;
       width: 100%;
       line-height: 40px;
     }
@@ -82,7 +79,7 @@ body {
     .item a {
       display: block;
       font-size: 14px;
-      padding: @default-padding @double-padding @default-padding @double-padding;
+      padding: @default-padding @default-padding @default-padding @triple-padding;
       white-space: nowrap;
       text-decoration: none;
       color: white;

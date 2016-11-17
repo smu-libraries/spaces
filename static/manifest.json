@@ -3,7 +3,7 @@
   "short_name": "NoLiTA",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#1a2c6b",
   "description": "An online photo gallery of SMU's two libraries -- Li Ka Shing Library and Kwa Geok Choo Law Library",
   "icons": [
     {
