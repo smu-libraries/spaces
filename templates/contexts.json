@@ -35,14 +35,10 @@
         "src": "images/main_hive_1.jpg",
         "alt": "Hive",
         "title": "Hive",
-        "caption": "Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. <strong>Nice TV</strong>. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. <strong>Nice TV</strong>. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV. Nice TV."
+        "caption": "TV! TV! TV! TV! TV! TV!"
       },
       {
         "src": "images/main_hive_2.jpg",
-        "alt": "Hive"
-      },
-      {
-        "src": "images/main_hive_3.jpg",
         "alt": "Hive"
       },
       {
@@ -117,12 +113,13 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_lounge_1.jpg",
+        "src": "images/main_lounge_2.jpg",
         "alt": "Lounge",
-        "title": "Lounge"
+        "title": "Lounge",
+        "caption": "Light reading, books, magazines, newspapers and DVDs."
       },
       {
-        "src": "images/main_lounge_2.jpg",
+        "src": "images/main_lounge_1.jpg",
         "alt": "Lounge"
       },
       {
@@ -165,11 +162,13 @@
       },
       {
         "src": "images/main_rooftop_garden_3.jpg",
-        "alt": "Rooftop Garden"
+        "alt": "Rooftop Garden",
+        "caption": "View of SAM."
       },
       {
         "src": "images/main_rooftop_garden_4.jpg",
-        "alt": "Rooftop Garden"
+        "alt": "Rooftop Garden",
+        "caption": "View of NMS."
       }
     ]
   },
