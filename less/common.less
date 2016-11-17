@@ -33,19 +33,17 @@ body {
 
 #sidebar {
   background-color: @smu-blue;
+  width: 300px;
 
   .banner {
-    padding: @double-margin @double-margin @double-margin @default-margin;
+    margin: @default-margin @default-margin @default-margin @double-margin;
     background-color: @smu-blue;
   }
 
   .close {
     float: right;
     cursor: pointer;
-
-    &:hover {
-      background-color: #cccccc;
-    }
+    margin: @default-margin;
   }
 
   section {
@@ -120,12 +118,15 @@ header {
 
   #hamburger {
     align-self: flex-start;
-    padding: @default-padding;
     margin: @default-margin;
     cursor: pointer;
 
+    .open {
+      margin: @default-margin;
+    }
+
     .logo {
-      padding-left: @double-padding;
+      margin-left: @default-margin;
 
       @media screen {
         @media (max-width: 480px) and (orientation: portrait) {
@@ -157,22 +158,20 @@ header {
     color: @dark-foreground;
     z-index: 2;
 
-    @nudge-down: 3;
-
     @media screen {
       @media (max-width: 480px) and (orientation: portrait) {
         background-color: transparent;
-        padding-top: @double-padding + @nudge-down;
+        padding-top: @double-padding;
       }
 
       @media (max-height: 480px) and (orientation: landscape) {
-        padding-top: @double-padding + @nudge-down;
+        padding-top: @double-padding;
       }
     }
 
     h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 
