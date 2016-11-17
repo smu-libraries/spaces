@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
+    "amphtml-validator": "^1.0.14",
     "command-line-args": "^3.0.2",
     "express": "^4.14.0",
     "fs-extra": "^1.0.0",
@@ -32,6 +33,7 @@
     "build:sw": "node ./tasks/build_sw.js -r public",
     "build": "npm run build:clean && npm run build:less && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:minify_static && npm run build:sw",
     "build:debug": "npm run build:clean && npm run build:less && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static && npm run build:sw",
+    "validate": "node ./tasks/validate.js -i public",
     "publish:github": "node ./tasks/publish_github.js -p public",
     "start": "node ./index.js"
   }

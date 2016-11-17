@@ -29,7 +29,7 @@ amphtmlValidator.getInstance().then(function (validator) {
       let input_path = path.join(args.input, file);
       let content = fse.readFileSync(input_path, 'utf8');
       var result = validator.validateString(content);
-      ((result.status === 'PASS') ? console.log : console.error)(result.status);
+      ((result.status === 'PASS') ? console.log : console.error)(file + ': ' + result.status);
       for (var ii = 0; ii < result.errors.length; ii++) {
         var error = result.errors[ii];
         var msg = 'file ' + file + ': line ' + error.line + ', col ' + error.col + ': ' + error.message;
