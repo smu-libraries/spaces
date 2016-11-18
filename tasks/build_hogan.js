@@ -104,6 +104,20 @@ class Builder {
       }
     });
 
+    /** Generate page numbers */
+    let generate_pager = (page_number, page_count) => {
+      let pages_before = '○'.repeat(page_number - 1);
+      let pages_after = '○'.repeat(page_count - page_number);
+      return `${pages_before}●${pages_after}`;
+    };
+    Object.keys(contexts).forEach((template) => {
+      if ('slides' in contexts[template]) {
+        contexts[template]['slides'].forEach((slide, index) => {
+          slide.pager = generate_pager(index + 1, contexts[template]['slides'].length);
+        });
+      }
+    });
+
     fse.readdirSync(input_folder).forEach((file) => {
       if (path.extname(file) === '.mustache') {  /** only do mustache files */
         let output_path = path.join(output_folder, file).replace(/\.mustache$/, '.html');

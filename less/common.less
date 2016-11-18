@@ -2,29 +2,29 @@
 @dark-foreground: #dddddd;
 @light-background: white;
 @light-foreground: #333333;
-@smu-blue: #2e2a5b;
-@smu-gold: #957749;
-@dark-overlay: fadeout(black, 20%);
-@light-overlay: fadeout(black, 80%);
+@smu-blue: #1a2c6b;
+@smu-gold: #917641;
+@dark-overlay: fadeout(black, 40%);
+@light-overlay: fadeout(black, 60%);
 @default-margin: 12px;
 @double-margin: @default-margin * 2;
 @triple-margin: @default-margin * 3;
 @default-padding: 12px;
 @double-padding: @default-padding * 2;
 @triple-padding: @default-padding * 3;
-@sidebar-icon-width: 24px;
+@sidebar-icon-width: @double-padding;
 
 @selected: {  /* ruleset for active link in the sidebar */
-  margin-left: @default-margin;
   padding-left: @default-padding;
-  font-weight: bold;
-  background-color: #eeeeee;
-  color:@smu-gold;
+  background-color: white;
+  color: @smu-blue;
 
   &:before {
-    content: '➜';
+    content: '▶';
     display: inline-block;
     width: @sidebar-icon-width;
+    font-weight: normal;
+    text-align: center;
   }
 };
 
@@ -36,19 +36,17 @@ body {
 
 #sidebar {
   background-color: @smu-blue;
+  width: 300px;
 
   .banner {
-    padding: @double-margin @double-margin @double-margin @default-margin;
-    background-color: @light-background;
+    margin: @default-margin @default-margin @default-margin @double-margin;
+    background-color: @smu-blue;
   }
 
   .close {
     float: right;
     cursor: pointer;
-
-    &:hover {
-      background-color: #cccccc;
-    }
+    margin: @default-margin;
   }
 
   section {
@@ -57,13 +55,17 @@ body {
     }
 
     .show-more:before {
-      content: '▷';
+      content: '▼';
+      text-align: center;
+      transform: rotate(270deg);
+      transform-origin: center;
       display: inline-block;
       width: @sidebar-icon-width;
     }
 
     .show-less:before {
-      content: '▽';
+      content: '▼';
+      text-align: center;
       display: inline-block;
       width: @sidebar-icon-width;
     }
@@ -82,7 +84,7 @@ body {
     .item a {
       display: block;
       font-size: 14px;
-      padding: @default-padding @double-padding @default-padding @double-padding;
+      padding: @default-padding @default-padding @default-padding @triple-padding;
       white-space: nowrap;
       text-decoration: none;
       color: white;
@@ -123,12 +125,15 @@ header {
 
   #hamburger {
     align-self: flex-start;
-    padding: @default-padding;
     margin: @default-margin;
     cursor: pointer;
 
+    .open {
+      margin: @default-margin;
+    }
+
     .logo {
-      padding-left: @double-padding;
+      margin-left: @default-margin;
 
       @media screen {
         @media (max-width: 480px) and (orientation: portrait) {
@@ -160,22 +165,20 @@ header {
     color: @dark-foreground;
     z-index: 2;
 
-    @nudge-down: 3;
-
     @media screen {
       @media (max-width: 480px) and (orientation: portrait) {
         background-color: transparent;
-        padding-top: @double-padding + @nudge-down;
+        padding-top: @double-padding;
       }
 
       @media (max-height: 480px) and (orientation: landscape) {
-        padding-top: @double-padding + @nudge-down;
+        padding-top: @double-padding;
       }
     }
 
     h1 {
       margin: 0;
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 
@@ -202,7 +205,13 @@ header {
 
     strong {
       font-weight: bold;
-      color: white;
+      color: goldenrod;
+    }
+
+    .page {
+      display: block;
+      text-align: center;
+      font-family: sans-serif;
     }
   }
 }
