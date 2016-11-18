@@ -17,15 +17,11 @@ header {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 500px;
+  height: calc(~"100vh - (@{double-margin} * 2 + 28px) * 2");  /* 28px is the observed height of the logo */
 
   @media screen {
-    @media (max-width: 480px) and (orientation: portrait) {
+    @media (orientation: portrait) {
       flex-direction: column;
-    }
-
-    @media (max-height: 480px) and (orientation: landscape) {
-      min-height: 250px;
     }
   }
 
@@ -44,12 +40,6 @@ header {
       flex: 0 0 50%;
       background: url('images/main.jpg') no-repeat center;
       cursor: pointer;
-
-      @media screen {
-        @media (max-width: 480px) and (orientation: portrait) {
-          height: 250px;
-        }
-      }
 
       h1 {
         margin: @double-margin 0 @double-margin @double-margin;
