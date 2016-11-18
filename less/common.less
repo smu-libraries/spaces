@@ -16,12 +16,15 @@
 
 @selected: {  /* ruleset for active link in the sidebar */
   padding-left: @default-padding;
+  background-color: white;
+  color: @smu-blue;
 
   &:before {
-    content: '■';
+    content: '▶';
     display: inline-block;
     width: @sidebar-icon-width;
     font-weight: normal;
+    text-align: center;
   }
 };
 
@@ -52,13 +55,17 @@ body {
     }
 
     .show-more:before {
-      content: '▶';
+      content: '▼';
+      text-align: center;
+      transform: rotate(270deg);
+      transform-origin: center;
       display: inline-block;
       width: @sidebar-icon-width;
     }
 
     .show-less:before {
       content: '▼';
+      text-align: center;
       display: inline-block;
       width: @sidebar-icon-width;
     }
@@ -68,8 +75,8 @@ body {
       font-size: 16px;
       padding: 0 0 0 @default-padding;
       border: 0;
-      background-color: white;
-      color: @smu-blue;
+      background-color: @smu-gold;
+      color: white;
       width: 100%;
       line-height: 40px;
     }
