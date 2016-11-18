@@ -1,9 +1,15 @@
 {
   "templates/index.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"]
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ]
   },
   "templates/main_overview.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -28,7 +34,10 @@
     ]
   },
   "templates/main_investment_studio.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -51,7 +60,10 @@
     ]
   },
   "templates/main_learning_commons_hive.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -88,7 +100,10 @@
     ]
   },
   "templates/main_learning_labs.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -103,7 +118,10 @@
     ]
   },
   "templates/main_lounge.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -131,7 +149,10 @@
     ]
   },
   "templates/main_postgraduate_lounge_suite.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -142,7 +163,10 @@
     ]
   },
   "templates/main_rooftop_garden.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -167,7 +191,10 @@
     ]
   },
   "templates/main_study_booths.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "main_expanded": true,
     "slides": [
       {
@@ -186,32 +213,56 @@
     ]
   },
   "templates/kgc_overview.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "kgc_expanded": true
   },
   "templates/kgc_atrium.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "kgc_expanded": true
   },
   "templates/kgc_learning_commons.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "kgc_expanded": true
   },
   "templates/kgc_learning_labs.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "kgc_expanded": true
   },
   "templates/kgc_lounge.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "kgc_expanded": true
   },
   "templates/kgc_postgraduate_lounge.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "kgc_expanded": true
   },
   "templates/kgc_terrace.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
     "kgc_expanded": true
+  },
+  "templates/partials/header.mustache": {
+    "app": "Spaces"
   },
   "templates/partials/sidebar.mustache": {
     "main_links": [
