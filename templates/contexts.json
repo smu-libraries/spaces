@@ -27,30 +27,6 @@
       }
     ]
   },
-  "templates/main_hive.mustache": {
-    "includes": ["templates/partials/sidebar.mustache"],
-    "main_expanded": true,
-    "slides": [
-      {
-        "src": "images/main_hive_1.jpg",
-        "alt": "Hive",
-        "title": "Hive",
-        "caption": "TV! TV! TV! TV! TV! TV!"
-      },
-      {
-        "src": "images/main_hive_2.jpg",
-        "alt": "Hive"
-      },
-      {
-        "src": "images/main_hive_4.jpg",
-        "alt": "Hive"
-      },
-      {
-        "src": "images/main_hive_5.jpg",
-        "alt": "Hive"
-      }
-    ]
-  },
   "templates/main_investment_studio.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
     "main_expanded": true,
@@ -74,7 +50,7 @@
       }
     ]
   },
-  "templates/main_learning_commons.mustache": {
+  "templates/main_learning_commons_hive.mustache": {
     "includes": ["templates/partials/sidebar.mustache"],
     "main_expanded": true,
     "slides": [
@@ -90,6 +66,24 @@
       {
         "src": "images/main_learning_commons_3.jpg",
         "alt": "Learning Commons"
+      },
+      {
+        "src": "images/main_hive_1.jpg",
+        "alt": "Hive",
+        "title": "Hive",
+        "caption": "TV! TV! TV! TV! TV!"
+      },
+      {
+        "src": "images/main_hive_2.jpg",
+        "alt": "Hive"
+      },
+      {
+        "src": "images/main_hive_4.jpg",
+        "alt": "Hive"
+      },
+      {
+        "src": "images/main_hive_5.jpg",
+        "alt": "Hive"
       }
     ]
   },
@@ -227,19 +221,14 @@
         "text": "Overview"
       },
       {
-        "class": "main_hive",
-        "href": "main_hive.html",
-        "text": "Hive (Level 2)"
-      },
-      {
         "class": "main_investment_studio",
         "href": "main_investment_studio.html",
         "text": "Investment Studio (Level 3)"
       },
       {
-        "class": "main_learning_commons",
-        "href": "main_learning_commons.html",
-        "text": "Learning Commons (Level 2)"
+        "class": "main_learning_commons_hive",
+        "href": "main_learning_commons_hive.html",
+        "text": "Learning Commons / Hive (Level 2)"
       },
       {
         "class": "main_learning_labs",
