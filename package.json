@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "amphtml-validator": "^1.0.14",
+    "amphtml-validator": "1.0.14",
     "command-line-args": "^3.0.2",
     "express": "^4.14.0",
     "fs-extra": "^1.0.0",
