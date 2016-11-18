@@ -5,7 +5,7 @@
  */
 
 var app = require('./app');
-var debug = require('debug')('nolita:server');
+var debug = require('debug')('spaces:server');
 var http = require('http');
 
 /**

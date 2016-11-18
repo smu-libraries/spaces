@@ -1,10 +1,10 @@
 {
-  "name": "NoLiTA",
-  "short_name": "NoLiTA",
+  "name": "SMU Libraries Spaces",
+  "short_name": "Spaces",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#1a2c6b",
-  "description": "An online photo gallery of SMU's two libraries -- Li Ka Shing Library and Kwa Geok Choo Law Library",
+  "description": "Spaces introduces SMU Libraries’ two branches -- Li Ka Shing Library and Kwa Geok Choo Law Library -- through photos and quick facts.",
   "icons": [
     {
       "src": "images/favicon_48.png",

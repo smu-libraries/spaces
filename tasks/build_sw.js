@@ -24,7 +24,7 @@ if (!args.root) {
 
 let output_file = path.join(args.root, "service_worker.js");
 sw_precache.write(output_file, {
-  cacheId: 'nolita',
+  cacheId: 'spaces',
   staticFileGlobs: [args.root + '/**/*.*'],
   stripPrefix: args.root + '/'
 }, (error) => {

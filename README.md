@@ -1,17 +1,15 @@
-# NoLiTA
+# SMU Libraries Spaces
 
-[NoLiTA](https://library.smu.edu.sg/nolita) is an online photo gallery of SMU's two libraries -- Li Ka Shing Library and Kwa Geok Choo Law Library.
-
-This project makes use of [Accelerated Mobile Pages (AMP)](https://www.ampproject.org) to provide an enhanced experience on mobile devices.
+[Spaces](https://library.smu.edu.sg/spaces) introduces SMU Libraries’ two branches -- Li Ka Shing Library and Kwa Geok Choo Law Library -- through photos and quick facts.
 
 ## Build
 
-1. Install [Node.js](https://nodejs.org). The project is developed using v7.0.0.
+1. Install [Node.js](https://nodejs.org).
 2. Set up the repository and build the site:
 
   ```
-  $ git clone https://github.com/smu-libraries/nolita.git
-  $ cd nolita
+  $ git clone https://github.com/smu-libraries/spaces.git
+  $ cd spaces
   $ npm install
   $ npm run build
   ```
@@ -28,4 +26,4 @@ This project makes use of [Accelerated Mobile Pages (AMP)](https://www.ampprojec
 
 Except where otherwise noted, this project is licensed under the CC-BY-4.0 license. See [LICENSE.txt](LICENSE.txt) for more information.
 
-This project adapts sample code from the [Accelerated Mobile Pages Project](https://www.ampproject.org) (in particular, the sub-projects [AMP by Example](https://ampbyexample.com) and [amphtml-validator](https://www.npmjs.com/package/amphtml-validator)), which is released under the Apache-2.0 license. See linked [LICENSE](https://github.com/ampproject/amphtml/blob/master/LICENSE) file for more information.
+This project adapts sample code from the [Accelerated Mobile Pages](https://www.ampproject.org) project (see linked [Apache-2.0](https://github.com/ampproject/amphtml/blob/master/LICENSE) license).
