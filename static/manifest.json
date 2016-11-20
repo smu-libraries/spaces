@@ -3,7 +3,7 @@
   "short_name": "Spaces",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#cf8034",
+  "background_color": "#cf8e10",
   "description": "Spaces introduces SMU Libraries’ two branches -- Li Ka Shing Library and Kwa Geok Choo Law Library -- through photos and quick facts.",
   "icons": [
     {
