@@ -13,18 +13,15 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main.jpg",
-        "alt": "Li Ka Shing Library",
+        "image": "images/main.jpg",
         "title": "Li Ka Shing Library",
         "caption": "Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <strong>voluptate velit esse cillum dolore</strong> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
-        "src": "images/main_1.jpg",
-        "alt": "Li Ka Shing Library"
+        "image": "images/main_1.jpg"
       },
       {
-        "src": "images/main_2.jpg",
-        "alt": "Li Ka Shing Library"
+        "image": "images/main_2.jpg"
       }
     ]
   },
@@ -36,21 +33,17 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_investment_studio_2.jpg",
-        "alt": "Investment Studio",
+        "image": "images/main_investment_studio_2.jpg",
         "title": "Investment Studio"
       },
       {
-        "src": "images/main_investment_studio_3.jpg",
-        "alt": "Investment Studio"
+        "image": "images/main_investment_studio_3.jpg"
       },
       {
-        "src": "images/main_investment_studio_4.jpg",
-        "alt": "Investment Studio"
+        "image": "images/main_investment_studio_4.jpg"
       },
       {
-        "src": "images/main_investment_studio_5.jpg",
-        "alt": "Investment Studio"
+        "image": "images/main_investment_studio_5.jpg"
       }
     ]
   },
@@ -62,35 +55,28 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_learning_commons_1.jpg",
-        "alt": "Learning Commons",
+        "image": "images/main_learning_commons_1.jpg",
         "title": "Learning Commons"
       },
       {
-        "src": "images/main_learning_commons_2.jpg",
-        "alt": "Learning Commons"
+        "image": "images/main_learning_commons_2.jpg"
       },
       {
-        "src": "images/main_learning_commons_3.jpg",
-        "alt": "Learning Commons"
+        "image": "images/main_learning_commons_3.jpg"
       },
       {
-        "src": "images/main_hive_1.jpg",
-        "alt": "Hive",
+        "image": "images/main_hive_1.jpg",
         "title": "Hive",
         "caption": "TV! TV! TV! TV! TV!"
       },
       {
-        "src": "images/main_hive_2.jpg",
-        "alt": "Hive"
+        "image": "images/main_hive_2.jpg"
       },
       {
-        "src": "images/main_hive_4.jpg",
-        "alt": "Hive"
+        "image": "images/main_hive_4.jpg"
       },
       {
-        "src": "images/main_hive_5.jpg",
-        "alt": "Hive"
+        "image": "images/main_hive_5.jpg"
       }
     ]
   },
@@ -102,13 +88,11 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_learning_labs_2.jpg",
-        "alt": "Learning Labs",
+        "image": "images/main_learning_labs_2.jpg",
         "title": "Learning Labs"
       },
       {
-        "src": "images/main_learning_labs_3.jpg",
-        "alt": "Learning Labs"
+        "image": "images/main_learning_labs_3.jpg"
       }
     ]
   },
@@ -120,30 +104,24 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_lounge_6.jpg",
-        "alt": "Lounge",
+        "image": "images/main_lounge_6.jpg",
         "title": "Lounge",
         "caption": "Lifestyle. Media. Newspapers, Magazines. Lounge. Smoo Smoo."
       },
       {
-        "src": "images/main_lounge_1.jpg",
-        "alt": "Lounge"
+        "image": "images/main_lounge_1.jpg"
       },
       {
-        "src": "images/main_lounge_3.jpg",
-        "alt": "Lounge"
+        "image": "images/main_lounge_3.jpg"
       },
       {
-        "src": "images/main_lounge_4.jpg",
-        "alt": "Lounge"
+        "image": "images/main_lounge_4.jpg"
       },
       {
-        "src": "images/main_lounge_5.jpg",
-        "alt": "Lounge"
+        "image": "images/main_lounge_5.jpg"
       },
       {
-        "src": "images/main_lounge_7.jpg",
-        "alt": "Lounge",
+        "image": "images/main_lounge_7.jpg",
         "caption": "Wait... is that Kama Sutra?"
       }
     ]
@@ -156,8 +134,7 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_postgraduate_lounge_suite_1.jpg",
-        "alt": "Postgraduate Lounge/Suite",
+        "image": "images/main_postgraduate_lounge_suite_1.jpg",
         "title": "Postgraduate Lounge/Suite"
       }
     ]
@@ -170,31 +147,25 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_rooftop_garden_5.jpg",
-        "alt": "Rooftop Garden",
+        "image": "images/main_rooftop_garden_5.jpg",
         "title": "Rooftop Garden"
       },
       {
-        "src": "images/main_rooftop_garden_1.jpg",
-        "alt": "Rooftop Garden"
+        "image": "images/main_rooftop_garden_1.jpg"
       },
       {
-        "src": "images/main_rooftop_garden_2.jpg",
-        "alt": "Rooftop Garden"
+        "image": "images/main_rooftop_garden_2.jpg"
       },
       {
-        "src": "images/main_rooftop_garden_3.jpg",
-        "alt": "Rooftop Garden",
+        "image": "images/main_rooftop_garden_3.jpg",
         "caption": "View of SAM."
       },
       {
-        "src": "images/main_rooftop_garden_6.jpg",
-        "alt": "Rooftop Garden",
+        "image": "images/main_rooftop_garden_6.jpg",
         "caption": "View of... a construction site?"
       },
       {
-        "src": "images/main_rooftop_garden_7.jpg",
-        "alt": "Rooftop Garden",
+        "image": "images/main_rooftop_garden_7.jpg",
         "caption": "View of NMS."
       }
     ]
@@ -207,17 +178,14 @@
     "main_expanded": true,
     "slides": [
       {
-        "src": "images/main_study_booths_1.jpg",
-        "alt": "Study Booths",
+        "image": "images/main_study_booths_1.jpg",
         "title": "Study Booths"
       },
       {
-        "src": "images/main_study_booths_2.jpg",
-        "alt": "Study Booths"
+        "image": "images/main_study_booths_2.jpg"
       },
       {
-        "src": "images/main_study_booths_3.jpg",
-        "alt": "Study Booths"
+        "image": "images/main_study_booths_3.jpg"
       }
     ]
   },
