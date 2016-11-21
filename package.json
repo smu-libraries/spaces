@@ -23,8 +23,8 @@
   "scripts": {
     "build:clean": "node ./tasks/build_clean.js -c styles html public",
     "build:less": "node ./tasks/build_less.js -i less -o styles",
-    "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o html",
-    "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -p schema styles templates/partials -t templates -o public",
+    "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -g -p schema styles templates/partials -t templates -o html",
+    "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -g -p schema styles templates/partials -t templates -o public",
     "build:minify_html": "node ./tasks/build_minify.js -i html -o public",
     "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
     "build:minify_static": "node ./tasks/build_minify.js -i static -o public",
