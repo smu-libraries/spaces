@@ -1,7 +1,5 @@
-@dark-background: #333333;
-@dark-foreground: #dddddd;
-@light-background: white;
-@light-foreground: #333333;
+@foreground: white;
+@background: #333333;
 @smu-blue: #1a2c6b;
 @smu-gold: #917641;
 @dark-overlay: fadeout(black, 40%);
@@ -30,8 +28,8 @@
 };
 
 body {
-  color: @dark-foreground;
-  background-color: @dark-background;
+  color: @foreground;
+  background-color: @background;
   font-family: -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
@@ -78,7 +76,6 @@ body {
       padding: 0 0 0 @default-padding;
       border: 0;
       background-color: @smu-gold;
-      color: white;
       width: 100%;
       line-height: 40px;
     }
@@ -89,7 +86,7 @@ body {
       padding: @default-padding @default-padding @default-padding @triple-padding;
       white-space: nowrap;
       text-decoration: none;
-      color: white;
+      color: @foreground;
 
       /* See also: @selected */
     }
@@ -178,7 +175,6 @@ header {
     top: 0;
     right: 0;
     padding: @double-padding @double-padding @default-padding @default-padding;
-    color: @dark-foreground;
     z-index: 2;
 
     @media screen {
@@ -205,7 +201,6 @@ header {
     right: 0;
     padding: @default-padding @triple-padding @default-padding @triple-padding;
     background-color: @light-overlay;
-    color: @dark-foreground;
 
     @media screen {
       @media (max-width: 480px) and (orientation: portrait) {
