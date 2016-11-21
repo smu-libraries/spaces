@@ -18,10 +18,12 @@
         "caption": "Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <strong>voluptate velit esse cillum dolore</strong> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
-        "image": "images/main_1.jpg"
+        "image": "images/main_1.jpg",
+        "caption": "Our collection focuses on electronic resources rather than print. We spend 85% of our budget on e-resources and only 15% on print resources. This allows us to offer more study spaces in the library."
       },
       {
-        "image": "images/main_2.jpg"
+        "image": "images/main_2.jpg",
+        "caption": "The library is often the preferred event space on campus but we do limit the number of events to give priority to students' needs, especially during intensive study periods."
       }
     ]
   },
@@ -33,17 +35,12 @@
     "main_expanded": true,
     "slides": [
       {
-        "image": "images/main_investment_studio_2.jpg",
-        "title": "Investment Studio"
-      },
-      {
-        "image": "images/main_investment_studio_3.jpg"
+        "image": "images/main_investment_studio_5.jpg",
+        "title": "Investment Studio",
+        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases. Users will be able to access <strong>Bloomberg</strong>, <strong>Eikon</strong>, <strong>Capital IQ</strong>, and other databases in a professional environment and hone technical skills in business research. With collaboration tables and wall-mounted digital displays to facilitate discussions, the Investment Studio also promotes teamwork and development of communication skills."
       },
       {
         "image": "images/main_investment_studio_4.jpg"
-      },
-      {
-        "image": "images/main_investment_studio_5.jpg"
       }
     ]
   },
@@ -56,10 +53,12 @@
     "slides": [
       {
         "image": "images/main_learning_commons_1.jpg",
-        "title": "Learning Commons"
+        "title": "Learning Commons",
+        "caption": "The Learning Commons is open 24/7. It has a dedicated entrance and seating capacity for group and independent learning. Additional collaborative seats and technology are available for late night SMUGGERS."
       },
       {
-        "image": "images/main_learning_commons_2.jpg"
+        "image": "images/main_learning_commons_2.jpg",
+        "caption": "The Learning Commons looks out to the Campus Green for students seeking some inspiration."
       },
       {
         "image": "images/main_learning_commons_3.jpg"
@@ -67,16 +66,10 @@
       {
         "image": "images/main_hive_1.jpg",
         "title": "Hive",
-        "caption": "TV! TV! TV! TV! TV!"
-      },
-      {
-        "image": "images/main_hive_2.jpg"
+        "caption": "The Hive is specially designed to support active and group learning. It has flexible seating and five connected projection screens, and can accommodate up to 50 participants at a time. This space can be booked by faculty for lessons and events but is otherwise open for student use normally."
       },
       {
         "image": "images/main_hive_4.jpg"
-      },
-      {
-        "image": "images/main_hive_5.jpg"
       }
     ]
   },
@@ -109,13 +102,14 @@
         "caption": "Lifestyle. Media. Newspapers, Magazines. Lounge. Smoo Smoo."
       },
       {
-        "image": "images/main_lounge_1.jpg"
+        "image": "images/main_lounge_3.jpg",
+        "title": "DVD Collection",
+        "caption": "The DVD collection is made up of materials for learning and some general interest titles, including selected Hollywood and award-winning international movies, and selected TV shows for leisure viewing."
       },
       {
-        "image": "images/main_lounge_3.jpg"
-      },
-      {
-        "image": "images/main_lounge_4.jpg"
+        "image": "images/main_lounge_4.jpg",
+        "title": "Lifestyle Collection",
+        "caption": "The Lifestyle collection: leisure reading material including regional and local fiction, biographies, classics, travel guides and more."
       },
       {
         "image": "images/main_lounge_5.jpg"
@@ -135,7 +129,8 @@
     "slides": [
       {
         "image": "images/main_postgraduate_lounge_suite_1.jpg",
-        "title": "Postgraduate Lounge/Suite"
+        "title": "Postgraduate Lounge/Suite",
+        "caption": "The Postgraduate Lounge and Suite are designated study areas set aside for postgraduates. The Suite lets graduate students have quiet learning while the Lounge promotes collaborative learning."
       }
     ]
   },
@@ -148,7 +143,8 @@
     "slides": [
       {
         "image": "images/main_rooftop_garden_5.jpg",
-        "title": "Rooftop Garden"
+        "title": "Rooftop Garden",
+        "caption": "Students have access to the rooftop garden during opening hours for relaxation."
       },
       {
         "image": "images/main_rooftop_garden_1.jpg"
