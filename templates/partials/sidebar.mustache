@@ -1,6 +1,8 @@
 <amp-sidebar id="sidebar" layout="nodisplay">
   <div class="banner">
-    <amp-img class="close" src="images/close_left_white.svg" width="24px" height="24px" alt="close sidebar" on="tap:sidebar.close" role="button" tabindex="0"></amp-img>
+    <a on="tap:sidebar.close">
+      <amp-img class="close" src="images/close_left_white.svg" width="24px" height="24px" alt="close sidebar"></amp-img>
+    </a>
     <amp-img class="logo" src="images/logo_white.svg" width="162px" height="48px" alt="SMU Libraries"></amp-img>
   </div>
   <amp-accordion>
