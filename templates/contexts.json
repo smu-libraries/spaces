@@ -18,10 +18,12 @@
         "caption": "Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <strong>voluptate velit esse cillum dolore</strong> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       },
       {
-        "image": "images/main_1.jpg"
+        "image": "images/main_1.jpg",
+        "caption": "Our collection focuses on electronic resources rather than print -- 85% of our collection budget goes to e-resources. Keeping the physical collection compact allows us to offer more study spaces in the library."
       },
       {
-        "image": "images/main_2.jpg"
+        "image": "images/main_2.jpg",
+        "caption": "The library is often the preferred spot for hosting events on campus. However, we do give priority to our students' needs, by limiting the number of events during intensive study periods."
       }
     ]
   },
@@ -33,17 +35,12 @@
     "main_expanded": true,
     "slides": [
       {
-        "image": "images/main_investment_studio_2.jpg",
-        "title": "Investment Studio"
-      },
-      {
-        "image": "images/main_investment_studio_3.jpg"
+        "image": "images/main_investment_studio_5.jpg",
+        "title": "Investment Studio",
+        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases, including Bloomberg, Eikon, Capital IQ, amongst others. Our users can hone their technical skills in business research in a professional environment, with collaboration furniture and projection screens to facilitate discussions."
       },
       {
         "image": "images/main_investment_studio_4.jpg"
-      },
-      {
-        "image": "images/main_investment_studio_5.jpg"
       }
     ]
   },
@@ -56,10 +53,12 @@
     "slides": [
       {
         "image": "images/main_learning_commons_1.jpg",
-        "title": "Learning Commons"
+        "title": "Learning Commons",
+        "caption": "The Learning Commons is a study space that caters to both group and individual learning. With a dedicated entrance, the Learning Commons remains open to our community 24 hours a day, 7 days a week."
       },
       {
-        "image": "images/main_learning_commons_2.jpg"
+        "image": "images/main_learning_commons_2.jpg",
+        "caption": "For students who are seeking some inspiration, the Learning Commons looks out to the Campus Green."
       },
       {
         "image": "images/main_learning_commons_3.jpg"
@@ -67,10 +66,7 @@
       {
         "image": "images/main_hive_1.jpg",
         "title": "Hive",
-        "caption": "TV! TV! TV! TV! TV!"
-      },
-      {
-        "image": "images/main_hive_2.jpg"
+        "caption": "The Hive is specially designed to support active group learning. It has flexible seating and five inter-connected projection screens, and the space can accommodate up to 50 participants at a time. This area can be reserved by faculty for lessons and events but is otherwise open for student use normally."
       },
       {
         "image": "images/main_hive_4.jpg"
@@ -109,20 +105,20 @@
         "caption": "Lifestyle. Media. Newspapers, Magazines. Lounge. Smoo Smoo."
       },
       {
-        "image": "images/main_lounge_1.jpg"
+        "image": "images/main_lounge_3.jpg",
+        "title": "DVD Collection",
+        "caption": "The DVD collection is made up of materials for learning, as well as some general interest titles, including award-winning movies, musicals, and selected TV show favourites for leisure viewing."
       },
       {
-        "image": "images/main_lounge_3.jpg"
-      },
-      {
-        "image": "images/main_lounge_4.jpg"
+        "image": "images/main_lounge_4.jpg",
+        "title": "Lifestyle Collection",
+        "caption": "The Lifestyle collection consists of leisure-reading materials that include regional and local fiction, biographies, literary classics, travel guides and more."
       },
       {
         "image": "images/main_lounge_5.jpg"
       },
       {
-        "image": "images/main_lounge_7.jpg",
-        "caption": "Wait... is that Kama Sutra?"
+        "image": "images/main_lounge_7.jpg"
       }
     ]
   },
@@ -135,7 +131,8 @@
     "slides": [
       {
         "image": "images/main_postgraduate_lounge_suite_1.jpg",
-        "title": "Postgraduate Lounge/Suite"
+        "title": "Postgraduate Lounge/Suite",
+        "caption": "The Postgraduate Lounge and Suite are study areas exclusive to postgraduates. The Suite allows our graduate students to engage in quiet learning while the Lounge promotes collaborative learning and the exchange of ideas."
       }
     ]
   },
@@ -148,25 +145,20 @@
     "slides": [
       {
         "image": "images/main_rooftop_garden_5.jpg",
-        "title": "Rooftop Garden"
-      },
-      {
-        "image": "images/main_rooftop_garden_1.jpg"
-      },
-      {
-        "image": "images/main_rooftop_garden_2.jpg"
+        "title": "Rooftop Garden",
+        "caption": "Students have access to the rooftop garden during opening hours for relaxation and contemplation. Smoking and eating is strictly prohibited."
       },
       {
         "image": "images/main_rooftop_garden_3.jpg",
-        "caption": "View of SAM."
+        "caption": "Great view of the Singapore Art Museum."
       },
       {
         "image": "images/main_rooftop_garden_6.jpg",
-        "caption": "View of... a construction site?"
+        "caption": "Great view of... a construction site?"
       },
       {
         "image": "images/main_rooftop_garden_7.jpg",
-        "caption": "View of NMS."
+        "caption": "Great view of the National Museum of Singapore."
       }
     ]
   },
@@ -180,9 +172,6 @@
       {
         "image": "images/main_study_booths_1.jpg",
         "title": "Study Booths"
-      },
-      {
-        "image": "images/main_study_booths_2.jpg"
       },
       {
         "image": "images/main_study_booths_3.jpg"
