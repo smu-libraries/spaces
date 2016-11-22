@@ -19,11 +19,11 @@
       },
       {
         "image": "images/main_1.jpg",
-        "caption": "Our collection focuses on electronic resources rather than print. We spend 85% of our budget on e-resources and only 15% on print resources. This allows us to offer more study spaces in the library."
+        "caption": "Our collection focuses on electronic resources rather than print -- 85% of our collection budget goes to e-resources. Keeping the physical collection compact allows us to offer more study spaces in the library."
       },
       {
         "image": "images/main_2.jpg",
-        "caption": "The library is often the preferred event space on campus but we do limit the number of events to give priority to students' needs, especially during intensive study periods."
+        "caption": "The library is often the preferred spot for hosting events on campus. However, we do give priority to our students' needs, by limiting the number of events during intensive study periods."
       }
     ]
   },
@@ -37,7 +37,7 @@
       {
         "image": "images/main_investment_studio_5.jpg",
         "title": "Investment Studio",
-        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases. Users will be able to access <strong>Bloomberg</strong>, <strong>Eikon</strong>, <strong>Capital IQ</strong>, and other databases in a professional environment and hone technical skills in business research. With collaboration tables and wall-mounted digital displays to facilitate discussions, the Investment Studio also promotes teamwork and development of communication skills."
+        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases, including Bloomberg, Eikon, Capital IQ, amongst others. Our users can hone their technical skills in business research in a professional environment, with collaboration furniture and projection screens to facilitate discussions."
       },
       {
         "image": "images/main_investment_studio_4.jpg"
@@ -54,11 +54,11 @@
       {
         "image": "images/main_learning_commons_1.jpg",
         "title": "Learning Commons",
-        "caption": "The Learning Commons is open 24/7. It has a dedicated entrance and seating capacity for group and independent learning. Additional collaborative seats and technology are available for late night SMUGGERS."
+        "caption": "The Learning Commons is a study space that caters to both group and individual learning. With a dedicated entrance, the Learning Commons remains open to our community 24 hours a day, 7 days a week."
       },
       {
         "image": "images/main_learning_commons_2.jpg",
-        "caption": "The Learning Commons looks out to the Campus Green for students seeking some inspiration."
+        "caption": "For students who are seeking some inspiration, the Learning Commons looks out to the Campus Green."
       },
       {
         "image": "images/main_learning_commons_3.jpg"
@@ -66,7 +66,7 @@
       {
         "image": "images/main_hive_1.jpg",
         "title": "Hive",
-        "caption": "The Hive is specially designed to support active and group learning. It has flexible seating and five connected projection screens, and can accommodate up to 50 participants at a time. This space can be booked by faculty for lessons and events but is otherwise open for student use normally."
+        "caption": "The Hive is specially designed to support active group learning. It has flexible seating and five inter-connected projection screens, and the space can accommodate up to 50 participants at a time. This area can be reserved by faculty for lessons and events but is otherwise open for student use normally."
       },
       {
         "image": "images/main_hive_4.jpg"
@@ -107,19 +107,18 @@
       {
         "image": "images/main_lounge_3.jpg",
         "title": "DVD Collection",
-        "caption": "The DVD collection is made up of materials for learning and some general interest titles, including selected Hollywood and award-winning international movies, and selected TV shows for leisure viewing."
+        "caption": "The DVD collection is made up of materials for learning, as well as some general interest titles, including award-winning movies, musicals, and selected TV show favourites for leisure viewing."
       },
       {
         "image": "images/main_lounge_4.jpg",
         "title": "Lifestyle Collection",
-        "caption": "The Lifestyle collection: leisure reading material including regional and local fiction, biographies, classics, travel guides and more."
+        "caption": "The Lifestyle collection consists of leisure-reading materials that include regional and local fiction, biographies, literary classics, travel guides and more."
       },
       {
         "image": "images/main_lounge_5.jpg"
       },
       {
-        "image": "images/main_lounge_7.jpg",
-        "caption": "Wait... is that Kama Sutra?"
+        "image": "images/main_lounge_7.jpg"
       }
     ]
   },
@@ -133,7 +132,7 @@
       {
         "image": "images/main_postgraduate_lounge_suite_1.jpg",
         "title": "Postgraduate Lounge/Suite",
-        "caption": "The Postgraduate Lounge and Suite are designated study areas set aside for postgraduates. The Suite lets graduate students have quiet learning while the Lounge promotes collaborative learning."
+        "caption": "The Postgraduate Lounge and Suite are study areas exclusive to postgraduates. The Suite allows our graduate students to engage in quiet learning while the Lounge promotes collaborative learning and the exchange of ideas."
       }
     ]
   },
@@ -147,19 +146,19 @@
       {
         "image": "images/main_rooftop_garden_5.jpg",
         "title": "Rooftop Garden",
-        "caption": "Students have access to the rooftop garden during opening hours for relaxation."
+        "caption": "Students have access to the rooftop garden during opening hours for relaxation and contemplation. Smoking and eating is strictly prohibited."
       },
       {
         "image": "images/main_rooftop_garden_3.jpg",
-        "caption": "View of SAM."
+        "caption": "Great view of the Singapore Art Museum."
       },
       {
         "image": "images/main_rooftop_garden_6.jpg",
-        "caption": "View of... a construction site?"
+        "caption": "Great view of... a construction site?"
       },
       {
         "image": "images/main_rooftop_garden_7.jpg",
-        "caption": "View of NMS."
+        "caption": "Great view of the National Museum of Singapore."
       }
     ]
   },
