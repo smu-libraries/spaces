@@ -3,7 +3,9 @@
     <a on="tap:sidebar.close">
       <amp-img class="close" src="images/close_left_white.svg" width="24px" height="24px" alt="close sidebar"></amp-img>
     </a>
-    <amp-img class="logo" src="images/logo_white.svg" width="162px" height="48px" alt="SMU Libraries"></amp-img>
+    <a href="index.html">
+      <amp-img class="logo" src="images/logo_white.svg" width="162px" height="48px" alt="SMU Libraries"></amp-img>
+    </a>
   </div>
   <amp-accordion>
     <section {{# main_expanded }}expanded{{/ main_expanded }}>
@@ -35,10 +37,13 @@
   </amp-accordion>
   <section class="footer">
     <div class="item">
-      <a href="mailto:library.smu.edu.sg"><span class="icon">✎</span>Send feedback</a>
+      <a href="{{ feedback }}"><span class="icon">✎</span>Send feedback</a>
     </div>
     <div class="item">
-      <a href="index.html"><span class="icon">ⓘ</span>About SMU Libraries</a>
+      <a href="{{ about }}"><span class="icon">ⓘ</span>About SMU Libraries</a>
+    </div>
+    <div class="item">
+      <a href="#"><amp-img src="images/smoo_smoo_white.svg" width="24px" height="14px"></amp-img>About Spaces</a>
     </div>
   </section>
 </amp-sidebar>
