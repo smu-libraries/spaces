@@ -1,0 +1,83 @@
+{{< templates/partials/layout.mustache }}
+  {{$ title_text }}
+    SMU Libraries :: Spaces :: About Spaces
+  {{/ title_text }}
+  {{$ css }}
+    {{> styles/about.css }}
+  {{/ css }}
+  {{$ head }}
+    {{> templates/partials/schema_smu_libraries.mustache }}
+  {{/ head }}
+  {{$ body }}
+    <amp-carousel class="carousel" layout="fill" type="slides">
+      <div class="slide">
+        <div class="credits">
+          <div class="spacer"></div>
+          <amp-img class="icon" src="images/favicon.svg" width="100px" height="100px"></amp-img>
+          <div class="heading">SMU Libraries Spaces {{ version }}</div>
+          <div class="content">
+            <p>Spaces introduces SMU Libraries’ two branches -- Li Ka Shing Library and Kwa Geok Choo Law Library -- through photos and quick facts.
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="caption">
+          <div class="page">
+            ●○○○
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="credits">
+          <div class="spacer"></div>
+          <div class="heading">How to use this app</div>
+          <div class="content">
+            <p>[Navigation]
+            <p>[Add to Home screen]
+            <p>[Send feedback]
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="caption">
+          <div class="page">
+            ○●○○
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="credits">
+          <div class="spacer"></div>
+          <div class="heading">Acknowledgement</div>
+          <div class="content">
+            <p>[Credit copyright holders]
+            <p>[License]
+            <p>[Tools and technologies]
+            <p>[Github]
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="caption">
+          <div class="page">
+            ○○●○
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="credits">
+          <div class="spacer"></div>
+          <div class="heading">The team</div>
+          <div class="content">
+            <p>[Photo]
+            <p>[Who are we?]
+            <p>[Thanks]
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="caption">
+          <div class="page">
+            ○○○●
+          </div>
+        </div>
+      </div>
+    </amp-carousel>
+  {{/ body }}
+{{/ templates/partials/layout.mustache }}
