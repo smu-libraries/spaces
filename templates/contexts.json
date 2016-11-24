@@ -1,4 +1,11 @@
 {
+  "templates/about.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "version": "0.0.1"
+  },
   "templates/index.mustache": {
     "includes": [
       "templates/partials/header.mustache",

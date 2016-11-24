@@ -1,0 +1,69 @@
+@import "common";
+
+#sidebar .item a.about {
+  @selected();
+
+  &:before {
+    content: '';
+  }
+}
+
+header {
+  @media screen {
+    @media (max-width: 480px) and (orientation: portrait) {
+      position: fixed;
+      background-color: transparent;
+    }
+
+    @media (max-height: 480px) and (orientation: landscape) {
+      position: fixed;
+    }
+  }
+}
+
+#sidebar {
+  .footer {
+    .smoo_smoo path {
+      fill: @smu-blue;
+    }
+  }
+}
+
+.carousel {
+  background: @background url('images/favicon.svg') center no-repeat;
+  background-size: auto 80vh;
+  background-blend-mode: multiply;
+
+  @media screen {
+    @media (orientation: portrait) {
+      background-size: 80vw auto;
+    }
+  }
+}
+
+.credits {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .spacer {
+    flex: 1 0 @double-margin * 2 + 24px + @double-margin;  /* enough space to push things below the header */
+  }
+
+  .icon {
+    flex: 0 0 100px;
+  }
+
+  .heading {
+    flex: 0 1;
+    padding-top: @double-padding;
+    font-weight: bold;
+  }
+
+  .content {
+    flex: 0 1;
+    padding: @double-padding;
+    font-size: 12px;
+  }
+}
