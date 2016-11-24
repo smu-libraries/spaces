@@ -5,20 +5,20 @@
   "dependencies": {},
   "devDependencies": {
     "amphtml-validator": "1.0.14",
-    "command-line-args": "^3.0.2",
+    "command-line-args": "^3.0.3",
     "express": "^4.14.0",
     "fs-extra": "^1.0.0",
-    "gh-pages": "^0.11.0",
+    "gh-pages": "^0.12.0",
     "hjs": "~0.0.6",
     "hogan.js": "^3.0.2",
-    "html-minifier": "^3.1.0",
+    "html-minifier": "^3.2.3",
     "imagemin": "^5.2.2",
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^5.2.0",
     "less": "^2.7.1",
     "morgan": "^1.7.0",
-    "sw-precache": "^4.2.1"
+    "sw-precache": "^4.2.3"
   },
   "scripts": {
     "build:clean": "node ./tasks/build_clean.js -c styles html public",
