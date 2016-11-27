@@ -3,11 +3,5 @@
   // Configure file associations to languages (e.g. "*.extension": "html"). These have precedence over the default associations of the languages installed.
   "files.associations": {
     "*.mustache": "html"
-  },
-
-  // The command line arguments to use when on the Windows terminal.
-  "terminal.integrated.shellArgs.windows": [
-    "/k",
-    "C:\\Program Files\\nodejs\\nodevars.bat"
-  ]
+  }
 }
