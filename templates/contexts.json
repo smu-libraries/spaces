@@ -4,7 +4,25 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "version": "0.0.1"
+    "slides": [
+      {
+        "heading": "SMU Libraries Spaces 0.0.1",
+        "content": "Spaces introduces SMU Libraries’ two branches -- Li Ka Shing Library and Kwa Geok Choo Law Library -- through photos and quick facts.",
+        "icon": "images/favicon.svg"
+      },
+      {
+        "heading": "How to use this app",
+        "content": "[Navigation]<p>[Add to Home screen (Android only)]<p>[Offline mode (Android and Windows only)]<p>[Send feedback]"
+      },
+      {
+        "heading": "Acknowledgement",
+        "content": "[External copyright holders]<p>[License]<p>[Tools and technologies]<p>[Github]"
+      },
+      {
+        "heading": "The team",
+        "content": "[Photo]<p>[Who are we?]<p>[Thanks]"
+      }
+    ]
   },
   "templates/index.mustache": {
     "includes": [

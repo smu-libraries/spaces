@@ -1,12 +1,23 @@
 <amp-carousel class="carousel" layout="fill" type="slides">
   {{# slides }}
     <div class="slide">
-      <amp-img src="{{ image }}" layout="fill"></amp-img>
-      {{# title }}
-        <div class="title">
-          <h1>{{ title }}</h1>
+      {{# image }}  {{! displays a photo, the main items in the gallery }}
+        <amp-img src="{{ image }}" layout="fill"></amp-img>
+        {{# title }}
+          <div class="title">
+            <h1>{{ title }}</h1>
+          </div>
+        {{/ title }}
+      {{/ image }}
+      {{# heading }}  {{! displays some text, mainly for the about page }}
+        <div class="about">
+          {{# icon }}
+            <amp-img class="icon" src="{{ icon }}" width="100px" height="100px"></amp-img>
+          {{/ icon }}
+          <div class="heading">{{ heading }}</div>
+          <div class="content">{{{ content }}}</div>
         </div>
-      {{/ title }}
+      {{/ heading }}
       <div class="caption">
         {{{ caption }}}
         <div class="page">
