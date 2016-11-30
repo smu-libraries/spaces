@@ -5,7 +5,7 @@ header {
 
   #hamburger .logo {
     @media screen {
-      @media (max-width: 480px) and (orientation: portrait) {
+      @media (max-width: 525px) {
         display: inline-block;
       }
     }
@@ -13,8 +13,12 @@ header {
 
   #title {
     @media screen {
-      @media (max-width: 600px) and (orientation: portrait) {
+      @media (max-width: 640px) {
         display: inherit;
+      }
+
+      @media (max-width: 359px) {
+        display: none;
       }
     }
   }
@@ -25,7 +29,7 @@ header {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: calc(~"100vh - (@{double-margin} * 2 + 24px)");
+  height: calc(~"100vh - (48px + @{double-margin})");
 
   @media screen {
     @media (orientation: portrait) {
