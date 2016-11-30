@@ -1,54 +1,19 @@
 /**
  * @file Compiles and renders the templates in the given folder using Hogan.js.
  *
- * Usage: node build_hogan.js [(--ext|-e) <file_extension> ...] [(--pager|-g)] [(--partial|-p) <partial_folder> ...] (--template|-t) <template_folder> (--out|-o) <output_folder>
- *
  * There is no error checking -- script fails at the first error. Stick to lowercase file names and extensions. Use UTF-8 file encoding.
  */
 
 let path = require('path');
-let command_line_args = require('command-line-args');
 let fse = require('fs-extra');
 let Hogan = require('hogan.js');
-
-let args = command_line_args([
-  {
-    name: 'partial',
-    alias: 'p',
-    type: String,
-    multiple: true
-  },
-  {
-    name: 'template',
-    alias: 't',
-    type: String
-  },
-  {
-    name: 'ext',
-    alias: 'e',
-    type: String,
-    multiple: true,
-    defaultValue: ['.css', '.json', '.mustache']
-  },
-  {
-    name: 'out',
-    alias: 'o',
-    type: String
-  },
-  {
-    name: 'pager',
-    alias: 'g',
-    type: Boolean,
-    default: false
-  }
-]);
 
 /**
  * Represents the builder that collects templates and perform the rendering.
  */
-class Builder {
+class HoganBuilder {
   /**
-   * Creates a Builder.
+   * Creates a HoganBuilder.
    */
   constructor() {
     /**
@@ -110,21 +75,19 @@ class Builder {
       }
     });
 
-    /** Generate page numbers if requested. This works with a "slides" array, where a generated "pager" tag (showing the page number) will be inserted into each element */
-    if (args.pager) {
-      let generate_pager = (page_number, page_count) => {
-        let pages_before = '○'.repeat(page_number - 1);
-        let pages_after = '○'.repeat(page_count - page_number);
-        return `${pages_before}●${pages_after}`;
-      };
-      Object.keys(contexts).forEach((template) => {
-        if ('slides' in contexts[template]) {
-          contexts[template]['slides'].forEach((slide, index) => {
-            slide.pager = generate_pager(index + 1, contexts[template]['slides'].length);
-          });
-        }
-      });
-    }
+    /** Generate page numbers. This works with a "slides" array, where a generated "pager" tag (showing the page number) will be inserted into each element */
+    let generate_pager = (page_number, page_count) => {
+      let pages_before = '○'.repeat(page_number - 1);
+      let pages_after = '○'.repeat(page_count - page_number);
+      return `${pages_before}●${pages_after}`;
+    };
+    Object.keys(contexts).forEach((template) => {
+      if ('slides' in contexts[template]) {
+        contexts[template]['slides'].forEach((slide, index) => {
+          slide.pager = generate_pager(index + 1, contexts[template]['slides'].length);
+        });
+      }
+    });
 
     fse.readdirSync(input_folder).forEach((file) => {
       if (path.extname(file) === '.mustache') {  /** only do mustache files */
@@ -139,13 +102,4 @@ class Builder {
   }
 }
 
-/** The actual script */
-if (!args.template || !args.out) {
-  throw new Error('Usage: node build_hogan.js [(--ext|-e) <file_extension> ...] [(--pager|-g)] [(--partial|-p) <partial_folder> ...] (--template|-t) <folder> (--out|-o) <output_folder>');
-}
-
-let builder = new Builder();
-args.partial.forEach((folder) => {
-  builder.addTemplates(folder, args.ext)
-});
-builder.renderPages(args.template, args.out);
+module.exports = HoganBuilder;
