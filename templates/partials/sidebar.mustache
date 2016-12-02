@@ -16,7 +16,14 @@
       <div>
         {{# main_links }}
           <div class="item">
-            <a class="{{ class }}" href="{{ href }}">{{ text }}</a>
+            <a class="{{ class }}" href="{{ href }}">
+              {{ text }}&nbsp;
+              {{# level_1 }}➊{{/ level_1 }}
+              {{# level_2 }}➋{{/ level_2 }}
+              {{# level_3 }}➌{{/ level_3 }}
+              {{# level_4 }}➍{{/ level_4 }}
+              {{# level_5 }}➎{{/ level_5 }}
+            </a>
           </div>
         {{/ main_links }}
       </div>
@@ -29,7 +36,14 @@
       <div>
         {{# kgc_links }}
           <div class="item">
-            <a class="{{ class }}" href="{{ href }}">{{ text }}</a>
+            <a class="{{ class }}" href="{{ href }}">
+              {{ text }}&nbsp;
+              {{# level_1 }}➊{{/ level_1 }}
+              {{# level_2 }}➋{{/ level_2 }}
+              {{# level_3 }}➌{{/ level_3 }}
+              {{# level_4 }}➍{{/ level_4 }}
+              {{# level_5 }}➎{{/ level_5 }}
+            </a>
           </div>
         {{/ kgc_links }}
       </div>

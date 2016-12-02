@@ -284,37 +284,45 @@
       {
         "class": "main_investment_studio",
         "href": "main_investment_studio.html",
-        "text": "Investment Studio (Level 3)"
+        "text": "Investment Studio",
+        "level_3": true
       },
       {
         "class": "main_learning_commons_hive",
         "href": "main_learning_commons_hive.html",
-        "text": "Learning Commons / Hive (Level 2)"
+        "text": "Learning Commons / Hive",
+        "level_2": true
       },
       {
         "class": "main_learning_labs",
         "href": "main_learning_labs.html",
-        "text": "Learning Labs (Level 5)"
+        "text": "Learning Labs",
+        "level_5": true
       },
       {
         "class": "main_lounge",
         "href": "main_lounge.html",
-        "text": "Lounge (Level 2)"
+        "text": "Lounge",
+        "level_2": true
       },
       {
         "class": "main_postgraduate_lounge_suite",
         "href": "main_postgraduate_lounge_suite.html",
-        "text": "Postgraduate Lounge/Suite (Level 5)"
+        "text": "Postgraduate Lounge/Suite",
+        "level_5": true
       },
       {
         "class": "main_rooftop_garden",
         "href": "main_rooftop_garden.html",
-        "text": "Rooftop Garden (Level 5)"
+        "text": "Rooftop Garden",
+        "level_5": true
       },
       {
         "class": "main_study_booths",
         "href": "main_study_booths.html",
-        "text": "Study Booths (Level 4)"
+        "text": "Study Booths",
+        "level_3": true,
+        "level_4": true
       }
     ],
     "kgc_links": [
@@ -326,32 +334,38 @@
       {
         "class": "kgc_atrium",
         "href": "kgc_atrium.html",
-        "text": "Atrium (Level 3)"
+        "text": "Atrium",
+        "level_3": true
       },
       {
         "class": "kgc_learning_commons",
         "href": "kgc_learning_commons.html",
-        "text": "Learning Commons (Level 3)"
+        "text": "Learning Commons",
+        "level_3": true
       },
       {
         "class": "kgc_learning_labs",
         "href": "kgc_learning_labs.html",
-        "text": "Learning Labs (Level 3)"
+        "text": "Learning Labs",
+        "level_3": true
       },
       {
         "class": "kgc_lounge",
         "href": "kgc_lounge.html",
-        "text": "Lounge (Level 3)"
+        "text": "Lounge",
+        "level_3": true
       },
       {
         "class": "kgc_postgraduate_lounge",
         "href": "kgc_postgraduate_lounge.html",
-        "text": "Postgraduate Lounge (Level 4)"
+        "text": "Postgraduate Lounge",
+        "level_4": true
       },
       {
         "class": "kgc_terrace",
         "href": "kgc_terrace.html",
-        "text": "Terrace (Level 5)"
+        "text": "Terrace",
+        "level_5": true
       }
     ],
     "feedback": "mailto:library@smu.edu.sg?subject=[Spaces]%20Feedback",
