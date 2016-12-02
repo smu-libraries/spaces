@@ -1,6 +1,6 @@
 let browser_sync = require('browser-sync').create();
 let del = require('del');
-let ghpages = require('gh-pages');
+let gh_pages = require('gh-pages');
 let gulp = require('gulp');
 let htmlmin = require('gulp-htmlmin');
 let imagemin = require('gulp-imagemin');
@@ -80,19 +80,19 @@ gulp.task('precache', () => {
   return precache(true);
 });
 
-function browser_sync_reload(done) {
+function browsersync_reload(done) {
   browser_sync.reload();
   done();
 }
 gulp.task('watch', gulp.series('minify', 'precache_dev', function _watch(done) {
-  gulp.watch('less/*.less', gulp.series('minify_html', 'precache_dev', browser_sync_reload));
-  gulp.watch(['templates/**/*.mustache', 'templates/contexts.json'], gulp.series('minify_html', 'precache_dev', browser_sync_reload));
-  gulp.watch('images/*.{jpg,png,svg}', gulp.series('minify_images', 'precache_dev', browser_sync_reload));
-  gulp.watch('static/*.json', gulp.series('minify_json', 'precache_dev', browser_sync_reload));
+  gulp.watch('less/*.less', gulp.series('minify_html', 'precache_dev', browsersync_reload));
+  gulp.watch(['templates/**/*.mustache', 'templates/contexts.json'], gulp.series('minify_html', 'precache_dev', browsersync_reload));
+  gulp.watch('images/*.{jpg,png,svg}', gulp.series('minify_images', 'precache_dev', browsersync_reload));
+  gulp.watch('static/*.json', gulp.series('minify_json', 'precache_dev', browsersync_reload));
   done();
 }));
 
-gulp.task('browser_sync', gulp.series('watch', function _browser_sync(done) {
+gulp.task('browsersync', gulp.series('watch', function _browsersync(done) {
   browser_sync.init({ server: { baseDir: 'public' }}, done);
 }));
 
@@ -101,12 +101,12 @@ gulp.task('validate', () => {
     .pipe(validate_amphtml());
 });
 
-gulp.task('dev', gulp.series('clean', 'browser_sync'));
+gulp.task('dev', gulp.series('clean', 'browsersync'));
 
 gulp.task('rel', gulp.series('clean', 'minify', 'precache', 'validate'));
 
 gulp.task('publish_github', gulp.series('rel', function _publish_github(done) {
-  ghpages.publish('public', (error) => {
+  gh_pages.publish('public', (error) => {
     if (error) throw new util.PluginError(error);
   });
   done();

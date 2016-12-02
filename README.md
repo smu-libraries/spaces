@@ -5,22 +5,29 @@
 ## Build
 
 1. Install [Node.js](https://nodejs.org).
-2. Set up the repository and build the site:
+2. Install [gulp](https://gulpjs.com).
+
+  ```
+  $ npm install -g gulp-cli
+  ```
+
+3. Set up the repository and build the site:
 
   ```
   $ git clone https://github.com/smu-libraries/spaces.git
   $ cd spaces
   $ npm install
-  $ npm run build
+  $ gulp
   ```
 
-3. If everything went well, the site (as static HTML pages) should now be found in the `public` folder. To run a local server for testing, use the command:
+4. If everything went well, the site (as static HTML pages) should now be found in the `public` folder.
+5. To run a development server (using [Browsersync](https://www.browsersync.io)) for testing, use the command:
 
   ```
-  $ npm start
+  $ gulp dev
   ```
 
-4. The local server should be running the site at [http://localhost:3000](http://localhost:3000).
+6. The server should be running the site at the URL [http://localhost:3000](http://localhost:3000). Use Ctrl-C to stop the server.
 
 ## License
 
