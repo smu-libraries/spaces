@@ -108,8 +108,8 @@ gulp.task('rel', gulp.series('clean', 'minify', 'precache', 'validate'));
 gulp.task('publish_github', gulp.series('rel', function _publish_github(done) {
   gh_pages.publish('public', (error) => {
     if (error) throw new util.PluginError(error);
+    done();
   });
-  done();
 }));
 
 gulp.task('default', gulp.series('rel'));
