@@ -5,36 +5,19 @@
   "dependencies": {},
   "devDependencies": {
     "amphtml-validator": "1.0.14",
-    "command-line-args": "^3.0.3",
-    "express": "^4.14.0",
+    "browser-sync": "^2.18.2",
+    "del": "^2.2.2",
     "fs-extra": "^1.0.0",
     "gh-pages": "^0.12.0",
-    "hjs": "~0.0.6",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-json-minify": "^1.0.5",
+    "gulp-less": "^3.3.0",
+    "gulp-util": "^3.0.7",
     "hogan.js": "^3.0.2",
-    "html-minifier": "^3.2.3",
-    "imagemin": "^5.2.2",
-    "imagemin-jpegtran": "^5.0.2",
-    "imagemin-optipng": "^5.2.1",
-    "imagemin-svgo": "^5.2.0",
-    "less": "^2.7.1",
-    "morgan": "^1.7.0",
-    "sw-precache": "^4.2.3"
+    "sw-precache": "^4.2.3",
+    "through2": "^2.0.3"
   },
-  "scripts": {
-    "build:clean": "node ./tasks/build_clean.js -c styles html public",
-    "build:less": "node ./tasks/build_less.js -i less -o styles",
-    "build:hogan": "node ./tasks/build_hogan.js -e .css .json .mustache -g -p schema styles templates/partials -t templates -o html",
-    "build:hogan_debug": "node ./tasks/build_hogan.js -e .css .json .mustache -g -p schema styles templates/partials -t templates -o public",
-    "build:minify_html": "node ./tasks/build_minify.js -i html -o public",
-    "build:minify_images": "node ./tasks/build_minify.js -i images -o public/images",
-    "build:minify_static": "node ./tasks/build_minify.js -i static -o public",
-    "build:copy_images": "node ./tasks/build_copy.js -s images -d public/images",
-    "build:copy_static": "node ./tasks/build_copy.js -s static -d public",
-    "build:sw": "node ./tasks/build_sw.js -r public",
-    "build": "npm run build:clean && npm run build:less && npm run build:hogan && npm run build:minify_html && npm run build:minify_images && npm run build:minify_static && npm run build:sw",
-    "build:debug": "npm run build:clean && npm run build:less && npm run build:hogan_debug && npm run build:copy_images && npm run build:copy_static && npm run build:sw",
-    "validate": "node ./tasks/validate.js -i public",
-    "publish:github": "node ./tasks/publish_github.js -p public",
-    "start": "node ./index.js"
-  }
+  "scripts": {}
 }
