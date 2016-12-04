@@ -8,46 +8,28 @@
     </a>
   </div>
   <amp-accordion>
-    <section {{# main_expanded }}expanded{{/ main_expanded }}>
-      <h4>
-        <div class="show-more category">Li Ka Shing Library</div>
-        <div class="show-less category expanded">Li Ka Shing Library</div>
-      </h4>
-      <div>
-        {{# main_links }}
-          <div class="item">
-            <a class="{{ class }}" href="{{ href }}">
-              {{ text }}&nbsp;
-              {{# level_1 }}➊{{/ level_1 }}
-              {{# level_2 }}➋{{/ level_2 }}
-              {{# level_3 }}➌{{/ level_3 }}
-              {{# level_4 }}➍{{/ level_4 }}
-              {{# level_5 }}➎{{/ level_5 }}
-            </a>
-          </div>
-        {{/ main_links }}
-      </div>
-    </section>
-    <section {{# kgc_expanded }}expanded{{/ kgc_expanded }}>
-      <h4>
-        <div class="show-more category">Kwa Geok Choo Law Library</div>
-        <div class="show-less category expanded">Kwa Geok Choo Law Library</div>
-      </h4>
-      <div>
-        {{# kgc_links }}
-          <div class="item">
-            <a class="{{ class }}" href="{{ href }}">
-              {{ text }}&nbsp;
-              {{# level_1 }}➊{{/ level_1 }}
-              {{# level_2 }}➋{{/ level_2 }}
-              {{# level_3 }}➌{{/ level_3 }}
-              {{# level_4 }}➍{{/ level_4 }}
-              {{# level_5 }}➎{{/ level_5 }}
-            </a>
-          </div>
-        {{/ kgc_links }}
-      </div>
-    </section>
+    {{# libraries }}
+      <section expanded>
+        <h4>
+          <div class="show-more category">{{ name }}</div>
+          <div class="show-less category expanded">{{ name }}</div>
+        </h4>
+        <div>
+          {{# links }}
+            <div class="item">
+              <a class="{{ class }}" href="{{ href }}">
+                {{ text }}&nbsp;
+                {{# level_1 }}➊{{/ level_1 }}
+                {{# level_2 }}➋{{/ level_2 }}
+                {{# level_3 }}➌{{/ level_3 }}
+                {{# level_4 }}➍{{/ level_4 }}
+                {{# level_5 }}➎{{/ level_5 }}
+              </a>
+            </div>
+          {{/ links }}
+        </div>
+      </section>
+    {{/ libraries }}
   </amp-accordion>
   <section class="footer">
     <div class="item">
