@@ -4,8 +4,8 @@
   "private": true,
   "dependencies": {},
   "devDependencies": {
-    "amphtml-validator": "1.0.14",
-    "browser-sync": "^2.18.2",
+    "amphtml-validator": "^1.0.18",
+    "browser-sync": "^2.18.5",
     "del": "^2.2.2",
     "fs-extra": "^1.0.0",
     "gh-pages": "^0.12.0",
