@@ -285,28 +285,35 @@
             "text": "Overview"
           },
           {
-            "class": "main_investment_studio",
-            "href": "main_investment_studio.html",
-            "text": "Investment Studio",
-            "level_3": true
-          },
-          {
             "class": "main_learning_commons_hive",
             "href": "main_learning_commons_hive.html",
             "text": "Learning Commons / Hive",
             "level_2": true
           },
           {
-            "class": "main_learning_labs",
-            "href": "main_learning_labs.html",
-            "text": "Learning Labs",
-            "level_5": true
-          },
-          {
             "class": "main_lounge",
             "href": "main_lounge.html",
             "text": "Lounge",
             "level_2": true
+          },
+          {
+            "class": "main_investment_studio",
+            "href": "main_investment_studio.html",
+            "text": "Investment Studio",
+            "level_3": true
+          },
+          {
+            "class": "main_study_booths",
+            "href": "main_study_booths.html",
+            "text": "Study Booths",
+            "level_3": true,
+            "level_4": true
+          },
+          {
+            "class": "main_learning_labs",
+            "href": "main_learning_labs.html",
+            "text": "Learning Labs",
+            "level_5": true
           },
           {
             "class": "main_postgraduate_lounge_suite",
@@ -319,13 +326,6 @@
             "href": "main_rooftop_garden.html",
             "text": "Rooftop Garden",
             "level_5": true
-          },
-          {
-            "class": "main_study_booths",
-            "href": "main_study_booths.html",
-            "text": "Study Booths",
-            "level_3": true,
-            "level_4": true
           }
         ]
       },

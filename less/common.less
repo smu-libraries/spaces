@@ -10,21 +10,11 @@
 @default-padding: 12px;
 @double-padding: @default-padding * 2;
 @triple-padding: @default-padding * 3;
-@sidebar-icon-width: @double-padding;
+@sidebar-icon-width: @double-padding + 16px;
 
 @selected: {  /* ruleset for active link in the sidebar */
-  padding-left: @default-padding;
   background-color: white;
   color: @smu-blue;
-
-  &:before {
-    content: '●';
-    display: inline-block;
-    width: @sidebar-icon-width;
-    font-family: sans-serif;
-    font-weight: normal;
-    text-align: center;
-  }
 };
 
 body {
@@ -88,30 +78,31 @@ body {
     .item a {
       display: block;
       font-size: 14px;
-      padding: @default-padding @default-padding @default-padding @triple-padding;
+      padding: @default-padding;
       white-space: nowrap;
       text-decoration: none;
       color: @foreground;
+
+      .levels {
+        display: inline-block;
+        width: @sidebar-icon-width;
+        text-align: left;
+      }
 
       /* See also: @selected */
     }
   }
 
   .footer {
-    margin: @default-margin 0 0 -@default-margin;
-
-    .icon {
-      display: inline-block;
-      width: @sidebar-icon-width;
-      text-align: center;
-    }
-
-    .smoo_smoo {
-      top: 2px;
-    }
-
     .spacer {
       height: @double-margin;
+    }
+
+    .about:before {
+      content: url('images/smoo_smoo_white_tiny.svg');
+      display: inline-block;
+      width: @sidebar-icon-width;
+      text-align: left;
     }
   }
 }

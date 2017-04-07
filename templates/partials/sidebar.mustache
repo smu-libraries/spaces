@@ -18,12 +18,8 @@
           {{# links }}
             <div class="item">
               <a class="{{ class }}" href="{{ href }}">
-                {{ text }}&nbsp;
-                {{# level_1 }}➊{{/ level_1 }}
-                {{# level_2 }}➋{{/ level_2 }}
-                {{# level_3 }}➌{{/ level_3 }}
-                {{# level_4 }}➍{{/ level_4 }}
-                {{# level_5 }}➎{{/ level_5 }}
+                <span class="levels">{{# level_1 }}L1 {{/ level_1 }}{{# level_2 }}L2 {{/ level_2 }}{{# level_3 }}L3 {{/ level_3 }}{{# level_4 }}L4 {{/ level_4 }}{{# level_5 }}L5 {{/ level_5 }}&nbsp;</span>
+                {{ text }}
               </a>
             </div>
           {{/ links }}
@@ -32,19 +28,9 @@
     {{/ libraries }}
   </amp-accordion>
   <section class="footer">
+    <div class="spacer"></div>
     <div class="item">
-      <a href="{{ feedback }}"><span class="icon">✎</span>Send feedback</a>
-    </div>
-    <div class="item">
-      <a href="{{ about }}"><span class="icon">ⓘ</span>About SMU Libraries</a>
-    </div>
-    <div class="item">
-      <a class="about" href="about.html">
-        <span class="icon">
-          <amp-img class="smoo_smoo" src="images/smoo_smoo_white.svg" width="14px" height="14px"></amp-img>
-        </span>
-        About Spaces
-      </a>
+      <a class="about" href="about.html">&nbsp;About SMU Libraries Spaces</a>
     </div>
     <div class="spacer"></div>
   </section>
