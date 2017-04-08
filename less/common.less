@@ -12,6 +12,8 @@
 @triple-padding: @default-padding * 3;
 @sidebar-icon-width: @double-padding + 16px;
 
+@safari-compensation: 57px;  /* extra height taken by Safari tab bar and menu */
+
 @selected: {  /* ruleset for active link in the sidebar */
   background-color: white;
   color: @smu-blue;
@@ -164,7 +166,7 @@ header {
 }
 
 .carousel {
-  height: 100vh;
+  height: calc(~"100vh - @{safari-compensation}");
 
   .slide > amp-img > img {
     object-fit: contain;
