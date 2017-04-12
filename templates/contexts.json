@@ -62,7 +62,7 @@
       {
         "image": "images/main_investment_studio_5.jpg",
         "title": "Investment Studio",
-        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases, including Bloomberg, Eikon, Capital IQ, amongst others. Our users can hone their technical skills in business research in a professional environment, with collaboration furniture and projection screens to facilitate discussions."
+        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases, including <strong>Bloomberg, Eikon, Capital IQ</strong>, amongst others. Our users can hone their technical skills in business research in a professional environment, with collaboration furniture and projection screens to facilitate discussions."
       },
       {
         "image": "images/main_investment_studio_4.jpg"
@@ -213,7 +213,10 @@
       {
         "image": "images/kgc.jpg",
         "title": "Kwa Geok Choo Law Library",
-        "caption": "Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <strong>Ut enim ad minim veniam</strong>, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in <strong>voluptate velit esse cillum dolore</strong> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        "caption": "Named after the late Mdm Kwa Geok Choo, the Kwa Geok Choo Law Library building opened its doors as Singapore Management University's second library on <strong>3 January 2017</strong> and was officially launched by Prime Minister Lee Hsien Loong on 15 March 2017."
+      },
+      {
+        "image":"images/kgc_exterior.jpg"
       },
       {
         "image": "images/kgc_1.jpg"
