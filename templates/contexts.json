@@ -35,7 +35,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main.jpg",
@@ -57,7 +56,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main_investment_studio_5.jpg",
@@ -74,7 +72,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main_learning_commons_1.jpg",
@@ -106,7 +103,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main_learning_labs_2.jpg",
@@ -122,7 +118,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main_lounge_6.jpg",
@@ -152,7 +147,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main_postgraduate_lounge_suite_1.jpg",
@@ -166,7 +160,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main_rooftop_garden_5.jpg",
@@ -192,7 +185,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "main_expanded": true,
     "slides": [
       {
         "image": "images/main_study_booths_1.jpg",
@@ -208,7 +200,6 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "kgc_expanded": true,
     "slides": [
       {
         "image": "images/kgc.jpg",
@@ -236,43 +227,37 @@
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
-    ],
-    "kgc_expanded": true
+    ]
   },
   "templates/kgc_learning_commons.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
-    ],
-    "kgc_expanded": true
+    ]
   },
   "templates/kgc_learning_labs.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
-    ],
-    "kgc_expanded": true
+    ]
   },
   "templates/kgc_lounge.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
-    ],
-    "kgc_expanded": true
+    ]
   },
   "templates/kgc_postgraduate_lounge.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
-    ],
-    "kgc_expanded": true
+    ]
   },
   "templates/kgc_terrace.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
-    ],
-    "kgc_expanded": true
+    ]
   },
   "templates/partials/header.mustache": {
     "app": "Spaces"
@@ -378,8 +363,6 @@
           }
         ]
       }
-    ],
-    "feedback": "mailto:library@smu.edu.sg?subject=[Spaces]%20Feedback",
-    "about": "https://library.smu.edu.sg/about-us-overview"
+    ]
   }
 }
