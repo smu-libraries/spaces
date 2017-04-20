@@ -150,7 +150,7 @@
       }
     ]
   },
-  "templates/main_postgraduate_lounge_suite.mustache": {
+  "templates/main_graduate_lounge_suite.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
@@ -158,7 +158,7 @@
     "slides": [
       {
         "image": "images/main_postgraduate_lounge_suite_1.jpg",
-        "title": "Postgraduate Lounge/Suite",
+        "title": "Graduate Lounge/Suite",
         "caption": "The Postgraduate Lounge and Suite are study areas exclusive to postgraduates. The Suite allows our graduate students to engage in quiet learning while the Lounge promotes collaborative learning and the exchange of ideas."
       }
     ]
@@ -249,7 +249,7 @@
       "templates/partials/sidebar.mustache"
     ]
   },
-  "templates/kgc_postgraduate_lounge.mustache": {
+  "templates/kgc_graduate_lounge.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
@@ -334,9 +334,9 @@
             "level_5": true
           },
           {
-            "class": "main_postgraduate_lounge_suite",
-            "href": "main_postgraduate_lounge_suite.html",
-            "text": "Postgraduate Lounge/Suite",
+            "class": "main_graduate_lounge_suite",
+            "href": "main_graduate_lounge_suite.html",
+            "text": "Graduate Lounge/Suite",
             "level_5": true
           },
           {
@@ -374,9 +374,9 @@
             "level_3": true
           },
           {
-            "class": "kgc_postgraduate_lounge",
-            "href": "kgc_postgraduate_lounge.html",
-            "text": "Postgraduate Lounge",
+            "class": "kgc_graduate_lounge",
+            "href": "kgc_graduate_lounge.html",
+            "text": "Graduate Lounge",
             "level_4": true
           },
           {
