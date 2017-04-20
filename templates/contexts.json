@@ -67,7 +67,26 @@
       }
     ]
   },
-  "templates/main_learning_commons_hive.mustache": {
+  "templates/main_hive.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "slides": [
+      {
+        "image": "images/main_hive_1.jpg",
+        "title": "Hive",
+        "caption": "The Hive is specially designed to support active group learning. It has flexible seating and five inter-connected projection screens, and the space can accommodate up to 50 participants at a time. This area can be reserved by faculty for lessons and events but is otherwise open for student use normally."
+      },
+      {
+        "image": "images/main_hive_4.jpg"
+      },
+      {
+        "image": "images/main_hive_5.jpg"
+      }
+    ]
+  },
+  "templates/main_learning_commons.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
@@ -84,17 +103,6 @@
       },
       {
         "image": "images/main_learning_commons_3.jpg"
-      },
-      {
-        "image": "images/main_hive_1.jpg",
-        "title": "Hive",
-        "caption": "The Hive is specially designed to support active group learning. It has flexible seating and five inter-connected projection screens, and the space can accommodate up to 50 participants at a time. This area can be reserved by faculty for lessons and events but is otherwise open for student use normally."
-      },
-      {
-        "image": "images/main_hive_4.jpg"
-      },
-      {
-        "image": "images/main_hive_5.jpg"
       }
     ]
   },
@@ -289,9 +297,15 @@
             "text": "Overview"
           },
           {
-            "class": "main_learning_commons_hive",
-            "href": "main_learning_commons_hive.html",
-            "text": "Learning Commons / Hive",
+            "class": "main_hive",
+            "href": "main_hive.html",
+            "text": "Hive",
+            "level_2": true
+          },
+          {
+            "class": "main_learning_commons",
+            "href": "main_learning_commons.html",
+            "text": "Learning Commons",
             "level_2": true
           },
           {
