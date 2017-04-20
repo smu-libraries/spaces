@@ -150,6 +150,18 @@
       }
     ]
   },
+  "templates/main_project_rooms.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ]
+  },
+  "templates/main_quiet_area.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ]
+  },
   "templates/main_graduate_lounge_suite.mustache": {
     "includes": [
       "templates/partials/header.mustache",
@@ -313,6 +325,18 @@
             "href": "main_lounge.html",
             "text": "Lounge",
             "level_2": true
+          },
+          {
+            "class": "main_project_rooms",
+            "href": "main_project_rooms.html",
+            "text": "Project Rooms",
+            "level_all": true
+          },
+          {
+            "class": "main_quiet_area",
+            "href": "main_quiet_area.html",
+            "text": "Quiet Area",
+            "level_all": true
           },
           {
             "class": "main_investment_studio",
