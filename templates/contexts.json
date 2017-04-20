@@ -247,6 +247,28 @@
       "templates/partials/sidebar.mustache"
     ]
   },
+  "templates/kgc_project_rooms.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ]
+  },
+  "templates/kgc_quiet_area.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "slides": [
+      {
+        "image": "images/kgc.jpg",
+        "title": "Level 4"
+      },
+      {
+        "image": "images/kgc.jpg",
+        "title": "Level 5"
+      }
+    ]
+  },
   "templates/kgc_terrace.mustache": {
     "includes": [
       "templates/partials/header.mustache",
@@ -342,6 +364,19 @@
             "href": "kgc_postgraduate_lounge.html",
             "text": "Postgraduate Lounge",
             "level_4": true
+          },
+          {
+            "class": "kgc_project_rooms",
+            "href": "kgc_project_rooms.html",
+            "text": "Project Rooms",
+            "level_4": true
+          },
+          {
+            "class": "kgc_quiet_area",
+            "href": "kgc_quiet_area.html",
+            "text": "Quiet Area",
+            "level_4": true,
+            "level_5": true
           },
           {
             "class": "kgc_terrace",
