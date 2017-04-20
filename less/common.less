@@ -33,11 +33,11 @@ body {
     margin: @default-margin @default-margin @default-margin @double-margin;
     background-color: @smu-blue;
     max-height: 48px;
+    cursor: pointer;
   }
 
   .close {
     float: right;
-    cursor: pointer;
     padding: @default-padding;
 
     img {
@@ -152,6 +152,12 @@ header {
     font-weight: bold;
     line-height: 24px;
     display: inherit;
+
+    a {
+      color: @foreground;
+      text-decoration: none;
+      cursor: pointer;
+    }
 
     @media screen {
       @media (max-width: 640px) {
