@@ -241,12 +241,6 @@
       "templates/partials/sidebar.mustache"
     ]
   },
-  "templates/kgc_lounge.mustache": {
-    "includes": [
-      "templates/partials/header.mustache",
-      "templates/partials/sidebar.mustache"
-    ]
-  },
   "templates/kgc_postgraduate_lounge.mustache": {
     "includes": [
       "templates/partials/header.mustache",
@@ -341,12 +335,6 @@
             "class": "kgc_learning_labs",
             "href": "kgc_learning_labs.html",
             "text": "Learning Labs",
-            "level_3": true
-          },
-          {
-            "class": "kgc_lounge",
-            "href": "kgc_lounge.html",
-            "text": "Lounge",
             "level_3": true
           },
           {
