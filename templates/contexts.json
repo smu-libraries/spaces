@@ -312,62 +312,61 @@
             "class": "main_hive",
             "href": "main_hive.html",
             "text": "Hive",
-            "level_2": true
+            "levels": "L2"
           },
           {
             "class": "main_learning_commons",
             "href": "main_learning_commons.html",
             "text": "Learning Commons",
-            "level_2": true
+            "levels": "L2"
           },
           {
             "class": "main_lounge",
             "href": "main_lounge.html",
             "text": "Lounge",
-            "level_2": true
+            "levels": "L2"
           },
           {
             "class": "main_project_rooms",
             "href": "main_project_rooms.html",
             "text": "Project Rooms",
-            "level_all": true
+            "levels": "L2-L5"
           },
           {
             "class": "main_quiet_area",
             "href": "main_quiet_area.html",
             "text": "Quiet Area",
-            "level_all": true
+            "levels": "L2-L5"
           },
           {
             "class": "main_investment_studio",
             "href": "main_investment_studio.html",
             "text": "Investment Studio",
-            "level_3": true
+            "levels": "L3"
           },
           {
             "class": "main_study_booths",
             "href": "main_study_booths.html",
             "text": "Study Booths",
-            "level_3": true,
-            "level_4": true
+            "levels": "L3, L4"
           },
           {
             "class": "main_learning_labs",
             "href": "main_learning_labs.html",
             "text": "Learning Labs",
-            "level_5": true
+            "levels": "L5"
           },
           {
             "class": "main_graduate_lounge_suite",
             "href": "main_graduate_lounge_suite.html",
             "text": "Graduate Lounge/Suite",
-            "level_5": true
+            "levels": "L5"
           },
           {
             "class": "main_rooftop_garden",
             "href": "main_rooftop_garden.html",
             "text": "Rooftop Garden",
-            "level_5": true
+            "levels": "L5"
           }
         ]
       },
@@ -383,44 +382,43 @@
             "class": "kgc_atrium",
             "href": "kgc_atrium.html",
             "text": "Atrium",
-            "level_3": true
+            "levels": "L3"
           },
           {
             "class": "kgc_learning_commons",
             "href": "kgc_learning_commons.html",
             "text": "Learning Commons",
-            "level_3": true
+            "levels": "L3"
           },
           {
             "class": "kgc_learning_labs",
             "href": "kgc_learning_labs.html",
             "text": "Learning Labs",
-            "level_3": true
+            "levels": "L3"
           },
           {
             "class": "kgc_graduate_lounge",
             "href": "kgc_graduate_lounge.html",
             "text": "Graduate Lounge",
-            "level_4": true
+            "levels": "L4"
           },
           {
             "class": "kgc_project_rooms",
             "href": "kgc_project_rooms.html",
             "text": "Project Rooms",
-            "level_4": true
+            "levels": "L4"
           },
           {
             "class": "kgc_quiet_area",
             "href": "kgc_quiet_area.html",
             "text": "Quiet Area",
-            "level_4": true,
-            "level_5": true
+            "levels": "L4, L5"
           },
           {
             "class": "kgc_terrace",
             "href": "kgc_terrace.html",
             "text": "Terrace",
-            "level_5": true
+            "levels": "L5"
           }
         ]
       }
