@@ -37,8 +37,8 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["about.html","9cff4dbf75092cba67bc6b7d9acd8ef0"],["images/close_left_white.svg","43fdb1d490d0cb364a72d6f61ba38e18"],["images/favicon.svg","633dc3cee3124176e1782051439435b1"],["images/favicon_120.png","34c54ede79ccfa160f5b4d4a61097169"],["images/favicon_128.png","fcf9c4171c0e5801b98215aaf5429f8d"],["images/favicon_144.png","2976123db2fb3502bc0570eb4fbbcc47"],["images/favicon_152.png","9ec252a4791845f2b36598ef9374633e"],["images/favicon_167.png","efa9c742c3b5cf8c66e1bcc49c11673b"],["images/favicon_168.png","09bfdd6f1a5cb5bed4f0980ab11e5518"],["images/favicon_180.png","453abfacda451a4c67c2cda5ab7e6d08"],["images/favicon_192.png","3952ca3405444a9d02810eae67005f22"],["images/favicon_48.png","1a04341a7691a3c5c77e42e9d8ab2107"],["images/favicon_72.png","bc3ebcc807d330afa99fe6f593f82011"],["images/favicon_96.png","aebf980fa1f6e28e8bddfcac233e7603"],["images/hamburger_white.svg","54d2e5a6725fbd89f072297e9e4188ae"],["images/kgc.jpg","fcc918f23e67cb74c3c4ad431de9a79c"],["images/kgc_1.jpg","b296c985a7930550dd67ee7fcae43a21"],["images/kgc_2.jpg","7bbc1be56bd150a78069b72f43d90edb"],["images/kgc_3.jpg","da4a885ec2e33542a8aea4eabd527687"],["images/kgc_exterior.jpg","24a8573ba93f0679d7b9d0152313046c"],["images/law_1.jpg","a687cbfbadfff4e05437b7a3635a2418"],["images/logo_white.svg","dd7a3acff4a1c83f7663a33ca0a1a102"],["images/main.jpg","87e587944d77bc911fac2240e43522b4"],["images/main_1.jpg","e507b70b21c0bc711d4078c4a12328f2"],["images/main_2.jpg","dbfdd48a0c720b2b80b118682d40526e"],["images/main_hive_1.jpg","ee4c2df9a35fbc9982d2bfc9d7df5e33"],["images/main_hive_4.jpg","378f0e7db58e523a578c52f8e7f68f06"],["images/main_hive_5.jpg","e869f6cff2442893ff2bfd97e9778570"],["images/main_investment_studio_4.jpg","a1f1a3f40896423a3867d9c0d6f76d5a"],["images/main_investment_studio_5.jpg","b6418fa3c264640acbb4e8e660ea8147"],["images/main_learning_commons_1.jpg","e776c28815c4633aba0ce530c6acfbc3"],["images/main_learning_commons_2.jpg","bf0e859994e4f75b6e1f01b2cac1c245"],["images/main_learning_commons_3.jpg","5759c36531293f611e23cbd8d1f24898"],["images/main_learning_labs_2.jpg","b1547df569e4a4fa769298fc78e047bf"],["images/main_learning_labs_3.jpg","277927bbf131988783a3852e14617de6"],["images/main_lounge_3.jpg","7ac46d4eacdeb31faedd3d2bd698e547"],["images/main_lounge_4.jpg","516c0b41e49527e1050ffcd9fb1a7d84"],["images/main_lounge_5.jpg","b0ca13a8dd4145ca4ee4e72e9bf35c25"],["images/main_lounge_6.jpg","a2b546f1b00396fd3a9e2a862f7bc305"],["images/main_lounge_7.jpg","5a64815c36ae94ac6f0a3cddeff2cf4b"],["images/main_postgraduate_lounge_suite_1.jpg","f079d3e1ae6b8b0a372ac3fe9f43fa2f"],["images/main_rooftop_garden_3.jpg","c4cc2d4153dffc7430a16ecdc32fa932"],["images/main_rooftop_garden_5.jpg","b7fb422fa071eec0ab12f3b1a8ca225e"],["images/main_rooftop_garden_6.jpg","ae88e65f2a7d33cf2198555cd55c74cc"],["images/main_rooftop_garden_7.jpg","a422f559bbb587d2e402699c171b312a"],["images/main_study_booths_1.jpg","4d98579af1704c72176197d1af815987"],["images/main_study_booths_3.jpg","6d6b0f9bfed8b385fec58e56e433f73e"],["images/smoo_smoo_blue_tiny.svg","6c58a858f0537625ebcf6513cdcd8be6"],["images/smoo_smoo_white.svg","66ef5f4faea50f93f7e6569ef67fb100"],["images/smoo_smoo_white_tiny.svg","f9bd335d263ed26bbb6d3ea11ff7ab60"],["index.html","9690d59f0a2a6bf342018768313f111e"],["kgc_atrium.html","45bb0597e84f8c7389857fa0f9964e40"],["kgc_graduate_lounge.html","e22428aa183157637e8424a43cfde76c"],["kgc_learning_commons.html","90189ae17d327c23083f3057731bc526"],["kgc_learning_labs.html","543d7da3756ac6524bc264e5749178db"],["kgc_overview.html","40530443780af1b8bf16579aaa29e3ed"],["kgc_project_rooms.html","49c572ac3fc0905f22028b9df5738406"],["kgc_quiet_area.html","99086235c2fa6aedd26ccc199a6f973d"],["kgc_terrace.html","fc4e9e7375e6943bb16abf9ba83763a4"],["main_graduate_lounge_suite.html","c379b060c47f056c34a6e032032afae2"],["main_hive.html","ce24929af9b99757190efdd7685b7dc5"],["main_investment_studio.html","777cdab3d9175707d96259fb491ee63b"],["main_learning_commons.html","ee1d73900dc788750ab4ae86b703bbf8"],["main_learning_labs.html","c5f70066d0817f1e3e77578e8d264868"],["main_lounge.html","6ef7b65c5b79170bfd76f5205472c403"],["main_overview.html","9c21492c8640fb68e82e494944ca11d3"],["main_project_rooms.html","dae70d661cdb9a6f123712365f2e1584"],["main_quiet_area.html","26e95b48fb569bf8eb8bd57fa4452f2e"],["main_rooftop_garden.html","f6934beaad238152a7d449d17d2c633c"],["main_study_booths.html","d87203a28b87028984b233b8c38f15f2"],["manifest.json","c791924472352e8aa0ea2c6b2f51d9de"]];
-var cacheName = 'sw-precache-v3-spaces-' + (self.registration ? self.registration.scope : '');
+var precacheConfig = [["about.html","3dabaafd2b6f54cab5f7c4f133977ae4"],["images/KGC_L3_Atrium_1.jpg","4855b90860a6df3886609898286b95ef"],["images/KGC_L3_Atrium_2.jpg","2732e00b8fdac3ad20270635500cb686"],["images/KGC_L3_Atrium_3.jpg","3a5719679ff93b1f7e1a8a726b734836"],["images/KGC_L3_LearnCommons_1.jpg","2b88eb1c81f0f34e7d6c150c322452cd"],["images/KGC_L4_GradLounge_1.jpg","fc7dc2903318ac8ada2ce614b98b9780"],["images/KGC_L4_GradLounge_2.jpg","b2ce2b7f7c55618ae441e4db489e08a2"],["images/KGC_L4_ProjectRms_1.jpg","a5dd2cacb4ff219d9d3c440da7d3989c"],["images/KGC_L4_ProjectRms_3.jpg","466d5f74fd61cb6b3552887716952415"],["images/KGC_L4_QuietArea_1.jpg","4f76545e8d4efa68a4e1606af8da3c52"],["images/KGC_L4_QuietArea_2.jpg","6d6c0b8ac56154377cc69af5fc0ed4fe"],["images/KGC_L4_QuietArea_3.jpg","956075de887b3bf9078d8c2450e8ac6c"],["images/KGC_L5_QuietArea_1.jpg","a8669cd9b32194d84551890da16b5540"],["images/KGC_L5_QuietArea_2.jpg","8debca2dfe95526ebcc9b8b31306f39b"],["images/KGC_L5_QuietArea_3.jpg","dfd5b829e2d14ef066d107fdae16d4ff"],["images/KGC_L5_Terrace_1.jpg","c8ad62ee2169b812721466a25658b115"],["images/KGC_L5_Terrace_2.jpg","47ece6b242c26c6dbe575feaae438ea7"],["images/close_left_white.svg","43fdb1d490d0cb364a72d6f61ba38e18"],["images/favicon.svg","633dc3cee3124176e1782051439435b1"],["images/favicon_120.png","34c54ede79ccfa160f5b4d4a61097169"],["images/favicon_128.png","fcf9c4171c0e5801b98215aaf5429f8d"],["images/favicon_144.png","2976123db2fb3502bc0570eb4fbbcc47"],["images/favicon_152.png","9ec252a4791845f2b36598ef9374633e"],["images/favicon_167.png","efa9c742c3b5cf8c66e1bcc49c11673b"],["images/favicon_168.png","09bfdd6f1a5cb5bed4f0980ab11e5518"],["images/favicon_180.png","453abfacda451a4c67c2cda5ab7e6d08"],["images/favicon_192.png","3952ca3405444a9d02810eae67005f22"],["images/favicon_48.png","1a04341a7691a3c5c77e42e9d8ab2107"],["images/favicon_72.png","bc3ebcc807d330afa99fe6f593f82011"],["images/favicon_96.png","aebf980fa1f6e28e8bddfcac233e7603"],["images/hamburger_white.svg","54d2e5a6725fbd89f072297e9e4188ae"],["images/kgc.jpg","fcc918f23e67cb74c3c4ad431de9a79c"],["images/kgc_exterior.jpg","24a8573ba93f0679d7b9d0152313046c"],["images/law_1.jpg","a687cbfbadfff4e05437b7a3635a2418"],["images/logo_white.svg","dd7a3acff4a1c83f7663a33ca0a1a102"],["images/main.jpg","87e587944d77bc911fac2240e43522b4"],["images/main_1.jpg","e507b70b21c0bc711d4078c4a12328f2"],["images/main_2.jpg","dbfdd48a0c720b2b80b118682d40526e"],["images/main_hive_1.jpg","ee4c2df9a35fbc9982d2bfc9d7df5e33"],["images/main_hive_4.jpg","378f0e7db58e523a578c52f8e7f68f06"],["images/main_hive_5.jpg","e869f6cff2442893ff2bfd97e9778570"],["images/main_investment_studio_1.jpg","035368eecc7c26ffa9df225c36e44d9e"],["images/main_investment_studio_2.jpg","6f2dae9da06053277d0e768390b37757"],["images/main_learning_commons_1.jpg","e776c28815c4633aba0ce530c6acfbc3"],["images/main_learning_commons_2.jpg","bf0e859994e4f75b6e1f01b2cac1c245"],["images/main_learning_commons_3.jpg","5759c36531293f611e23cbd8d1f24898"],["images/main_learning_labs_2.jpg","b1547df569e4a4fa769298fc78e047bf"],["images/main_learning_labs_3.jpg","277927bbf131988783a3852e14617de6"],["images/main_lounge_6.jpg","a2b546f1b00396fd3a9e2a862f7bc305"],["images/main_lounge_7.jpg","5a64815c36ae94ac6f0a3cddeff2cf4b"],["images/main_lounge_dvds.jpg","f8d814007276ba51416168577bf1858a"],["images/main_lounge_newspaper.jpg","08428775be6cdb24487ecd121587cc25"],["images/main_postgraduate_lounge_suite_1.jpg","f079d3e1ae6b8b0a372ac3fe9f43fa2f"],["images/main_postgraduate_lounge_suite_2.jpg","3f5be8a14598679680a2b4993c84c028"],["images/main_rooftop_garden_3.jpg","c4cc2d4153dffc7430a16ecdc32fa932"],["images/main_rooftop_garden_5.jpg","b7fb422fa071eec0ab12f3b1a8ca225e"],["images/main_rooftop_garden_7.jpg","a422f559bbb587d2e402699c171b312a"],["images/main_study_booths_1.jpg","4d98579af1704c72176197d1af815987"],["images/main_study_booths_3.jpg","6d6b0f9bfed8b385fec58e56e433f73e"],["images/main_study_booths_level3.jpg","f744425718b460eb04e74ccd61b6086b"],["images/smoo_smoo_blue_tiny.svg","6c58a858f0537625ebcf6513cdcd8be6"],["images/smoo_smoo_white.svg","66ef5f4faea50f93f7e6569ef67fb100"],["images/smoo_smoo_white_tiny.svg","f9bd335d263ed26bbb6d3ea11ff7ab60"],["index.html","bca4de90e72a0cca9c175a5226ecf475"],["kgc_atrium.html","9cef8bb296d3e7ded5a48da2fa2965fe"],["kgc_graduate_lounge.html","e1a9b1e0ec94aad4d3b395a92a8e1b0f"],["kgc_learning_commons.html","4f8394b239030adf7c5702e5a2cb6399"],["kgc_learning_labs.html","8aecc3ba464d8519553213becf58a0e5"],["kgc_overview.html","b2b102ff27ba6a5203e85342d1e1936a"],["kgc_project_rooms.html","dc06bb0899835aa73fac4fe057083252"],["kgc_quiet_area.html","0929a6a05421fc140092020033875677"],["kgc_terrace.html","e6a436a9f08a4700b2170adcb0d5e3b2"],["main_graduate_lounge_suite.html","2b7cecba44388e988e1e6081c52a9bc0"],["main_hive.html","202493020ffea005d0681a69b9c7ec90"],["main_investment_studio.html","2ea4f447c36a9fab70e6d82958f210df"],["main_learning_commons.html","1426559b634dbefcaaeb85cb738af225"],["main_learning_labs.html","2a5d03bee194f140780429ec8f1ba2f2"],["main_lounge.html","0d201994c628e10aefc9a81e2cc36cf4"],["main_overview.html","a516df24a224c81cc2b40b57801c9401"],["main_project_rooms.html","99d02cb49d674be07fc03aa0b7c35e61"],["main_quiet_area.html","42f3f3073c309f98c264245750ec20fc"],["main_rooftop_garden.html","5d82ed965a690113803da45f8086b0cd"],["main_study_booths.html","b837e8852c85772907c4143d4b3e3f26"],["manifest.json","c791924472352e8aa0ea2c6b2f51d9de"]];
+var cacheName = 'sw-precache-v2-spaces-' + (self.registration ? self.registration.scope : '');
 
 
 var ignoreUrlParametersMatching = [/^utm_/];
@@ -53,28 +53,6 @@ var addDirectoryIndex = function (originalUrl, index) {
     return url.toString();
   };
 
-var cleanResponse = function (originalResponse) {
-    // If this is not a redirected response, then we don't have to do anything.
-    if (!originalResponse.redirected) {
-      return Promise.resolve(originalResponse);
-    }
-
-    // Firefox 50 and below doesn't support the Response.body stream, so we may
-    // need to read the entire body to memory as a Blob.
-    var bodyPromise = 'body' in originalResponse ?
-      Promise.resolve(originalResponse.body) :
-      originalResponse.blob();
-
-    return bodyPromise.then(function(body) {
-      // new Response() is happy when passed either a stream or a Blob.
-      return new Response(body, {
-        headers: originalResponse.headers,
-        status: originalResponse.status,
-        statusText: originalResponse.statusText
-      });
-    });
-  };
-
 var createCacheKey = function (originalUrl, paramName, paramValue,
                            dontCacheBustUrlsMatching) {
     // Create a new URL object to avoid modifying originalUrl.
@@ -83,7 +61,7 @@ var createCacheKey = function (originalUrl, paramName, paramValue,
     // If dontCacheBustUrlsMatching is not set, or if we don't have a match,
     // then add in the extra cache-busting URL parameter.
     if (!dontCacheBustUrlsMatching ||
-        !(url.pathname.match(dontCacheBustUrlsMatching))) {
+        !(url.toString().match(dontCacheBustUrlsMatching))) {
       url.search += (url.search ? '&' : '') +
         encodeURIComponent(paramName) + '=' + encodeURIComponent(paramValue);
     }
@@ -156,19 +134,10 @@ self.addEventListener('install', function(event) {
           Array.from(urlsToCacheKeys.values()).map(function(cacheKey) {
             // If we don't have a key matching url in the cache already, add it.
             if (!cachedUrls.has(cacheKey)) {
-              var request = new Request(cacheKey, {credentials: 'same-origin'});
-              return fetch(request).then(function(response) {
-                // Bail out of installation unless we get back a 200 OK for
-                // every request.
-                if (!response.ok) {
-                  throw new Error('Request for ' + cacheKey + ' returned a ' +
-                    'response with status ' + response.status);
-                }
-
-                return cleanResponse(response).then(function(responseToCache) {
-                  return cache.put(cacheKey, responseToCache);
-                });
-              });
+              return cache.add(new Request(cacheKey, {
+                credentials: 'same-origin',
+                redirect: 'follow'
+              }));
             }
           })
         );
