@@ -39,7 +39,7 @@
       {
         "image": "images/main.jpg",
         "title": "Li Ka Shing Library",
-        "caption": "The <strong>Li Ka Shing Library</strong> building has unique architectural features that let in abundant natural light. Greenery cascades down the library's modern, curvilinear facade."
+        "caption": "The <strong>Li Ka Shing Library</strong> was officially opened in 2006. The building has unique architectural features that let in abundant natural light. Greenery cascades down the library's modern, curvilinear facade."
       },
       {
         "image": "images/main_1.jpg",
@@ -60,7 +60,7 @@
       {
         "image": "images/main_investment_studio_1.jpg",
         "title": "Investment Studio",
-        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases, including <strong>Bloomberg, Eikon, Capital IQ</strong>, amongst others."
+        "caption": "The Investment Studio is a dedicated space for accessing high-end financial databases, including <strong>Bloomberg, Eikon, Capital IQ</strong>."
       },
       {
         "image": "images/main_investment_studio_2.jpg",
@@ -81,7 +81,7 @@
       },
       {
         "image": "images/main_hive_4.jpg",
-        "caption": "It has <strong>flexible seating</strong> and five <strong>inter-connected projection screens</strong>. The space can accommodate 50."
+        "caption": "It has <strong>flexible seating</strong> and five <strong>inter-connected projection screens</strong>. The space can accommodate 50 seats."
       }
     ]
   },
@@ -98,7 +98,7 @@
       },
       {
         "image": "images/main_learning_commons_2.jpg",
-        "caption": "Floor-to-ceiling windows look out to the Campus Green for those seeking inspiration."
+        "caption": "For those seeking inspiration, <strong>floor-to-ceiling</strong> windows look out to the Campus Green."
       },
       {
         "image": "images/main_learning_commons_3.jpg",
@@ -132,7 +132,7 @@
       {
         "image": "images/main_lounge_6.jpg",
         "title": "Lounge",
-        "caption": "The Lounge area offers popular books, DVDs, magazines and newspapers (and sometimes Smoo Smoo) in a comfortable setting."
+        "caption": "The Lounge offers <strong>popular books, DVDs, magazines</strong> and <strong>newspapers</strong> (and sometimes Smoo Smoo) in a comfortable setting."
       },
       {
         "image": "images/main_lounge_dvds.jpg",
@@ -142,7 +142,7 @@
       {
         "image": "images/main_lounge_7.jpg",
         "title": "Lifestyle Collection",
-        "caption": "The Lifestyle collection includes award-winning titles, travel guides, popular non-fiction and Singapore literature."
+        "caption": "The <strong>Lifestyle Collection</strong> includes award-winning titles, travel guides, popular non-fiction and Singapore literature."
       },
       {
         "image": "images/main_lounge_newspaper.jpg",
@@ -180,21 +180,17 @@
       {
         "image": "images/main_quiet_area_1.jpg",
         "title": "L2 Quiet Area",
-        "caption": "Quiet Areas are available for work that requires intense concentration. L2 Quiet Area offers a mix of tables and carrels."
+        "caption": "Quiet Areas are for work that requires intense concentration. There is a mix of tables and carrels in the L2 Quiet Area."
       },
       {
         "image": "images/main_quiet_area_3.jpg",
         "title": "L4 Quiet Area",
-        "caption": "There are individual study carrels here. It is also a <strong>Hog Free zone</strong>."
-      },
-      {
-        "image": "images/main_quiet_area_4a.jpg",
-        "title": "L5 Quiet Area",
-        "caption": "L5 has a large and open Quiet Area that is sometimes used for <strong>events and seminars</strong>."
+        "caption": "The L4 Quiet Area is a <strong>Hog-Free zone</strong>."
       },
       {
         "image": "images/main_quiet_area_4b.jpg",
-        "title": "L5 Quiet Area"
+        "title": "L5 Quiet Area",
+        "caption": "The L5 Quiet Area is sometimes used for <strong>events and seminars</strong>."
       },
       {
         "image": "images/main_quiet_area_5.jpg",
@@ -209,14 +205,13 @@
     ],
     "slides": [
       {
-        "image": "images/main_postgraduate_lounge_suite_1.jpg",
-        "title": "Graduate Lounge/Suite",
-        "caption": "The Graduate Lounge and Suite are study areas exclusive to postgraduate students."
+        "image": "images/main_postgraduate_lounge_suite_2.jpg",
+        "title": "Graduate Lounge",
+        "caption": "The Graduate Lounge and Suite are study areas exclusive to graduate students."
       },
       {
-        "image": "images/main_postgraduate_lounge_suite_2.jpg",
-        "title": "Graduate Lounge/Suite",
-        "caption": "The Graduate Lounge promotes collaborative learning and the exchange of ideas."
+        "image": "images/main_postgraduate_lounge_suite_1.jpg",
+        "title": "Graduate Suite"
       }
     ]
   },
@@ -248,18 +243,18 @@
     ],
     "slides": [
       {
-        "image": "images/main_study_booths_level3.jpg",
+        "image": "images/main_study_booths_3.jpg",
         "title": "Study Booths",
-        "caption":"Study Booths with LCD screens are located on Level 3..."
+        "caption":"Study Booths with LCD screens are located on Levels 3 and 4."
       },
       {
         "image": "images/main_study_booths_1.jpg",
         "title": "Study Booths",
-        "caption":"... and Level 4."
+        "caption":"Booths can be booked online for project discussion and presentation rehearsals."
       },
       {
-        "image": "images/main_study_booths_3.jpg",
-        "caption":"Booths can be booked online for project discussion and presentation rehearsals."
+        "image": "images/main_study_booths_level3.jpg",
+        "caption":"Booths can comfortably seat 6. (Uncomfortably, 10.)"
       }
     ]
   },
@@ -272,10 +267,14 @@
       {
         "image": "images/kgc.jpg",
         "title": "Kwa Geok Choo Law Library",
-        "caption": "Named after the late Mdm Kwa Geok Choo, the Kwa Geok Choo Law Library building opened its doors as Singapore Management University's second library on <strong>3 January 2017</strong> and was officially launched by Prime Minister Lee Hsien Loong on 15 March 2017."
+        "caption": "The Kwa Geok Choo Law Library is SMU's second library. It was officially opened by Prime Minister Lee Hsien Loong on <strong>15 March 2017</strong>."
       },
       {
         "image": "images/kgc_exterior.jpg"
+      },
+      {
+        "image": "images/KGC_L4_QuietArea_2.jpg",
+        "caption": "The law collection is located on L4 and consists of <strong>textbooks, law reports and international legal journals</strong>. Kwa Geok Choo Law Library hosts a print collection of <strong>21,000</strong> volumes."
       }
     ]
   },
@@ -288,15 +287,15 @@
       {
         "image": "images/KGC_L3_Atrium_1.jpg",
         "title": "Atrium",
-        "caption": "The atrium offers a variety of <strong>casual study spaces</strong> for users to enjoy."
+        "caption": "The Atrium offers <strong>casual study spaces</strong> for users to enjoy."
       },
       {
         "image": "images/KGC_L3_Atrium_2.jpg",
-        "caption": "The library displays the <strong>latest arrivals</strong> on shelves that students can browse at leisure. There is also a collection of <strong>faculty publications</strong> on display - note that these books are not for loan or browsing."
+        "caption": "<strong>Faculty publications</strong> are on display. These books are not for loan or browsing."
       },
       {
         "image": "images/KGC_L3_Atrium_3.jpg",
-        "caption": "The library has seating space for approximately 500 users."
+        "caption": "The Kwa Geok Choo Law Library has seating space for approximately 500 users."
       }
     ]
   },
@@ -317,7 +316,7 @@
       },
       {
         "image": "images/KGC_L3_LearnCommons_2.jpg",
-        "caption": "The Learning Commons is accessible just outside of the library as well as from within the School of Law."
+        "caption": "There are two entrances to the Learning Commons: one is outside of the library and one is within the School of Law."
       }
     ]
   },
@@ -328,16 +327,16 @@
     ],
     "slides": [
       {
-        "image": "images/KGC_L3_LearnLabs_1.jpg",
-        "title": "Learning Labs",
-        "caption": "The Learning Labs are often used to hold library events including seminars and workshops."
+        "image": "images/KGC_L3_LearnLabs_1.JPG",
+        "title": "Learning Labs 3 & 4",
+        "caption": "Learning Labs 3 & 4 are often used to hold library events including seminars and workshops."
       },
       {
-        "image": "images/KGC_L3_LearnLabs_2.jpg",
+        "image": "images/KGC_L3_LearnLabs_2.JPG",
         "caption": "When not in used for training, users are welcome to use it for their own personal study."
       },
       {
-        "image": "images/KGC_L3_LearnLabs_2.jpg"
+        "image": "images/KGC_L3_LearnLabs_2.JPG"
       }
     ]
   },
@@ -354,7 +353,7 @@
       },
       {
         "image": "images/KGC_L4_GradLounge_2.jpg",
-        "caption": "There is a dedicated meeting room for graduates to use for group discussions. This room is not bookable on the online system."
+        "caption": "There is a dedicated meeting room for graduates to use for group discussions."
       },
       {
         "image": "images/KGC_L4_GradLounge_3.jpg",
@@ -371,7 +370,7 @@
       {
         "image":"images/KGC_L4_ProjectRms_1.jpg",
         "title": "Project Rooms",
-        "caption": "13 project roooms can be booked by undergraduate and graduate students for group study and discussion. The orange couches have built-in power outlets."
+        "caption": "13 project rooms can be booked by undergraduate and graduate students for group study and discussion. The orange couches have built-in power outlets."
       },
       {
         "image": "images/KGC_L4_ProjectRms_3.jpg",
@@ -387,32 +386,23 @@
     "slides": [
       {
         "image": "images/KGC_L4_QuietArea_1.jpg",
-        "title": "Level 4",
-        "caption": "There is a spacious quiet area on level 4 where students can study while overlooking the park."
-      },
-      {
-        "image": "images/KGC_L4_QuietArea_2.jpg",
-        "title": "Level 4",
-        "caption": "The law collection is located on level 4 and consists of <strong>textbooks, law reports and international legal journals</strong>. Kwa Geok Choo Law Library hosts a print collection of <strong>21,000</strong> volumes."
+        "title": "L4 Quiet Area",
+        "caption": "There is a spacious quiet area on L4 where students can study while enjoying the view of Fort Canning Park."
       },
       {
         "image": "images/KGC_L4_QuietArea_3.jpg",
-        "title": "Level 4",
-        "caption": "Personal study carrels offer users a cosy space to curl up in."
+        "caption": "These \"Business Class Seats\" offer users a cosy space to curl up in."
       },
       {
         "image": "images/KGC_L5_QuietArea_1.jpg",
-        "title": "Level 5",
-        "caption": "Level 5 is a quiet study space for users at the top of the dome."
+        "title": "L5 Quiet Area"
       },
       {
         "image": "images/KGC_L5_QuietArea_2.jpg",
-        "title": "Level 5",
-        "caption": "There are individual study carrels too."
+        "caption": "There are individual study carrels here."
       },
       {
         "image": "images/KGC_L5_QuietArea_3.jpg",
-        "title": "Level 5",
         "caption": "We have all kinds of tables for all kinds of people."
       }
     ]
@@ -469,18 +459,6 @@
             "levels": "L2"
           },
           {
-            "class": "main_project_rooms",
-            "href": "main_project_rooms.html",
-            "text": "Project Rooms",
-            "levels": "L2-L5"
-          },
-          {
-            "class": "main_quiet_area",
-            "href": "main_quiet_area.html",
-            "text": "Quiet Area",
-            "levels": "L2-L5"
-          },
-          {
             "class": "main_investment_studio",
             "href": "main_investment_studio.html",
             "text": "Investment Studio",
@@ -495,7 +473,7 @@
           {
             "class": "main_learning_labs",
             "href": "main_learning_labs.html",
-            "text": "Learning Labs",
+            "text": "Learning Labs 1 & 2",
             "levels": "L5"
           },
           {
@@ -509,6 +487,18 @@
             "href": "main_rooftop_garden.html",
             "text": "Rooftop Garden",
             "levels": "L5"
+          },
+          {
+            "class": "main_project_rooms",
+            "href": "main_project_rooms.html",
+            "text": "Project Rooms",
+            "levels": "All"
+          },
+          {
+            "class": "main_quiet_area",
+            "href": "main_quiet_area.html",
+            "text": "Quiet Area",
+            "levels": "All"
           }
         ]
       },
@@ -535,7 +525,7 @@
           {
             "class": "kgc_learning_labs",
             "href": "kgc_learning_labs.html",
-            "text": "Learning Labs",
+            "text": "Learning Labs 3 & 4",
             "levels": "L3"
           },
           {
