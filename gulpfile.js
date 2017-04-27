@@ -87,7 +87,7 @@ function browsersync_reload(done) {
 gulp.task('watch', gulp.series('minify', 'precache_dev', function _watch(done) {
   gulp.watch('less/*.less', gulp.series('minify_html', 'precache_dev', browsersync_reload));
   gulp.watch(['templates/**/*.mustache', 'templates/contexts.json'], gulp.series('minify_html', 'precache_dev', browsersync_reload));
-  gulp.watch('images/*.{jpg,png,svg}', gulp.series('minify_images', 'precache_dev', browsersync_reload));
+  gulp.watch('images/*.{JPG,jpg,PNG,png,SVG,svg}', gulp.series('minify_images', 'precache_dev', browsersync_reload));
   gulp.watch('static/*.json', gulp.series('minify_json', 'precache_dev', browsersync_reload));
   done();
 }));
