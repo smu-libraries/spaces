@@ -7,7 +7,7 @@
   </a>
   <amp-accordion disable-session-states>
     {{# libraries }}
-      <section expanded>
+      <section {{# menu_main }}{{# expand_main }}expanded{{/ expand_main }}{{/ menu_main }}{{# menu_kgc }}{{# expand_kgc }}expanded{{/ expand_kgc }}{{/ menu_kgc }}>
         <h4>
           <div class="show-more category">{{ name }}</div>
           <div class="show-less category expanded">{{ name }}</div>

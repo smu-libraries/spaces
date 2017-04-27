@@ -35,6 +35,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main.jpg",
@@ -56,6 +57,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_investment_studio_1.jpg",
@@ -73,6 +75,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_hive_1.jpg",
@@ -90,6 +93,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_learning_commons_1.jpg",
@@ -111,6 +115,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_learning_labs_2.jpg",
@@ -128,6 +133,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_lounge_6.jpg",
@@ -155,6 +161,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_project_rooms_1.jpg",
@@ -176,6 +183,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides":[
       {
         "image": "images/main_quiet_area_1.jpg",
@@ -203,6 +211,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_postgraduate_lounge_suite_2.jpg",
@@ -220,6 +229,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_rooftop_garden_5.jpg",
@@ -241,6 +251,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_main": true,
     "slides": [
       {
         "image": "images/main_study_booths_3.jpg",
@@ -263,6 +274,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image": "images/kgc.jpg",
@@ -283,6 +295,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image": "images/KGC_L3_Atrium_1.jpg",
@@ -304,6 +317,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image": "images/KGC_L3_LearnCommons_1.jpg",
@@ -325,6 +339,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image": "images/KGC_L3_LearnLabs_1.JPG",
@@ -345,6 +360,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image":"images/KGC_L4_GradLounge_1.jpg",
@@ -366,6 +382,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image":"images/KGC_L4_ProjectRms_1.jpg",
@@ -383,6 +400,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image": "images/KGC_L4_QuietArea_1.jpg",
@@ -412,6 +430,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
+    "expand_kgc": true,
     "slides": [
       {
         "image": "image/KGC_L5_Terrace_1.jpg",
@@ -434,6 +453,7 @@
     "libraries": [
       {
         "name": "Li Ka Shing Library",
+        "menu_main": true,
         "links": [
           {
             "class": "main_overview",
@@ -504,6 +524,7 @@
       },
       {
         "name": "Kwa Geok Choo Law Library",
+        "menu_kgc": true,
         "links": [
           {
             "class": "kgc_overview",
