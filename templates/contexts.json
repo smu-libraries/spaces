@@ -154,12 +154,52 @@
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
+    ],
+    "slides": [
+      {
+        "image": "images/main_project_rooms_1.jpg",
+        "title": "Project Rooms",
+        "caption":"There are project rooms on <strong>all floors of Li Ka Shing Library</strong> for group discussions and project work."
+      },
+      {
+        "image": "images/main_project_rooms_2.jpg",
+        "caption": "The project room under the stairs."
+      },
+      {
+        "image": "images/main_project_rooms_3.jpg",
+        "caption": "Discussion with Smoo Smoo."
+      }
     ]
   },
   "templates/main_quiet_area.mustache": {
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
+    ],
+    "slides":[
+      {
+        "image": "images/main_quiet_area_1.jpg",
+        "title": "L2 Quiet Area",
+        "caption": "Quiet Areas are available for work that requires intense concentration. L2 Quiet Area offers a mix of tables and carrels."
+      },
+      {
+        "image": "images/main_quiet_area_3.jpg",
+        "title": "L4 Quiet Area",
+        "caption": "There are individual study carrels here. It is also a <strong>Hog Free zone</strong>."
+      },
+      {
+        "image": "images/main_quiet_area_4a.jpg",
+        "title": "L5 Quiet Area",
+        "caption": "L5 has a large and open Quiet Area that is sometimes used for <strong>events and seminars</strong>."
+      },
+      {
+        "image": "images/main_quiet_area_4b.jpg",
+        "title": "L5 Quiet Area"
+      },
+      {
+        "image": "images/main_quiet_area_5.jpg",
+        "title": "L5 Quiet Area"
+      }
     ]
   },
   "templates/main_graduate_lounge_suite.mustache": {
