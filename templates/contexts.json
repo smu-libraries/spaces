@@ -112,11 +112,11 @@
       {
         "image": "images/main_learning_labs_2.jpg",
         "title": "Learning Labs",
-        "caption":"Learning Labs 1 and 2 in the Li Ka Shing Library are equipped with <strong>video-conferencing technology</strong> and flexible furniture."
+        "caption": "Learning Labs 1 and 2 in the Li Ka Shing Library are equipped with <strong>video-conferencing technology</strong> and flexible furniture."
       },
       {
         "image": "images/main_learning_labs_3.jpg",
-        "caption":"The Learning Labs are <strong>usually open for student use</strong> but they can be reserved for meetings, lessons or events. The tables can be configured for different group sizes."
+        "caption": "The Learning Labs are <strong>usually open for student use</strong> but they can be reserved for meetings, lessons or events. The tables can be configured for different group sizes."
       }
     ]
   },
@@ -144,7 +144,7 @@
       },
       {
         "image": "images/main_lounge_newspaper.jpg",
-        "caption":"Relax in the Lounge with a newspaper and a cuppa (with a lid)."
+        "caption": "Relax in the Lounge with a newspaper and a cuppa (with a lid)."
       }
     ]
   },
@@ -158,7 +158,7 @@
       {
         "image": "images/main_project_rooms_1.jpg",
         "title": "Project Rooms",
-        "caption":"There are project rooms on <strong>all floors of Li Ka Shing Library</strong> for group discussions and project work."
+        "caption": "There are project rooms on <strong>all floors of Li Ka Shing Library</strong> for group discussions and project work."
       },
       {
         "image": "images/main_project_rooms_2.jpg",
@@ -176,7 +176,7 @@
       "templates/partials/sidebar.mustache"
     ],
     "expand_main": true,
-    "slides":[
+    "slides": [
       {
         "image": "images/main_quiet_area_1.jpg",
         "title": "L2 Quiet Area",
@@ -248,16 +248,16 @@
       {
         "image": "images/main_study_booths_3.jpg",
         "title": "Study Booths",
-        "caption":"Study Booths with LCD screens are located on Levels 3 and 4."
+        "caption": "Study Booths with LCD screens are located on Levels 3 and 4."
       },
       {
         "image": "images/main_study_booths_1.jpg",
         "title": "Study Booths",
-        "caption":"Booths can be booked online for project discussion and presentation rehearsals."
+        "caption": "Booths can be booked online for project discussion and presentation rehearsals."
       },
       {
         "image": "images/main_study_booths_level3.jpg",
-        "caption":"Booths can comfortably seat 6. (Uncomfortably, 10.)"
+        "caption": "Booths can comfortably seat 6. (Uncomfortably, 10.)"
       }
     ]
   },
@@ -355,7 +355,7 @@
     "expand_kgc": true,
     "slides": [
       {
-        "image":"images/KGC_L4_GradLounge_1.jpg",
+        "image": "images/KGC_L4_GradLounge_1.jpg",
         "title": "Graduate Lounge",
         "caption": "Kwa Geok Choo Law Library provides a Graduate Lounge exclusively for graduate students."
       },
@@ -377,7 +377,7 @@
     "expand_kgc": true,
     "slides": [
       {
-        "image":"images/KGC_L4_ProjectRms_1.jpg",
+        "image": "images/KGC_L4_ProjectRms_1.jpg",
         "title": "Project Rooms",
         "caption": "13 project rooms can be booked by undergraduate and graduate students for group study and discussion. The orange couches have built-in power outlets."
       },
@@ -430,7 +430,7 @@
         "caption": "The terrace is accessible from 8.00 am to 7.30 pm for those who need a little bit of fresh air."
       },
       {
-        "image":"images/KGC_L5_Terrace_2.jpg",
+        "image": "images/KGC_L5_Terrace_2.jpg",
         "caption": "You can admire the view of Fort Canning Park here."
       },
       {
