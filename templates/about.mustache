@@ -9,6 +9,92 @@
     {{> templates/partials/schema_smu_libraries.mustache }}
   {{/ head }}
   {{$ body }}
-    {{> templates/partials/carousel.mustache }}
+    <amp-carousel class="carousel" layout="fill" type="slides">
+      <div class="slide">
+        <div class="about">
+          <amp-img class="icon" src="{{ app_icon }}" width="64px" height="64px"></amp-img>
+          <div class="heading">{{ app_title }}</div>
+          <div class="content">{{{ app_about }}}</div>
+          <div class="content">
+            Love our app?<p>
+            <form id="feedback" method="POST" action-xhr="{{ feedback_service_url }}" target="_top">
+              <input type="hidden" id="app_id" name="app_id" value="{{ feedback_app_id }}">
+              <input type="radio" id="sick" name="rating" value="sick" on="change:feedback.submit">
+              <label for="sick">
+                <amp-img src="images/feedback_sick.svg" width="32px" height="32px"></amp-img>
+              </label>
+              <input type="radio" id="sad" name="rating" value="sad" on="change:feedback.submit">
+              <label for="sad">
+                <amp-img src="images/feedback_sad.svg" width="32px" height="32px"></amp-img>
+              </label>
+              <input type="radio" id="plain" name="rating" value="plain" on="change:feedback.submit">
+              <label for="plain">
+                <amp-img src="images/feedback_plain.svg" width="32px" height="32px"></amp-img>
+              </label>
+              <input type="radio" id="smile" name="rating" value="smile" on="change:feedback.submit">
+              <label for="smile">
+                <amp-img src="images/feedback_smile.svg" width="32px" height="32px"></amp-img>
+              </label>
+              <input type="radio" id="in_love" name="rating" value="in_love" on="change:feedback.submit">
+              <label for="in_love">
+                <amp-img src="images/feedback_in_love.svg" width="32px" height="32px"></amp-img>
+              </label>
+              <div class="feedback-response" submit-success>
+                Thank you for your feedback.
+              </div>
+              <div class="feedback-response" submit-error>
+                Opps. We are unable to register your feedback at this moment. Please try again later.
+              </div>
+            </form>
+          </div>
+          <div class="content">
+            Connect with us on<p>
+            <div class="social-media">
+              {{# show_facebook }}
+                <a href="{{ facebook_url }}" target="_blank">
+                  <amp-img src="images/social_media_facebook.svg" width="32px" height="32px"></amp-img>
+                </a>
+              {{/ show_facebook }}
+              {{# show_twitter }}
+                <a href="{{ twitter_url }}" target="_blank">
+                  <amp-img src="images/social_media_twitter.svg" width="32px" height="32px"></amp-img>
+                </a>
+              {{/ show_twitter }}
+              {{# show_instagram }}
+                <a href="{{ instagram_url }}" target="_blank">
+                  <amp-img src="images/social_media_instagram.svg" width="32px" height="32px"></amp-img>
+                </a>
+              {{/ show_instagram }}
+            </div>
+          </div>
+        </div>
+        <div class="caption">
+          <div class="page">
+            ●○
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="about">
+          <div class="heading">The Team</div>
+          <div class="content">
+            <ul>
+              <li>Chai Yee Xin</li>
+              <li>Ler Wee Hiong</li>
+              <li>Low Jiaxin</li>
+              <li>Galvin Soh Boon Ming</li>
+            </ul>
+          </div>
+          <div class="content">
+            This app is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<p>Fork it on <a target="_blank" href="https://github.com/smu-libraries/spaces">GitHub</a>!
+          </div>
+        </div>
+        <div class="caption">
+          <div class="page">
+            ○●
+          </div>
+        </div>
+      </div>
+    </amp-carousel>
   {{/ body }}
 {{/ templates/partials/layout.mustache }}
