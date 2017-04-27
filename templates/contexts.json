@@ -325,6 +325,20 @@
     "includes": [
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
+    ],
+    "slides": [
+      {
+        "image": "images/KGC_L3_LearnLabs_1.jpg",
+        "title": "Learning Labs",
+        "caption": "The Learning Labs are often used to hold library events including seminars and workshops."
+      },
+      {
+        "image": "images/KGC_L3_LearnLabs_2.jpg",
+        "caption": "When not in used for training, users are welcome to use it for their own personal study."
+      },
+      {
+        "image": "images/KGC_L3_LearnLabs_2.jpg"
+      }
     ]
   },
   "templates/kgc_graduate_lounge.mustache": {
