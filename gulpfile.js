@@ -50,7 +50,7 @@ gulp.task('minify_html', gulp.series('hogan', function _minify_html() {
 }));
 
 gulp.task('minify_images', () => {
-  return gulp.src('images/*.{jpg,png,svg}')
+  return gulp.src('images/*.{JPG,jpg,PNG,png,SVG,svg}')
     .pipe(imagemin())
     .pipe(gulp.dest('public/images'));
 });
