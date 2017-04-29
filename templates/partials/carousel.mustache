@@ -1,7 +1,7 @@
 <amp-carousel class="carousel" layout="fill" type="slides">
   {{# slides }}
     <div class="slide">
-      {{# image }}  {{! displays a photo, the main items in the gallery }}
+      {{# image }}
         <amp-img src="{{ image }}" layout="fill"></amp-img>
         {{# title }}
           <div class="title">
@@ -9,15 +9,6 @@
           </div>
         {{/ title }}
       {{/ image }}
-      {{# heading }}  {{! displays some text, mainly for the about page }}
-        <div class="about">
-          {{# icon }}
-            <amp-img class="icon" src="{{ icon }}" width="100px" height="100px"></amp-img>
-          {{/ icon }}
-          <div class="heading">{{ heading }}</div>
-          <div class="content">{{{ content }}}</div>
-        </div>
-      {{/ heading }}
       <div class="caption">
         {{{ caption }}}
         <div class="page">
