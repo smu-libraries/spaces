@@ -9,12 +9,24 @@
     "app_icon": "images/favicon.svg",
     "feedback_service_url": "https://lti.library.smu.edu.sg/poc_spaces_feedback",
     "feedback_app_id": "spaces",
+    "feedback_success_message": "Thank you for your feedback.",
+    "feedback_error_message": "Opps. We are unable to register your feedback at this moment. Please try again later.",
     "show_facebook": true,
+    "facebook_icon": "images/social_media_facebook.svg",
     "facebook_url": "https://www.facebook.com/sgsmu.library",
     "show_twitter": true,
+    "twitter_icon": "images/social_media_twitter.svg",
     "twitter_url": "https://twitter.com/smulibraries",
     "show_instagram": true,
-    "instagram_url": "https://instagram.com/sgsmu.library"
+    "instagram_icon": "images/social_media_instagram.svg",
+    "instagram_url": "https://instagram.com/sgsmu.library",
+    "team_members": [
+      "Chai Yee Xin",
+      "Ler Wee Hiong",
+      "Low Jiaxin",
+      "Galvin Soh Boon Ming"
+    ],
+    "license": "This app is licensed under a <a rel=\"license\" target=\"_blank\" href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>.<p>Fork it on <a target=\"_blank\" href=\"https://github.com/smu-libraries/spaces\">GitHub</a>!"
   },
   "templates/index.mustache": {
     "includes": [

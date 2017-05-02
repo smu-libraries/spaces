@@ -39,12 +39,8 @@
               <label for="in_love">
                 <amp-img src="images/feedback_in_love.svg" width="32px" height="32px"></amp-img>
               </label>
-              <div class="feedback-response" submit-success>
-                Thank you for your feedback.
-              </div>
-              <div class="feedback-response" submit-error>
-                Opps. We are unable to register your feedback at this moment. Please try again later.
-              </div>
+              <div class="feedback-response" submit-success>{{{ feedback_success_message }}}</div>
+              <div class="feedback-response" submit-error>{{{ feedback_error_message }}}</div>
             </form>
           </div>
           <div class="content">
@@ -52,17 +48,17 @@
             <div class="social-media">
               {{# show_facebook }}
                 <a href="{{ facebook_url }}" target="_blank">
-                  <amp-img src="images/social_media_facebook.svg" width="32px" height="32px"></amp-img>
+                  <amp-img src="{{ facebook_icon }}" width="32px" height="32px"></amp-img>
                 </a>
               {{/ show_facebook }}
               {{# show_twitter }}
                 <a href="{{ twitter_url }}" target="_blank">
-                  <amp-img src="images/social_media_twitter.svg" width="32px" height="32px"></amp-img>
+                  <amp-img src="{{ twitter_icon }}" width="32px" height="32px"></amp-img>
                 </a>
               {{/ show_twitter }}
               {{# show_instagram }}
                 <a href="{{ instagram_url }}" target="_blank">
-                  <amp-img src="images/social_media_instagram.svg" width="32px" height="32px"></amp-img>
+                  <amp-img src="{{ instagram_icon }}" width="32px" height="32px"></amp-img>
                 </a>
               {{/ show_instagram }}
             </div>
@@ -79,15 +75,14 @@
           <div class="heading">The Team</div>
           <div class="content">
             <ul>
-              <li>Chai Yee Xin</li>
-              <li>Ler Wee Hiong</li>
-              <li>Low Jiaxin</li>
-              <li>Galvin Soh Boon Ming</li>
+              {{# team_members }}
+                <li>{{ . }}</li>
+              {{/ team_members }}
             </ul>
           </div>
-          <div class="content">
-            This app is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<p>Fork it on <a target="_blank" href="https://github.com/smu-libraries/spaces">GitHub</a>!
-          </div>
+          {{# license }}
+            <div class="content">{{{ license }}}</div>
+          {{/ license }}
         </div>
         <div class="caption">
           <div class="page">
