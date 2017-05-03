@@ -122,13 +122,16 @@
     "expand_main": true,
     "slides": [
       {
-        "image": "images/main_learning_labs_2.jpg",
+        "image": "images/main_learning_labs_1a.jpg",
         "title": "Learning Labs",
         "caption": "Learning Labs 1 and 2 in the Li Ka Shing Library are equipped with <strong>video-conferencing technology</strong> and flexible furniture."
       },
       {
-        "image": "images/main_learning_labs_3.jpg",
+        "image": "images/main_learning_labs_1b.jpg",
         "caption": "The Learning Labs are <strong>usually open for student use</strong> but they can be reserved for meetings, lessons or events. The tables can be configured for different group sizes."
+      },
+      {
+        "image": "images/main_learning_labs_1c.jpg"
       }
     ]
   },
@@ -247,6 +250,9 @@
       {
         "image": "images/main_rooftop_garden_7.jpg",
         "caption": "View of the <strong>National Museum of Singapore</strong>. In the background, Orchard Road."
+      },
+      {
+        "image": "images/main_rooftop_garden_8.jpg"
       }
     ]
   },
