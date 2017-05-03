@@ -19,25 +19,25 @@
             Love our app?<p>
             <form id="feedback" method="POST" action-xhr="{{ feedback_service_url }}" target="_top">
               <input type="hidden" id="app_id" name="app_id" value="{{ feedback_app_id }}">
-              <input type="radio" id="sick" name="rating" value="sick" on="change:feedback.submit">
-              <label for="sick">
-                <amp-img src="images/feedback_sick.svg" width="32px" height="32px"></amp-img>
+              <input type="radio" id="1" name="rating" value="1" on="change:feedback.submit">
+              <label for="1">
+                <amp-img src="images/feedback_1.svg" width="32px" height="32px"></amp-img>
               </label>
-              <input type="radio" id="sad" name="rating" value="sad" on="change:feedback.submit">
-              <label for="sad">
-                <amp-img src="images/feedback_sad.svg" width="32px" height="32px"></amp-img>
+              <input type="radio" id="2" name="rating" value="2" on="change:feedback.submit">
+              <label for="2">
+                <amp-img src="images/feedback_2.svg" width="32px" height="32px"></amp-img>
               </label>
-              <input type="radio" id="plain" name="rating" value="plain" on="change:feedback.submit">
-              <label for="plain">
-                <amp-img src="images/feedback_plain.svg" width="32px" height="32px"></amp-img>
+              <input type="radio" id="3" name="rating" value="3" on="change:feedback.submit">
+              <label for="3">
+                <amp-img src="images/feedback_3.svg" width="32px" height="32px"></amp-img>
               </label>
-              <input type="radio" id="smile" name="rating" value="smile" on="change:feedback.submit">
-              <label for="smile">
-                <amp-img src="images/feedback_smile.svg" width="32px" height="32px"></amp-img>
+              <input type="radio" id="4" name="rating" value="4" on="change:feedback.submit">
+              <label for="4">
+                <amp-img src="images/feedback_4.svg" width="32px" height="32px"></amp-img>
               </label>
-              <input type="radio" id="in_love" name="rating" value="in_love" on="change:feedback.submit">
-              <label for="in_love">
-                <amp-img src="images/feedback_in_love.svg" width="32px" height="32px"></amp-img>
+              <input type="radio" id="5" name="rating" value="5" on="change:feedback.submit">
+              <label for="5">
+                <amp-img src="images/feedback_5.svg" width="32px" height="32px"></amp-img>
               </label>
               <div class="feedback-response" submit-success>{{{ feedback_success_message }}}</div>
               <div class="feedback-response" submit-error>{{{ feedback_error_message }}}</div>
