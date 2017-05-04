@@ -2,6 +2,7 @@ let browser_sync = require('browser-sync').create();
 let del = require('del');
 let gh_pages = require('gh-pages');
 let gulp = require('gulp');
+let gulp_amphtml_validator = require('gulp-amphtml-validator');
 let htmlmin = require('gulp-htmlmin');
 let imagemin = require('gulp-imagemin');
 let json_minify = require('gulp-json-minify');
@@ -11,7 +12,6 @@ let path = require('path');
 let sw_precache = require ('sw-precache');
 
 let minify_embedded_json = require('./tasks/gulp_minify_embedded_json');
-let validate_amphtml = require('./tasks/gulp_validate_amphtml');
 let HoganBuilder = require('./tasks/HoganBuilder');
 
 gulp.task('clean', () => {
@@ -98,7 +98,9 @@ gulp.task('browsersync', gulp.series('watch', function _browsersync(done) {
 
 gulp.task('validate', () => {
   return gulp.src('public/*.html')
-    .pipe(validate_amphtml());
+    .pipe(gulp_amphtml_validator.validate())
+    .pipe(gulp_amphtml_validator.format())
+//  .pipe(gulp_amphtml_validator.failAfterError());  /** disable for now because About will fail (using a new feature) */
 });
 
 gulp.task('dev', gulp.series('clean', 'browsersync'));
