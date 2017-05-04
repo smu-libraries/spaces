@@ -13,8 +13,10 @@
     <amp-carousel class="carousel" layout="fill" type="slides">
       <div class="slide">
         <div class="about">
-          <amp-img class="icon" src="{{ app_icon }}" width="64px" height="64px"></amp-img>
-          <div class="heading">{{ app_title }}</div>
+          <div class="about-horizontal">
+            <amp-img src="{{ app_icon }}" width="48px" height="48px"></amp-img>
+            <div class="heading">{{ app_title }}</div>
+          </div>
           <div class="content">{{{ app_about }}}</div>
           <div class="content">
             Love our app?<p>
