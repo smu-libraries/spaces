@@ -287,16 +287,17 @@
     "expand_kgc": true,
     "slides": [
       {
-        "image": "images/kgc.jpg",
-        "title": "Kwa Geok Choo Law Library",
-        "caption": "The Kwa Geok Choo Law Library is SMU's second library. It was officially opened by Prime Minister Lee Hsien Loong on <strong>15 March 2017</strong>."
-      },
-      {
-        "image": "images/kgc_exterior.jpg"
+        "image": "images/kgc_exterior.jpg",
+        "caption": "The Kwa Geok Choo Law Library is SMU's second library. It was officially opened by Prime Minister Lee Hsien Loong on <strong>15 March 2017</strong>.<p>The library has seating space for approximately 500 users."
       },
       {
         "image": "images/kgc_l4_quietarea_2.jpg",
         "caption": "The law collection is located on L4 and consists of <strong>textbooks, law reports and international legal journals</strong>. Kwa Geok Choo Law Library hosts a print collection of <strong>21,000</strong> volumes."
+      },
+      {
+        "image": "images/kgc.jpg",
+        "title": "Kwa Geok Choo Law Library",
+        "caption": "The library looks out to the tranquil Fort Canning Park.<p>Here is one of the 10 life-sized Singa statues installed as part of Singapore Kindness Month in April 2009. A month before, three SMU students had staged a mock funeral for Singa, hoping to spur Singaporeans into becoming more active in creating a gracious society.<sup>[1]</sup>"
       }
     ]
   },
@@ -308,7 +309,7 @@
     "expand_kgc": true,
     "slides": [
       {
-        "image": "images/kgc_l3_atrium_1.jpg",
+        "image": "images/kgc_l3_atrium_3.jpg",
         "title": "Atrium",
         "caption": "The Atrium offers <strong>casual study spaces</strong> for users to enjoy."
       },
@@ -317,12 +318,8 @@
         "caption": "<strong>Faculty publications</strong> are on display. These books are not for loan or browsing."
       },
       {
-        "image": "images/kgc_l3_atrium_4.jpg",
+        "image": "images/kgc_atrium_n_1.jpg",
         "caption": "The early bird catches the worm."
-      },
-      {
-        "image": "images/kgc_l3_atrium_3.jpg",
-        "caption": "The Kwa Geok Choo Law Library has seating space for approximately 500 users."
       }
     ]
   },
@@ -334,17 +331,20 @@
     "expand_kgc": true,
     "slides": [
       {
-        "image": "images/kgc_l3_learncommons_1.jpg",
+        "image": "images/kgc_learning_commons_n_1.jpg",
         "title": "Learning Commons",
         "caption": "A 24/7 study space offered by the library for those wanting to keep working after library opening hours."
       },
       {
-        "image": "images/kgc_l3_learncommons_4.jpg",
-        "caption": "The Learning Commons can seat about <strong>100</strong>."
-      },
-      {
         "image": "images/kgc_l3_learncommons_2.jpg",
         "caption": "There are two entrances to the Learning Commons: one is outside of the library and one is within the School of Law."
+      },
+      {
+        "image": "images/kgc_l3_learncommons_4.jpg"
+      },
+      {
+        "image": "images/kgc_learning_commons_n_3.jpg",
+        "caption": "The Learning Commons can seat about <strong>100</strong>."
       }
     ]
   },
@@ -356,12 +356,12 @@
     "expand_kgc": true,
     "slides": [
       {
-        "image": "images/kgc_l3_learnlabs_1.jpg",
+        "image": "images/kgc_learning_labs_n_1.jpg",
         "title": "Learning Labs 3 & 4",
         "caption": "Learning Labs 3 & 4 are often used to hold library events including seminars and workshops."
       },
       {
-        "image": "images/kgc_l3_learnlabs_2.jpg",
+        "image": "images/kgc_learning_labs_n_2.jpg",
         "caption": "When not in used for training, users are welcome to use it for their own personal study."
       },
       {
@@ -382,7 +382,7 @@
         "caption": "Kwa Geok Choo Law Library provides a Graduate Lounge exclusively for graduate students."
       },
       {
-        "image": "images/kgc_l4_gradlounge_2.jpg",
+        "image": "images/kgc_graduate_lounge_n_1.jpg",
         "caption": "There is a dedicated meeting room for graduates to use for group discussions."
       },
       {
@@ -399,13 +399,13 @@
     "expand_kgc": true,
     "slides": [
       {
-        "image": "images/kgc_l4_projectrms_1.jpg",
+        "image": "images/kgc_project_rooms_n_1.jpg",
         "title": "Project Rooms",
-        "caption": "13 project rooms can be booked by undergraduate and graduate students for group study and discussion. The orange couches have built-in power outlets."
+        "caption": "13 project rooms can be booked by undergraduate and graduate students for group study and discussion. The orange couches outside have built-in power outlets under the flap."
       },
       {
-        "image": "images/kgc_l4_projectrms_3.jpg",
-        "caption": "The rooms are equipped with screens that support <strong>wireless projection</strong> from multiple devices simultaneously."
+        "image": "images/kgc_project_rooms_n_2.jpg",
+        "caption": "The rooms are equipped with a <strong>wireless collaboration and presentation</strong> system that allows projection from multiple devices simultaneously."
       }
     ]
   },
@@ -422,19 +422,15 @@
         "caption": "There is a spacious quiet area on L4 where students can study while enjoying the view of Fort Canning Park."
       },
       {
-        "image": "images/kgc_l4_quietarea_3.jpg",
+        "image": "images/kgc_quiet_area_n_1.jpg",
         "caption": "These \"Business Class Seats\" offer users a cosy space to curl up in."
-      },
-      {
-        "image": "images/kgc_l5_quietarea_1.jpg",
-        "title": "L5 Quiet Area"
       },
       {
         "image": "images/kgc_l5_quietarea_2.jpg",
         "caption": "There are individual study carrels here."
       },
       {
-        "image": "images/kgc_l5_quietarea_3.jpg",
+        "image": "images/kgc_l5_quietarea_1.jpg",
         "caption": "We have all kinds of tables for all kinds of people."
       }
     ]
@@ -456,7 +452,7 @@
         "caption": "You can admire the view of Fort Canning Park here."
       },
       {
-        "image": "images/kgc_l5_terrace_3.jpg"
+        "image": "images/kgc_terrace_n_1.jpg"
       }
     ]
   },
