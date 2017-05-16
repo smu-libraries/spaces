@@ -224,11 +224,10 @@
       {
         "image": "images/main_postgraduate_lounge_suite_2.jpg",
         "title": "Graduate Lounge",
-        "caption": "The Graduate Lounge and Suite are study areas exclusive to graduate students."
+        "caption": "The Graduate Lounge is a study area exclusive to graduate students."
       },
       {
-        "image": "images/main_postgraduate_lounge_suite_1.jpg",
-        "title": "Graduate Suite"
+        "image": "images/main_postgraduate_lounge_suite_1.jpg"
       }
     ]
   },
@@ -514,7 +513,7 @@
           {
             "class": "main_graduate_lounge_suite",
             "href": "main_graduate_lounge_suite.html",
-            "text": "Graduate Lounge/Suite",
+            "text": "Graduate Lounge",
             "levels": "L5"
           },
           {
