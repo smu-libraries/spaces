@@ -288,6 +288,7 @@
     "slides": [
       {
         "image": "images/kgc_exterior.jpg",
+        "title": "Kwa Geok Choo Law Library",
         "caption": "The Kwa Geok Choo Law Library is SMU's second library. It was officially opened by Prime Minister Lee Hsien Loong on <strong>15 March 2017</strong>.<p>The library has seating space for approximately 500 users."
       },
       {
@@ -296,7 +297,6 @@
       },
       {
         "image": "images/kgc.jpg",
-        "title": "Kwa Geok Choo Law Library",
         "caption": "The library looks out to the tranquil Fort Canning Park.<p>Here is one of the 10 life-sized Singa statues installed as part of Singapore Kindness Month in April 2009. A month before, three SMU students had staged a mock funeral for Singa, hoping to spur Singaporeans into becoming more active in creating a gracious society.<sup>[1]</sup>"
       }
     ]
@@ -427,6 +427,7 @@
       },
       {
         "image": "images/kgc_l5_quietarea_2.jpg",
+        "title": "L5 Quiet Area",
         "caption": "There are individual study carrels here."
       },
       {
