@@ -43,7 +43,7 @@
     "expand_main": true,
     "slides": [
       {
-        "image": "images/main.jpg",
+        "image": "images/lks_overview_n_1.jpg",
         "title": "Li Ka Shing Library",
         "caption": "The <strong>Li Ka Shing Library</strong> was officially opened in 2006. The building has unique architectural features that let in abundant natural light. Greenery cascades down the library's modern, curvilinear facade."
       },
@@ -88,7 +88,7 @@
         "caption": "The Hive is specially designed to support <strong>active group learning</strong>. It is <strong>usually open</strong> for student use but it can be reserved for lessons and events."
       },
       {
-        "image": "images/main_hive_4.jpg",
+        "image": "images/lks_hive_n_1.jpg",
         "caption": "It has <strong>flexible seating</strong> and five <strong>inter-connected projection screens</strong>. The space can accommodate 50 seats."
       }
     ]
@@ -133,6 +133,9 @@
       },
       {
         "image": "images/main_learning_labs_1c.jpg"
+      },
+      {
+        "image": "images/lks_learning_labs_n_2.jpg"
       }
     ]
   },
@@ -199,7 +202,7 @@
         "caption": "Quiet Areas are for work that requires intense concentration. There is a mix of tables and carrels in the L2 Quiet Area."
       },
       {
-        "image": "images/main_quiet_area_3.jpg",
+        "image": "images/lks_quiet_area_n_1.jpg",
         "title": "L4 Quiet Area",
         "caption": "The L4 Quiet Area is a <strong>Hog-Free zone</strong>."
       },
@@ -222,12 +225,15 @@
     "expand_main": true,
     "slides": [
       {
-        "image": "images/main_postgraduate_lounge_suite_2.jpg",
+        "image": "images/lks_graduate_lounge_n_1.jpg",
         "title": "Graduate Lounge",
         "caption": "The Graduate Lounge is a study area exclusive to graduate students."
       },
       {
-        "image": "images/main_postgraduate_lounge_suite_1.jpg"
+        "image": "images/lks_graduate_lounge_n_2.jpg"
+      },
+      {
+        "image": "images/lks_graduate_lounge_n_3.jpg"
       }
     ]
   },
@@ -274,7 +280,7 @@
         "caption": "Booths can be booked online for project discussion and presentation rehearsals."
       },
       {
-        "image": "images/main_study_booths_level3.jpg",
+        "image": "images/lks_study_booths_n_1.jpg",
         "caption": "Booths can comfortably seat 6. (Uncomfortably, 10.)"
       }
     ]
