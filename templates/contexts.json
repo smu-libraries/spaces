@@ -207,13 +207,15 @@
         "caption": "The L4 Quiet Area is a <strong>Hog-Free zone</strong>."
       },
       {
+        "image": "images/main_quiet_area_4a.jpg",
+        "title": "L5 Quiet Area"
+      },
+      {
         "image": "images/main_quiet_area_4b.jpg",
-        "title": "L5 Quiet Area",
         "caption": "The L5 Quiet Area is sometimes used for <strong>events and seminars</strong>."
       },
       {
-        "image": "images/main_quiet_area_5.jpg",
-        "title": "L5 Quiet Area"
+        "image": "images/main_quiet_area_5.jpg"
       }
     ]
   },
