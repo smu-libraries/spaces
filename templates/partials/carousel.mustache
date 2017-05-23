@@ -1,12 +1,14 @@
 <amp-carousel class="carousel" layout="fill" type="slides">
   {{# slides }}
     <div class="slide">
-      <amp-img src="{{ image }}" layout="fill"></amp-img>
-      {{# title }}
-        <div class="title">
-          <h1>{{ title }}</h1>
-        </div>
-      {{/ title }}
+      {{# image }}
+        <amp-img src="{{ image }}" layout="fill"></amp-img>
+        {{# title }}
+          <div class="title">
+            <h1>{{ title }}</h1>
+          </div>
+        {{/ title }}
+      {{/ image }}
       <div class="caption">
         {{{ caption }}}
         <div class="page">

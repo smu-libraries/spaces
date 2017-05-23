@@ -1,0 +1,118 @@
+@import "common";
+
+#sidebar .item a.about {
+  @selected();
+
+  &:before {
+    content: url('images/smoo_smoo_blue_tiny.svg');
+  }
+}
+
+header {
+  @media screen {
+    @media (max-width: 480px) and (orientation: portrait) {
+      position: fixed;
+      background-color: transparent;
+    }
+
+    @media (max-height: 480px) and (orientation: landscape) {
+      position: fixed;
+    }
+  }
+}
+
+.carousel {
+  background: @background url('images/favicon.svg') center no-repeat;
+  background-size: auto 80vh;
+  background-blend-mode: multiply;
+
+  @media screen {
+    @media (orientation: portrait) {
+      background-size: 80vw auto;
+    }
+  }
+
+  .about {
+    height: calc(~"100vh - @{safari-compensation}");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .about-horizontal {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .heading {
+      font-weight: bold;
+      padding: 0 @default-padding 0 @default-padding;
+      line-height: 48px;
+    }
+
+    .content {
+      padding: @default-padding @double-padding @default-padding @double-padding;
+      font-size: 12px;
+      text-align: center;
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+      }
+
+      .social-media amp-img {
+        padding-left: @default-padding;
+        padding-right: @default-padding;
+      }
+
+      a {
+        color: goldenrod;
+      }
+    }
+  }
+}
+
+#feedback {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 250px;
+
+  input {
+    display: none;
+  }
+
+  label {
+    flex: 1 0 20%;
+
+    amp-img {
+      cursor: pointer;
+    }
+  }
+
+  .feedback-response {
+    flex: 1 0 80%;
+  }
+
+  div[submit-success] {
+    color: lightgreen;
+  }
+
+  div[submit-error] {
+    color: lightcoral;
+  }
+}
+
+form.amp-form-submit-success[submit-success], form.amp-form-submit-error[submit-error] {
+  margin-top: @default-margin;
+
+  input {
+    display: none;
+  }
+}
+
+form.amp-form-submit-success > label {
+  display: none;
+}

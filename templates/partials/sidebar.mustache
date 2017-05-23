@@ -1,49 +1,37 @@
 <amp-sidebar id="sidebar" layout="nodisplay">
-  <div class="banner">
-    <a on="tap:sidebar.close">
-      <amp-img class="close" src="images/close_left_white.svg" width="24px" height="24px" alt="close sidebar"></amp-img>
-    </a>
-    <a href="index.html">
+  <a on="tap:sidebar.close">
+    <div class="banner">
+      <amp-img class="close" src="images/close_left_white.svg" width="auto" height="24px" layout="fixed-height" alt="close sidebar"></amp-img>
       <amp-img class="logo" src="images/logo_white.svg" width="160px" height="48px" alt="SMU Libraries"></amp-img>
-    </a>
-  </div>
-  <amp-accordion>
-    <section {{# main_expanded }}expanded{{/ main_expanded }}>
-      <h4>
-        <div class="show-more category">Li Ka Shing Library</div>
-        <div class="show-less category expanded">Li Ka Shing Library</div>
-      </h4>
-      <div>
-        {{# main_links }}
-          <div class="item">
-            <a class="{{ class }}" href="{{ href }}">{{ text }}</a>
-          </div>
-        {{/ main_links }}
-      </div>
-    </section>
-    <section {{# kgc_expanded }}expanded{{/ kgc_expanded }}>
-      <h4>
-        <div class="show-more category">Kwa Geok Choo Law Library</div>
-        <div class="show-less category expanded">Kwa Geok Choo Law Library</div>
-      </h4>
-      <div>
-        {{# kgc_links }}
-          <div class="item">
-            <a class="{{ class }}" href="{{ href }}">{{ text }}</a>
-          </div>
-        {{/ kgc_links }}
-      </div>
-    </section>
+    </div>
+  </a>
+  <amp-accordion disable-session-states>
+    {{# libraries }}
+      <section {{# menu_main }}{{# expand_main }}expanded{{/ expand_main }}{{/ menu_main }}{{# menu_kgc }}{{# expand_kgc }}expanded{{/ expand_kgc }}{{/ menu_kgc }}>
+        <h4>
+          <div class="show-more category">{{ name }}</div>
+          <div class="show-less category expanded">{{ name }}</div>
+        </h4>
+        <div>
+          {{# links }}
+            <div class="item">
+              <a class="{{ class }}" href="{{ href }}">
+                <span class="levels">{{ levels }}&nbsp;</span>
+                {{ text }}
+              </a>
+            </div>
+          {{/ links }}
+        </div>
+      </section>
+    {{/ libraries }}
   </amp-accordion>
   <section class="footer">
+    <div class="spacer"></div>
     <div class="item">
-      <a href="{{ feedback }}"><span class="icon">✎</span>Send feedback</a>
+      <a class="about" href="about.html">&nbsp;About</a>
     </div>
-    <div class="item">
-      <a href="{{ about }}"><span class="icon">ⓘ</span>About SMU Libraries</a>
-    </div>
-    <div class="item">
-      <a href="#"><amp-img src="images/smoo_smoo_white.svg" width="24px" height="14px"></amp-img>About Spaces</a>
-    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
   </section>
 </amp-sidebar>

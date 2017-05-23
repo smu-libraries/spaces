@@ -1,12 +1,12 @@
 <header>
   <a class="button" on='tap:sidebar.toggle'>
     <div id="hamburger">
-      <amp-img class="open" src="images/hamburger_white.svg" width="24px" height="24px" alt="toggle sidebar"></amp-img>
+      <amp-img class="open" src="images/hamburger_white.svg" width="auto" height="24px" layout="fixed-height" alt="toggle sidebar"></amp-img>
       <amp-img class="logo" src="images/logo_white.svg" width="160px" height="48px" alt="SMU Libraries"></amp-img>
     </div>
   </a>
   <div id="title">
-    <amp-img class="smoo_smoo" src="images/smoo_smoo_white.svg" width="24px" height="24px" alt="Smoo Smoo"></amp-img>
-    {{ app }}
+    <a href="index.html"><amp-img class="smoo_smoo" src="images/smoo_smoo_white.svg" width="24px" height="24px" alt="Smoo Smoo"></amp-img></a>
+    <a href="index.html">{{ app }}</a>
   </div>
 </header>

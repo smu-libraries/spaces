@@ -5,7 +5,7 @@ header {
 
   #hamburger .logo {
     @media screen {
-      @media (max-width: 480px) and (orientation: portrait) {
+      @media (max-width: 525px) {
         display: inline-block;
       }
     }
@@ -13,8 +13,12 @@ header {
 
   #title {
     @media screen {
-      @media (max-width: 600px) and (orientation: portrait) {
+      @media (max-width: 640px) {
         display: inherit;
+      }
+
+      @media (max-width: 359px) {
+        display: none;
       }
     }
   }
@@ -25,7 +29,7 @@ header {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: calc(~"100vh - (@{double-margin} * 2 + 24px)");
+  height: calc(~"100vh - (48px + @{double-margin}) - @{safari-compensation}");
 
   @media screen {
     @media (orientation: portrait) {
@@ -46,7 +50,7 @@ header {
       display: flex;
       flex-direction: column-reverse;
       flex: 0 0 50%;
-      background-image: url('images/main.jpg');
+      background-image: url('images/lks_cover_n_1.jpg');
       background-size: cover;
       background-position: center;
       cursor: pointer;
@@ -60,7 +64,7 @@ header {
       display: flex;
       flex-direction: column;
       flex: 1;
-      background-image: url('images/main_blue.jpg');
+      background-image: url('images/kgc_cover_n_1.jpg');
       background-size: cover;
       background-position: center;
       cursor: pointer;
@@ -71,4 +75,8 @@ header {
       }
     }
   }
+}
+
+#unused {
+  display: none;
 }

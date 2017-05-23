@@ -2,7 +2,62 @@
   "@context": "http://schema.org",
   "@type": "Library",
   "name":  "Kwa Geok Choo Law Library",
-  "email":  "liblaw@smu.edu.sg",
+  "email":  "library@smu.edu.sg",
+  "telephone": "(65) 6828-0635",
+  "faxNumber": "(65) 6822-8083",
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Singapore",
+      "postalCode": "179943",
+      "streetAddress": "55 Armenian Street"
+    }
+  },
   "parentOrganization": "SMU Libraries",
-  "branchCode": "KGC"
+  "branchCode": "KGC",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "http://schema.org/Monday",
+      "opens": "08:00:00",
+      "closes": "22:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "http://schema.org/Tuesday",
+      "opens": "08:00:00",
+      "closes": "22:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek":  "http://schema.org/Wednesday",
+      "opens": "08:00:00",
+      "closes": "22:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "http://schema.org/Thursday",
+      "opens": "08:00:00",
+      "closes": "22:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek":  "http://schema.org/Friday",
+      "opens": "08:00:00",
+      "closes": "22:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "http://schema.org/Saturday",
+      "opens": "10:00:00",
+      "closes": "21:00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "http://schema.org/Sunday",
+      "opens": "13:00:00",
+      "closes": "21:00:00"
+    }
+  ]
 }
