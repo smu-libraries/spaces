@@ -4,7 +4,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "app_title": "SMU Libraries Spaces 0.0.1",
+    "app_title": "SMU Libraries Spaces 0.9",
     "app_about": "Spaces introduces SMU Libraries' two physical libraries through photos and quick facts.<p>SMU Libraries is the heartbeat of <a href=\"https://www.smu.edu.sg\" target=\"_blank\">Singapore Management University</a>, a centre where researchers and learners converge to share and acquire academic and professional knowledge.<p>Together, Li Ka Shing Library and Kwa Geok Choo Law Library offer more than 11,000m<sup>2</sup> of learning spaces to the SMU community.",
     "app_icon": "images/favicon.svg",
     "feedback_service_url": "https://lti.library.smu.edu.sg/poc_spaces_feedback",
