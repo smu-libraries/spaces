@@ -10,7 +10,6 @@
     "gh-pages": "^1.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-amphtml-validator": "^1.0.1",
-    "gulp-cli": "github:gulpjs/gulp-cli",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.2.0",
     "gulp-json-minify": "^1.2.0",
