@@ -20,6 +20,7 @@
     "show_instagram": true,
     "instagram_icon": "images/social_media_instagram.svg",
     "instagram_url": "https://instagram.com/sgsmu.library",
+    "feedback_email_address": "mailto:library@smu.edu.sg?subject=[Feedback] Spaces",
     "team_members": [
       "Chai Yee Xin",
       "Yuyun Wirawati Ishak",
