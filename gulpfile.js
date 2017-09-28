@@ -107,7 +107,7 @@ gulp.task('dev', gulp.series('clean', 'browsersync'));
 
 gulp.task('rel', gulp.series('clean', 'minify', 'precache', 'validate'));
 
-gulp.task('publish_github', gulp.series('rel', function _publish_github(done) {
+gulp.task('publish', gulp.series('rel', function _publish(done) {
   gh_pages.publish('public', (error) => {
     if (error) throw new util.PluginError(error);
     done();
