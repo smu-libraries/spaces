@@ -100,7 +100,7 @@ gulp.task('validate', () => {
   return gulp.src('public/*.html')
     .pipe(gulp_amphtml_validator.validate())
     .pipe(gulp_amphtml_validator.format())
-//  .pipe(gulp_amphtml_validator.failAfterError());  /** disable for now because About will fail (using a new feature) */
+    .pipe(gulp_amphtml_validator.failAfterError());
 });
 
 gulp.task('dev', gulp.series('clean', 'browsersync'));
