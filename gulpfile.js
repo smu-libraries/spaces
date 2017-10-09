@@ -28,15 +28,26 @@ gulp.task('less', () => {
     .pipe(gulp.dest('styles'));
 });
 
-gulp.task('hogan', gulp.series('less', function _hogan(done) {
-  new HoganBuilder()
+function hogan(injected_context = {}) {
+  return new HoganBuilder(injected_context)
     .addTemplates('styles', ['.css'])
     .addTemplates('schema', ['.json'])
     .addTemplates('templates/partials', ['.mustache'])
     .renderPages('templates', 'html');
+}
+gulp.task('hogan_dev', gulp.series('less', function _hogan_dev(done) {
+  hogan({ release: false });
+  done();
+}));
+gulp.task('hogan', gulp.series('less', function _hogan(done) {
+  hogan({ release: true });
   done();
 }));
 
+gulp.task('minify_html_dev', gulp.series('hogan_dev', function _minify_html_dev() {
+  return gulp.src('html/*.html')
+    .pipe(gulp.dest('public'));
+}));
 gulp.task('minify_html', gulp.series('hogan', function _minify_html() {
   return gulp.src('html/*.html')
     .pipe(htmlmin({
@@ -61,6 +72,7 @@ gulp.task('minify_json', () => {
     .pipe(gulp.dest('public'));
 });
 
+gulp.task('minify_dev', gulp.parallel('minify_html_dev', 'minify_images', 'minify_json'));
 gulp.task('minify', gulp.parallel('minify_html', 'minify_images', 'minify_json'));
 
 function precache(handleFetch = true) {
@@ -84,9 +96,9 @@ function browsersync_reload(done) {
   browser_sync.reload();
   done();
 }
-gulp.task('watch', gulp.series('minify', 'precache_dev', function _watch(done) {
-  gulp.watch('less/*.less', gulp.series('minify_html', 'precache_dev', browsersync_reload));
-  gulp.watch(['templates/**/*.mustache', 'templates/contexts.json'], gulp.series('minify_html', 'precache_dev', browsersync_reload));
+gulp.task('watch', gulp.series('minify_dev', 'precache_dev', function _watch(done) {
+  gulp.watch('less/*.less', gulp.series('minify_html_dev', 'precache_dev', browsersync_reload));
+  gulp.watch(['templates/**/*.mustache', 'templates/contexts.json'], gulp.series('minify_html_dev', 'precache_dev', browsersync_reload));
   gulp.watch('images/*.{jpg,png,svg}', gulp.series('minify_images', 'precache_dev', browsersync_reload));
   gulp.watch('static/*.json', gulp.series('minify_json', 'precache_dev', browsersync_reload));
   done();

@@ -14,8 +14,15 @@ let Hogan = require('hogan.js');
 class HoganBuilder {
   /**
    * Creates a HoganBuilder.
+   *
+   * @param {object} injected_tags - The common tags and values that will be injected into all the contexts.
    */
-  constructor() {
+  constructor(injected_tags) {
+    /**
+     * @property {object} injected_tags - The common tags and values that will be injected into all the contexts.
+     */
+    this.injected_tags = injected_tags || {};
+
     /**
      * @property {object} templates - The collection of templates, including partials, that will be used for rendering.
      */
@@ -62,6 +69,13 @@ class HoganBuilder {
     if (fse.existsSync(contexts_path)) {
       contexts = JSON.parse(fse.readFileSync(contexts_path));
     }
+
+    /** Add injected tags into context */
+    Object.keys(contexts).forEach((template) => {
+      let combined_context = contexts[template];
+      Object.assign(combined_context, this.injected_tags);
+      contexts[template] = combined_context;
+    });
 
     /** Merge in context for partials if requested */
     /** TODO: Pull partials from the template directly rather than having to explicitly do an include */
