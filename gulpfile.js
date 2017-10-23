@@ -92,11 +92,16 @@ gulp.task('precache', () => {
   return precache(true);
 });
 
+gulp.task('copy_no_precache', () => {
+  return gulp.src('static/web.config')
+    .pipe(gulp.dest('public'));
+});
+
 function browsersync_reload(done) {
   browser_sync.reload();
   done();
 }
-gulp.task('watch', gulp.series('minify_dev', 'precache_dev', function _watch(done) {
+gulp.task('watch', gulp.series('minify_dev', 'precache_dev', 'copy_no_precache', function _watch(done) {
   gulp.watch('less/*.less', gulp.series('minify_html_dev', 'precache_dev', browsersync_reload));
   gulp.watch(['templates/**/*.mustache', 'templates/contexts.json'], gulp.series('minify_html_dev', 'precache_dev', browsersync_reload));
   gulp.watch('images/*.{jpg,png,svg}', gulp.series('minify_images', 'precache_dev', browsersync_reload));
@@ -117,7 +122,7 @@ gulp.task('validate', () => {
 
 gulp.task('dev', gulp.series('clean', 'browsersync'));
 
-gulp.task('rel', gulp.series('clean', 'minify', 'precache', 'validate'));
+gulp.task('rel', gulp.series('clean', 'minify', 'precache', 'copy_no_precache', 'validate'));
 
 gulp.task('publish', gulp.series('rel', function _publish(done) {
   gh_pages.publish('public', (error) => {
