@@ -131,7 +131,7 @@ gulp.task('publish_github', gulp.series('rel', function _publish(done) {
   });
 }));
 
-gulp.task('publish_release', gulp.series('rel', function _publish(done) {
+gulp.task('publish_release', gulp.series('rel', function _publish_release(done) {
   gh_pages.publish('public', { branch: 'release' }, (error) => {
     if (error) throw new util.PluginError(error);
     done();
