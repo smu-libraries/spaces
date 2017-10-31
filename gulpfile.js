@@ -63,7 +63,7 @@ gulp.task('minify_html', gulp.series('hogan', function _minify_html() {
 gulp.task('minify_images', () => {
   return gulp.src('images/*.{jpg,png,svg}')
     .pipe(imagemin())
-    .pipe(gulp.dest('public/images'));
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('minify_json', () => {
