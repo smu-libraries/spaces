@@ -64,13 +64,13 @@ styles | For process CSS files
 1. Publish the website to the `gh-pages` branch for verification and testing.
 
 ```
-$ gulp publish
+$ gulp publish_github
 ```
 
-2. Publish the website to the `release` branch for actual deployment.
+2. Publish the website to the `azure` branch for deployment to an Azure App Service (the App Service deployment should be configured to monitor changes in this branch).
 
 ```
-$ gulp publish_release
+$ gulp publish_azure
 ```
 
 ## License
