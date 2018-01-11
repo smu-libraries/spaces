@@ -124,15 +124,15 @@ gulp.task('dev', gulp.series('clean', 'browsersync'));
 
 gulp.task('rel', gulp.series('clean', 'minify', 'precache', 'copy_no_precache', 'validate'));
 
-gulp.task('publish_github', gulp.series('rel', function _publish(done) {
+gulp.task('publish_github', gulp.series('rel', function _publish_github(done) {
   gh_pages.publish('public', (error) => {
     if (error) throw new util.PluginError(error);
     done();
   });
 }));
 
-gulp.task('publish_release', gulp.series('rel', function _publish_release(done) {
-  gh_pages.publish('public', { branch: 'release' }, (error) => {
+gulp.task('publish_azure', gulp.series('rel', function _publish_azure(done) {
+  gh_pages.publish('public', { branch: 'azure' }, (error) => {
     if (error) throw new util.PluginError(error);
     done();
   });
