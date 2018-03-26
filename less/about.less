@@ -9,15 +9,13 @@
 }
 
 header {
-  @media screen {
-    @media (max-width: 480px) and (orientation: portrait) {
-      position: fixed;
-      background-color: transparent;
-    }
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    position: fixed;
+    background-color: transparent;
+  }
 
-    @media (max-height: 480px) and (orientation: landscape) {
-      position: fixed;
-    }
+  @media screen and (max-height: 480px) and (orientation: landscape) {
+    position: fixed;
   }
 }
 
@@ -26,10 +24,8 @@ header {
   background-size: auto 80vh;
   background-blend-mode: multiply;
 
-  @media screen {
-    @media (orientation: portrait) {
-      background-size: 80vw auto;
-    }
+  @media screen and (orientation: portrait) {
+    background-size: 80vw auto;
   }
 
   .about {
