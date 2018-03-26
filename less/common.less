@@ -138,10 +138,8 @@ header {
     .logo {
       margin-left: @default-margin;
 
-      @media screen {
-        @media (max-width: 525px) {
-          display: none;
-        }
+      @media screen and (max-width: 525px) {
+        display: none;
       }
     }
   }
@@ -159,10 +157,8 @@ header {
       cursor: pointer;
     }
 
-    @media screen {
-      @media (max-width: 640px) {
-        display: none;
-      }
+    @media screen and (max-width: 640px) {
+      display: none;
     }
 
     .smoo_smoo {
@@ -189,11 +185,9 @@ header {
       margin: 0;
       font-size: 20px;
 
-      @media screen {
-        @media (max-width: 360px), (max-height: 360px) {
-          font-size: 16px;
-          line-height: 20px;
-        }
+      @media screen and (max-width: 360px), screen and (max-height: 360px) {
+        font-size: 16px;
+        line-height: 20px;
       }
     }
   }
@@ -206,11 +200,9 @@ header {
     padding: @default-padding @triple-padding @default-padding @triple-padding;
     background-color: @light-overlay;
 
-    @media screen {
-      @media (max-width: 480px), (max-height: 480px) {
-        padding: @default-padding;
-        font-size: 12px;
-      }
+    @media screen and (max-width: 480px) and (max-height: 480px) {
+      padding: @default-padding;
+      font-size: 12px;
     }
 
     strong {
@@ -223,5 +215,22 @@ header {
       text-align: center;
       font-family: Arial;
     }
+  }
+}
+
+/* Workaround lack of object-fit in IE. */
+@media screen and (-ms-high-contrast: none) and (orientation: landscape),
+screen and (-ms-high-contrast: active) and (orientation: landscape) {
+  .carousel .slide amp-img {
+    width: calc(~"100vh - @{safari-compensation}");
+    left: calc(~"(100vw - 100vh + @{safari-compensation}) / 2");
+  }
+}
+
+@media screen and (-ms-high-contrast: none) and (orientation: portrait),
+screen and (-ms-high-contrast: active) and (orientation: portrait) {
+  .carousel .slide amp-img {
+    height: 100vw;
+    top: calc(~"(100vh - @{safari-compensation} - 100vw) / 2");
   }
 }

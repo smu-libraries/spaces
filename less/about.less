@@ -9,15 +9,13 @@
 }
 
 header {
-  @media screen {
-    @media (max-width: 480px) and (orientation: portrait) {
-      position: fixed;
-      background-color: transparent;
-    }
+  @media screen and (max-width: 480px) and (orientation: portrait) {
+    position: fixed;
+    background-color: transparent;
+  }
 
-    @media (max-height: 480px) and (orientation: landscape) {
-      position: fixed;
-    }
+  @media screen and (max-height: 480px) and (orientation: landscape) {
+    position: fixed;
   }
 }
 
@@ -26,10 +24,8 @@ header {
   background-size: auto 80vh;
   background-blend-mode: multiply;
 
-  @media screen {
-    @media (orientation: portrait) {
-      background-size: 80vw auto;
-    }
+  @media screen and (orientation: portrait) {
+    background-size: 80vw auto;
   }
 
   .about {
@@ -75,6 +71,20 @@ header {
       a {
         color: goldenrod;
       }
+    }
+  }
+}
+
+/* Prevent workaround for lack of object-fit in IE from affecting this page. */
+@media screen and (-ms-high-contrast: none), screen and (-ms-high-contrast: active) {
+  .carousel {
+    background: none;
+
+    .slide amp-img {
+      width: auto;
+      height: auto;
+      left: auto;
+      top: auto;
     }
   }
 }
