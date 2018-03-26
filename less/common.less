@@ -225,3 +225,20 @@ header {
     }
   }
 }
+
+/* Workaround lack of object-fit in IE. */
+@media screen and (-ms-high-contrast: none) and (orientation: landscape),
+screen and (-ms-high-contrast: active) and (orientation: landscape) {
+  .carousel .slide amp-img {
+    width: calc(~"100vh - @{safari-compensation}");
+    left: calc(~"(100vw - 100vh + @{safari-compensation}) / 2");
+  }
+}
+
+@media screen and (-ms-high-contrast: none) and (orientation: portrait),
+screen and (-ms-high-contrast: active) and (orientation: portrait) {
+  .carousel .slide amp-img {
+    height: 100vw;
+    top: calc(~"(100vh - @{safari-compensation} - 100vw) / 2");
+  }
+}

@@ -79,6 +79,20 @@ header {
   }
 }
 
+/* Prevent workaround for lack of object-fit in IE from affecting this page. */
+@media screen and (-ms-high-contrast: none), screen and (-ms-high-contrast: active) {
+  .carousel {
+    background: none;
+
+    .slide amp-img {
+      width: auto;
+      height: auto;
+      left: auto;
+      top: auto;
+    }
+  }
+}
+
 #feedback {
   display: inline-flex;
   flex-direction: row;
