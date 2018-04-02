@@ -4,7 +4,7 @@
       "templates/partials/header.mustache",
       "templates/partials/sidebar.mustache"
     ],
-    "app_title": "SMU Libraries Spaces 1.6",
+    "app_title": "SMU Libraries Spaces 1.6.1",
     "app_about": "Spaces introduces SMU Libraries' two physical libraries through photos and quick facts.<p>SMU Libraries is the heartbeat of <a href=\"https://www.smu.edu.sg\" target=\"_blank\">Singapore Management University</a>, a centre where researchers and learners converge to share and acquire academic and professional knowledge.<p>Together, Li Ka Shing Library and Kwa Geok Choo Law Library offer more than 11,000m<sup>2</sup> of learning spaces to the SMU community.",
     "app_icon": "favicon.svg",
     "feedback_service_url": "https://smulibrariesanonfeedback.azurewebsites.net",
@@ -54,7 +54,7 @@
         "caption": "SMU Libraries has more than <strong>380,000</strong> printed and electronic books, <strong>80,000</strong> print and electronic journals, <strong>160</strong> eletronic databases and <strong>17,000</strong> SMU research publications."
       },
       {
-        "image": "main_3.jpg",
+        "image": "main_2.jpg",
         "caption": "Li Ka Shing library has a seating capacity of <strong>1,800</strong> spread over four floors."
       }
     ]
