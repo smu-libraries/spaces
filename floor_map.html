@@ -24,15 +24,18 @@
     pointer-events: auto;
 }
 .modalDialog > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 5px 20px 13px 20px;
+  min-width: 100%;
+  min-heght: 100%;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+    /* padding: 5px 20px 13px 20px;
     border-radius: 10px;
     background: #fff;
     background: -moz-linear-gradient(#fff, #999);
     background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999); */
 }
 .close {
     background: #606061;
@@ -55,21 +58,48 @@
 .close:hover {
     background: #00d9ff;
 }
+
+.center_page {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+
+	position: center;
+	margin: auto;
+}
 </style>
 </head>
 <body>
+  <span class="center_page">
+    <center>
+      <a href="#openModal5"><img src="map5.PNG" width="100%"></a>
+      <a href="#openModal4"><img src="map4.PNG" width="100%"></a>
+      <a href="#openModal3"><img src="map3.PNG" width="100%"></a>
+      <a href="#openModal2"><img src="map2.PNG" width="100%"></a>
+    </center>
+  </span>
 
-  <a href="#openModal"><img src="map5.PNG"></a>
-  <a href="#openModal"><img src="map4.PNG"></a>
-  <a href="#openModal"><img src="map3.PNG"></a>
-  <a href="#openModal"><img src="map2.PNG"></a>
-
-
-  <div id="openModal" class="modalDialog">
+  <div id="openModal5" class="modalDialog">
       <div>	<a href="#close" title="Close" class="close">X</a>
+          	<a href="#close"><img src="5.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
+      </div>
+  </div>
 
-          	<h2>This is a test</h2>
+  <div id="openModal4" class="modalDialog">
+      <div>	<a href="#close" title="Close" class="close">X</a>
+            <a href="#close"><img src="4.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
+      </div>
+  </div>
 
+  <div id="openModal3" class="modalDialog">
+      <div>	<a href="#close" title="Close" class="close">X</a>
+            <a href="#close"><img src="3.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
+      </div>
+  </div>
+
+  <div id="openModal2" class="modalDialog">
+      <div>	<a href="#close" title="Close" class="close">X</a>
+            <a href="#close"><img src="2.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
       </div>
   </div>
 
