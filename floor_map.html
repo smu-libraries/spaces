@@ -1,84 +1,77 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #00d9ff;
+}
+</style>
+</head>
+<body>
 
-    <title>Floor Map</title>
+  <a href="#openModal"><img src="map5.PNG"></a>
+  <a href="#openModal"><img src="map4.PNG"></a>
+  <a href="#openModal"><img src="map3.PNG"></a>
+  <a href="#openModal"><img src="map2.PNG"></a>
 
-  </head>
 
-  <style media="screen">
-    .modal-full {
-      min-width: 100%;
-      min-heght: 100%;
+  <div id="openModal" class="modalDialog">
+      <div>	<a href="#close" title="Close" class="close">X</a>
 
-      position: absolute;
-    	left: 0;
-    	right: 0;
-    }
-  </style>
+          	<h2>This is a test</h2>
 
-  <body>
-    <br />
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col">
-          <a data-toggle="modal" data-target=".bd-example-modal-xl5"><img src="map5.PNG" class="figure-img img-fluid rounded" ></a><hr />
-          <a data-toggle="modal" data-target=".bd-example-modal-xl4"><img src="map4.PNG" class="figure-img img-fluid rounded" ></a><hr />
-          <a data-toggle="modal" data-target=".bd-example-modal-xl3"><img src="map3.PNG" class="figure-img img-fluid rounded" ></a><hr />
-          <a data-toggle="modal" data-target=".bd-example-modal-xl2"><img src="map2.PNG" class="figure-img img-fluid rounded" ></a>
-        </div>
       </div>
-    </div>
+  </div>
 
-    <div class="modal fade bd-example-modal-xl5 " tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-full">
-        <div class="modal-content">
-          <figure class="figure">
-            <a href="#" data-dismiss="modal"><img src="5.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade bd-example-modal-xl4" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-full">
-        <div class="modal-content">
-          <figure class="figure">
-            <a href="#" data-dismiss="modal"><img src="4.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade bd-example-modal-xl3" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-full">
-        <div class="modal-content">
-          <figure class="figure">
-            <a href="#" data-dismiss="modal"><img src="3.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-          </figure>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade bd-example-modal-xl2" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-full">
-        <div class="modal-content">
-          <figure class="figure">
-            <a href="#" data-dismiss="modal"><img src="2.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-          </figure>
-        </div>
-      </div>
-    </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
