@@ -6,12 +6,11 @@
 <style>
 .modalDialog {
     position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: white;
     z-index: 99999;
     opacity:0;
     -webkit-transition: opacity 400ms ease-in;
@@ -23,49 +22,12 @@
     opacity:1;
     pointer-events: auto;
 }
-.modalDialog > div {
-  min-width: 100%;
-  min-heght: 100%;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-    /* padding: 5px 20px 13px 20px;
-    border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999); */
-}
-.close {
-    background: #606061;
-    color: #FFFFFF;
-    line-height: 25px;
-    position: absolute;
-    right: -12px;
-    text-align: center;
-    top: -10px;
-    width: 24px;
-    text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
-    box-shadow: 1px 1px 3px #000;
-}
-.close:hover {
-    background: #00d9ff;
-}
 
 .center_page {
-	width: 100px;
-	height: 100px;
-	background-color: red;
-
-	position: center;
-	margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 </style>
 </head>
@@ -80,27 +42,19 @@
   </span>
 
   <div id="openModal5" class="modalDialog">
-      <div>	<a href="#close" title="Close" class="close">X</a>
-          	<a href="#close"><img src="5.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-      </div>
+      <div><a href="#close"><img src="5.PNG" class="center_page"></a></div>
   </div>
 
   <div id="openModal4" class="modalDialog">
-      <div>	<a href="#close" title="Close" class="close">X</a>
-            <a href="#close"><img src="4.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-      </div>
+      <div><a href="#close"><img src="4.PNG"  class="center_page"></a></div>
   </div>
 
   <div id="openModal3" class="modalDialog">
-      <div>	<a href="#close" title="Close" class="close">X</a>
-            <a href="#close"><img src="3.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-      </div>
+      <div><a href="#close"><img src="3.PNG"  class="center_page"></a></div>
   </div>
 
   <div id="openModal2" class="modalDialog">
-      <div>	<a href="#close" title="Close" class="close">X</a>
-            <a href="#close"><img src="2.PNG" class="figure-img img-fluid rounded mx-auto d-block"></a>
-      </div>
+      <div><a href="#close"><img src="2.PNG"  class="center_page"></a></div>
   </div>
 
 </body>
