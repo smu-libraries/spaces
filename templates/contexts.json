@@ -47,11 +47,12 @@
       {
         "image": "lks_overview_n_1.jpg",
         "title": "Li Ka Shing Library",
-        "caption": "The <strong>Li Ka Shing Library</strong> was officially opened on <strong>24 February 2006</strong> by Minister Mentor Lee Kuan Yew and Hong Kong businessman Dr. Li Ka-Shing, whom the Library is named after. The Li Ka Shing Foundation donated an endowment for library collections.<br><br>The building has unique architectural features that let in abundant natural light. Greenery cascades down the library's modern, curvilinear facade."
+        "caption": "SMU Libraries has more than <strong>550,000<strong> printed and electronic books, over <strong>170<strong> electronic databases, <strong>340,000<strong> streaming media and <strong>25,000<strong> SMU research publications."
+
       },
       {
         "image": "main_1.jpg",
-        "caption": "SMU Libraries has more than <strong>380,000</strong> printed and electronic books, <strong>80,000</strong> print and electronic journals, <strong>160</strong> eletronic databases and <strong>17,000</strong> SMU research publications."
+        "caption": "SMU Libraries has more than <strong>550,000</strong> printed and electronic books, over <strong>80,000</strong> print and electronic journals, <strong>160</strong> eletronic databases and <strong>17,000</strong> SMU research publications."
       },
       {
         "image": "main_2.jpg",
@@ -69,7 +70,7 @@
       {
         "image": "main_investment_studio_1.jpg",
         "title": "Investment Studio",
-        "caption": "The <strong>Investment Studio</strong> is a dedicated space for accessing high-end financial databases, including <strong>Bloomberg</strong>, <strong>Eikon</strong>, <strong>Capital IQ</strong>."
+        "caption": "The <strong>Investment Studio</strong> is a dedicated space for accessing high-end financial databases, including <strong>Bloomberg</strong> and <strong>Eikon</strong>."
       },
       {
         "image": "main_investment_studio_2.jpg",
@@ -150,12 +151,7 @@
       {
         "image": "main_lounge_6.jpg",
         "title": "Lounge",
-        "caption": "The <strong>Lounge</strong> offers <strong>popular books</strong>, <strong>DVDs</strong>, <strong>magazines</strong> and <strong>newspapers</strong> (and sometimes Smoo Smoo) in a comfortable setting."
-      },
-      {
-        "image": "main_lounge_dvds.jpg",
-        "title": "DVD Collection",
-        "caption": "Cheaper and wider range than Netflix Singapore."
+        "caption": "The <strong>Lounge</strong> offers <strong>popular books</strong>, <strong>magazines</strong> and <strong>newspapers</strong> (and sometimes Smoo Smoo) in a comfortable setting."
       },
       {
         "image": "main_lounge_7.jpg",
@@ -165,6 +161,24 @@
       {
         "image": "main_lounge_newspaper.jpg",
         "caption": "Relax in the Lounge with a newspaper and a cuppa (with a lid)."
+      }
+    ]
+  },
+  "templates/main_artlevel.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "lks_artlevel4_1.jpg",
+        "title": "art@level4",
+        "caption": "The art@level4 is a dedicated exhibition space at Level 4."
+      },
+      {
+        "image": "lks_artlevel4_2.jpg",
+        "caption": "The exhibition space, composed of six freestanding panels, is a teeming thoroughfare with students passing through."
       }
     ]
   },
@@ -298,7 +312,7 @@
       },
       {
         "image": "kgc_l4_quietarea_2.jpg",
-        "caption": "The Kwa Geok Choo Law Library hosts a print collection of <strong>21,000</strong> volumes.<br><br>The <strong>Law Collection</strong> is located on L4 and consists of <strong>textbooks</strong>, <strong>law reports</strong> and <strong>international legal journals</strong>."
+        "caption": "The Kwa Geok Choo Law Library hosts a print collection of over <strong>16,000</strong> volumes.<br><br>The <strong>Law Collection</strong> is located on L4 and consists of <strong>textbooks</strong>, <strong>law reports</strong> and <strong>international legal journals</strong>."
       }
     ]
   },
@@ -338,11 +352,11 @@
       {
         "image": "kgc_learning_commons_n_1.jpg",
         "title": "Learning Commons",
-        "caption": "The <strong>Learning Commons</strong> is a <strong>24/7</strong> study space for those who want to carry on working after library opening hours."
+        "caption": "The <strong>Learning Commons</strong> is a study space that supports both group and individual learning."
       },
       {
         "image": "kgc_l3_learncommons_2.jpg",
-        "caption": "There are two entrances to the Learning Commons: one is just outside the library and the other is within the School of Law. The latter is closed at <strong>10:30pm</strong>."
+        "caption": "There are two entrances to the Learning Commons: one is just outside the library and the other is within the Yong Pung How School of Law."
       },
       {
         "image": "kgc_learning_commons_n_3.jpg",
@@ -404,7 +418,7 @@
       {
         "image": "kgc_project_rooms_n_1.jpg",
         "title": "Project Rooms",
-        "caption": "<strong>13 project rooms</strong> can be booked by undergraduate and graduate students for group study and discussion. The orange couches outside have built-in power outlets."
+        "caption": "<strong>13 project rooms</strong> can be booked by undergraduate and graduate students for group study and discussion."
       },
       {
         "image": "kgc_project_rooms_n_2.jpg",
@@ -500,6 +514,12 @@
             "href": "main_study_booths.html",
             "text": "Study Booths",
             "levels": "L3, L4"
+          },
+          {
+            "class": "main_artlevel",
+            "href": "main_artlevel.html",
+            "text": "art@level4",
+            "levels": "L4"
           },
           {
             "class": "main_learning_labs",
