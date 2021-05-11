@@ -1,0 +1,76 @@
+@import "common";
+
+header {
+  position: relative;
+
+  #hamburger .logo {
+    @media screen and (max-width: 525px) {
+      display: inline-block;
+    }
+  }
+
+  #title {
+    @media screen and (max-width: 640px) {
+      display: inherit;
+    }
+
+    @media screen and (max-width: 359px) {
+      display: none;
+    }
+  }
+}
+
+#welcome {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(~"100vh - (48px + @{double-margin}) - @{safari-compensation}");
+
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+  }
+
+  a {
+    color: @foreground;
+    text-decoration: none;
+
+    h1 {
+      padding: @default-padding @double-padding @default-padding @double-padding;
+      background-color: @dark-overlay;
+    }
+
+    &.left_panel {
+      display: flex;
+      flex-direction: column-reverse;
+      flex: 0 0 50%;
+      background-image: url('lks_cover_n_1.jpg');
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+
+      h1 {
+        margin: @double-margin 0 @double-margin @double-margin;
+      }
+    }
+
+    &.right_panel {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background-image: url('kgc_cover_n_1.jpg');
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+
+      h1 {
+        margin: @double-margin @double-margin @double-margin 0;
+        text-align: right;
+      }
+    }
+  }
+}
+
+#unused {
+  display: none;
+}

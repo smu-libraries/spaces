@@ -1,0 +1,17 @@
+<!doctype html>
+<html ⚡ lang="en">
+  <head>
+    {{> templates/partials/head.mustache }}
+    <style amp-custom>
+      {{$ css }}{{/ css }}
+    </style>
+    <title>{{$ title_text }}SMU Libraries :: Spaces{{/ title_text }}</title>
+    {{$ head }}{{/ head }}
+  </head>
+  <body>
+    {{> templates/partials/sidebar.mustache }}
+    {{> templates/partials/header.mustache }}
+    {{> templates/partials/body.mustache }}
+    {{$ body }}{{/ body }}
+  </body>
+</html>

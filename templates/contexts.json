@@ -1,0 +1,611 @@
+{
+  "templates/about.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "app_title": "SMU Libraries Spaces 1.6.1",
+    "app_about": "Spaces introduces SMU Libraries' two physical libraries through photos and quick facts.<p>SMU Libraries is the heartbeat of <a href=\"https://www.smu.edu.sg\" target=\"_blank\">Singapore Management University</a>, a centre where researchers and learners converge to share and acquire academic and professional knowledge.<p>Together, Li Ka Shing Library and Kwa Geok Choo Law Library offer more than 11,000m<sup>2</sup> of learning spaces to the SMU community.",
+    "app_icon": "favicon.svg",
+    "feedback_service_url": "https://smulibrariesanonfeedback.azurewebsites.net",
+    "feedback_app_id": "spaces",
+    "feedback_success_message": "Thank you for your feedback.",
+    "feedback_error_message": "Opps. We are unable to register your feedback at this moment. Please try again later.",
+    "show_facebook": true,
+    "facebook_icon": "social_media_facebook.svg",
+    "facebook_url": "https://www.facebook.com/sgsmu.library",
+    "show_twitter": true,
+    "twitter_icon": "social_media_twitter.svg",
+    "twitter_url": "https://twitter.com/smulibraries",
+    "show_instagram": true,
+    "instagram_icon": "social_media_instagram.svg",
+    "instagram_url": "https://instagram.com/sgsmu.library",
+    "feedback_email_address": "mailto:library@smu.edu.sg?subject=[Feedback] Spaces",
+    "team_members": [
+      "Chai Yee Xin",
+      "Yuyun Wirawati Ishak",
+      "Ler Wee Hiong",
+      "Low Jiaxin",
+      "Galvin Soh Boon Ming",
+      "Tay Mui Yen"
+    ],
+    "license": "This app is licensed under a <a rel=\"license\" target=\"_blank\" href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License</a>.<p>Fork it on <a target=\"_blank\" href=\"https://github.com/smu-libraries/spaces\">GitHub</a>!"
+  },
+  "templates/index.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ]
+  },
+  "templates/main_overview.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "lks_overview_n_1.jpg",
+        "title": "Li Ka Shing Library",
+        "caption": "SMU Libraries has more than <strong>550,000<strong> printed and electronic books, over <strong>170<strong> electronic databases, <strong>340,000<strong> streaming media and <strong>25,000<strong> SMU research publications."
+
+      },
+      {
+        "image": "main_1.jpg",
+        "caption": "SMU Libraries has more than <strong>550,000</strong> printed and electronic books, over <strong>80,000</strong> print and electronic journals, <strong>160</strong> eletronic databases and <strong>17,000</strong> SMU research publications."
+      },
+      {
+        "image": "main_2.jpg",
+        "caption": "Li Ka Shing library has a seating capacity of <strong>1,800</strong> spread over four floors."
+      }
+    ]
+  },
+  "templates/main_investment_studio.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_investment_studio_1.jpg",
+        "title": "Investment Studio",
+        "caption": "The <strong>Investment Studio</strong> is a dedicated space for accessing high-end financial databases, including <strong>Bloomberg</strong> and <strong>Eikon</strong>."
+      },
+      {
+        "image": "main_investment_studio_2.jpg",
+        "caption": "Users can hone their technical skills in business research in a professional environment."
+      }
+    ]
+  },
+  "templates/main_hive.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_hive_1.jpg",
+        "title": "Hive",
+        "caption": "The <strong>Hive</strong> is specially designed to support <strong>active group learning</strong>. It is usually open for student use but it can be reserved for lessons and events."
+      },
+      {
+        "image": "lks_hive_n_1.jpg",
+        "caption": "The Hive has <strong>flexible seating</strong> and six <strong>inter-connected projection screens</strong>. The space can accommodate <strong>50</strong> people when closed off."
+      }
+    ]
+  },
+  "templates/main_learning_commons.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_learning_commons_1.jpg",
+        "title": "Learning Commons",
+        "caption": "The <strong>Learning Commons</strong> is a <strong>24-hour</strong> study space that supports both group and individual learning."
+      },
+      {
+        "image": "main_learning_commons_2.jpg",
+        "caption": "For those seeking inspiration, <strong>floor-to-ceiling windows</strong> look out to the Campus Green."
+      },
+      {
+        "image": "main_learning_commons_3.jpg",
+        "caption": "A mix of booth tables, group seating and individual carrels cater to different learning styles."
+      }
+    ]
+  },
+  "templates/main_learning_labs.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_learning_labs_1a.jpg",
+        "title": "Learning Lab 1",
+        "caption": "<strong>Learning Labs 1 & 2</strong> in the Li Ka Shing Library are equipped with <strong>video-conferencing technology</strong> and <strong>flexible furniture</strong>."
+      },
+      {
+        "image": "main_learning_labs_1b.jpg",
+        "caption": "The Learning Labs are usually open for student use but they can be reserved for meetings, lessons or events. The Labs can be used separately or combined into a single, larger event space."
+      },
+      {
+        "image": "lks_learning_labs_n_2.jpg",
+        "title": "Learning Lab 2",
+        "caption": "The tables can be configured for different activity and group sizes."
+      }
+    ]
+  },
+  "templates/main_lounge.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_lounge_6.jpg",
+        "title": "Lounge",
+        "caption": "The <strong>Lounge</strong> offers <strong>popular books</strong>, <strong>magazines</strong> and <strong>newspapers</strong> (and sometimes Smoo Smoo) in a comfortable setting."
+      },
+      {
+        "image": "main_lounge_7.jpg",
+        "title": "Lifestyle Collection",
+        "caption": "The <strong>Lifestyle Collection</strong> includes <strong>award-winning titles</strong>, <strong>travel guides</strong>, <strong>popular non-fiction</strong> and <strong>Singapore literature</strong>."
+      },
+      {
+        "image": "main_lounge_newspaper.jpg",
+        "caption": "Relax in the Lounge with a newspaper and a cuppa (with a lid)."
+      }
+    ]
+  },
+  "templates/main_artlevel.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "lks_artlevel4_1.jpg",
+        "title": "art@level4",
+        "caption": "The art@level4 is a dedicated exhibition space at Level 4."
+      },
+      {
+        "image": "lks_artlevel4_2.jpg",
+        "caption": "The exhibition space, composed of six freestanding panels, is a teeming thoroughfare with students passing through."
+      }
+    ]
+  },
+  "templates/main_project_rooms.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_project_rooms_1.jpg",
+        "title": "Project Rooms",
+        "caption": "There are <strong>project rooms</strong> on all floors of the Li Ka Shing Library for group discussions and project work."
+      },
+      {
+        "image": "main_project_rooms_2.jpg",
+        "caption": "The project room under the stairs."
+      },
+      {
+        "image": "main_project_rooms_3.jpg",
+        "caption": "Discussion with Smoo Smoo.<br><br>All project rooms have <strong>wireless projection</strong> and a <strong>white board</strong>."
+      }
+    ]
+  },
+  "templates/main_quiet_area.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_quiet_area_1.jpg",
+        "title": "L2 Quiet Area",
+        "caption": "<strong>Quiet Areas</strong> are for work that require intense concentration. There is a mix of tables and carrels in the L2 Quiet Area."
+      },
+      {
+        "image": "lks_quiet_area_n_1.jpg",
+        "title": "L4 Quiet Area",
+        "caption": "The L4 Quiet Area is a <strong>Hog-Free zone</strong>."
+      },
+      {
+        "image": "main_quiet_area_5.jpg",
+        "title": "L5 Quiet Area",
+        "caption": "The spacious L5 Quiet Area is sometimes used for events and seminars."
+      }
+    ]
+  },
+  "templates/main_graduate_lounge_suite.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "lks_graduate_lounge_n_1.jpg",
+        "title": "Graduate Lounge",
+        "caption": "The <strong>Graduate Lounge</strong> is a study area exclusive to graduate students ..."
+      },
+      {
+        "image": "lks_graduate_lounge_n_2.jpg",
+        "caption": "... and the occasional visitor."
+      },
+      {
+        "image": "lks_graduate_lounge_n_3.jpg",
+        "caption": "The Lounge is a sanctuary of peace and quiet, away from the bubbly undergraduates."
+      }
+    ]
+  },
+  "templates/main_rooftop_garden.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_rooftop_garden_5.jpg",
+        "title": "Rooftop Garden",
+        "caption": "The <strong>rooftop garden</strong> offers space for <strong>relaxation and contemplation</strong>. Please do not smoke here."
+      },
+      {
+        "image": "main_rooftop_garden_3.jpg",
+        "caption": "A view of the <strong>Singapore Art Museum</strong> dome, and the Rochor area in the distance."
+      },
+      {
+        "image": "main_rooftop_garden_7.jpg",
+        "caption": "A view of the <strong>National Museum of Singapore</strong>. In the background, Orchard Road."
+      },
+      {
+        "image": "main_rooftop_garden_8.jpg",
+        "caption": "The rooftop garden is closed after <strong>7:30pm</strong>."
+      }
+    ]
+  },
+  "templates/main_study_booths.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_main": true,
+    "slides": [
+      {
+        "image": "main_study_booths_3.jpg",
+        "title": "Study Booths",
+        "caption": "<strong>Study booths</strong> with <strong>LCD screens</strong> are located on L3 and L4."
+      },
+      {
+        "image": "main_study_booths_1.jpg",
+        "caption": "Booths can be booked online for project discussion and presentation rehearsals."
+      },
+      {
+        "image": "lks_study_booths_n_1.jpg",
+        "caption": "Each booth can comfortably seat <strong>6</strong> (or, uncomfortably, <strong>10</strong>)."
+      }
+    ]
+  },
+  "templates/kgc_overview.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_exterior.jpg",
+        "title": "Kwa Geok Choo Law Library",
+        "caption": "The <strong>Kwa Geok Choo Law Library</strong> is SMU's second library. It was officially opened by Prime Minister Lee Hsien Loong on <strong>15 March 2017</strong>.<br><br>The library has seating space for approximately <strong>500</strong> users and it is open to the entire SMU community."
+      },
+      {
+        "image": "kgc_l4_quietarea_2.jpg",
+        "caption": "The Kwa Geok Choo Law Library hosts a print collection of over <strong>16,000</strong> volumes.<br><br>The <strong>Law Collection</strong> is located on L4 and consists of <strong>textbooks</strong>, <strong>law reports</strong> and <strong>international legal journals</strong>."
+      }
+    ]
+  },
+  "templates/kgc_atrium.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_l3_atrium_3.jpg",
+        "title": "Atrium",
+        "caption": "The <strong>Atrium</strong> offers casual study spaces for users to enjoy."
+      },
+      {
+        "image": "kgc_l3_atrium_2.jpg",
+        "caption": "<strong>Faculty publications</strong> on display are not for loan or browsing."
+      },
+      {
+        "image": "kgc_atrium_n_1.jpg",
+        "caption": "The early bird catches the worm."
+      },
+      {
+        "image": "KGC_MdmKGC_TributeCorner.jpg",
+        "caption": "<strong>Mdm Kwa Geok Choo</strong> Tribute Corner."
+      }
+    ]
+  },
+  "templates/kgc_learning_commons.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_learning_commons_n_1.jpg",
+        "title": "Learning Commons",
+        "caption": "The <strong>Learning Commons</strong> is a study space that supports both group and individual learning."
+      },
+      {
+        "image": "kgc_l3_learncommons_2.jpg",
+        "caption": "There are two entrances to the Learning Commons: one is just outside the library and the other is within the Yong Pung How School of Law."
+      },
+      {
+        "image": "kgc_learning_commons_n_3.jpg",
+        "caption": "The Learning Commons can seat about <strong>100</strong>."
+      }
+    ]
+  },
+  "templates/kgc_learning_labs.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_learning_labs_n_1.jpg",
+        "title": "Learning Labs 3 & 4",
+        "caption": "<strong>Learning Labs 3 & 4</strong> are often used to hold library events, including seminars and workshops."
+      },
+      {
+        "image": "kgc_learning_labs_n_2.jpg",
+        "caption": "When not in used for training, users are welcome to use it for their own personal study."
+      },
+      {
+        "image": "kgc_l3_learnlabs_3.jpg",
+        "caption": "The Learning Labs can be combined to create a larger event venue."
+      }
+    ]
+  },
+  "templates/kgc_graduate_lounge.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_graduate_lounge_n_2.jpg",
+        "title": "Graduate Lounge",
+        "caption": "The Kwa Geok Choo Law Library provides a <strong>Graduate Lounge</strong> exclusively for graduate students."
+      },
+      {
+        "image": "kgc_graduate_lounge_n_1.jpg",
+        "caption": "There is a dedicated meeting room within the Lounge for group discussions."
+      },
+      {
+        "image": "kgc_l4_gradlounge_3.jpg",
+        "caption": "Mid-assignment brooding."
+      }
+    ]
+  },
+  "templates/kgc_project_rooms.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_project_rooms_n_1.jpg",
+        "title": "Project Rooms",
+        "caption": "<strong>13 project rooms</strong> can be booked by undergraduate and graduate students for group study and discussion."
+      },
+      {
+        "image": "kgc_project_rooms_n_2.jpg",
+        "caption": "The rooms are equipped with a <strong>wireless collaboration and presentation</strong> system that allow projection from multiple devices simultaneously."
+      }
+    ]
+  },
+  "templates/kgc_quiet_area.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_l4_quietarea_1.jpg",
+        "title": "L4 Quiet Area",
+        "caption": "There is a spacious <strong>quiet area</strong> on L4 where students can study while enjoying the view of Fort Canning Park."
+      },
+      {
+        "image": "kgc_quiet_area_n_1.jpg",
+        "caption": "These \"Business Class\" seats offer users a cosy space to curl up in."
+      },
+      {
+        "image": "kgc_l5_quietarea_2.jpg",
+        "title": "L5 Quiet Area",
+        "caption": "There are individual study carrels on L5."
+      }
+    ]
+  },
+  "templates/kgc_terrace.mustache": {
+    "includes": [
+      "templates/partials/header.mustache",
+      "templates/partials/sidebar.mustache"
+    ],
+    "expand_kgc": true,
+    "slides": [
+      {
+        "image": "kgc_l5_terrace_1.jpg",
+        "title": "Terrace",
+        "caption": "The <strong>terrace</strong> is accessible from <strong>8:00am to 7:30pm</strong> for those who need to stretch and take in a bit of fresh air."
+      },
+      {
+        "image": "kgc_l5_terrace_2.jpg",
+        "caption": "You can admire the view of <strong>Fort Canning Park</strong> here."
+      },
+      {
+        "image": "kgc_terrace_n_1.jpg",
+        "caption": "Goodbye, Smoo Smoo!"
+      }
+    ]
+  },
+  "templates/partials/header.mustache": {
+    "app": "Spaces"
+  },
+  "templates/partials/sidebar.mustache": {
+    "libraries": [
+      {
+        "name": "Li Ka Shing Library",
+        "menu_main": true,
+        "links": [
+          {
+            "class": "main_overview",
+            "href": "main_overview.html",
+            "text": "Overview"
+          },
+          {
+            "class": "main_hive",
+            "href": "main_hive.html",
+            "text": "Hive",
+            "levels": "L2"
+          },
+          {
+            "class": "main_learning_commons",
+            "href": "main_learning_commons.html",
+            "text": "Learning Commons",
+            "levels": "L2"
+          },
+          {
+            "class": "main_lounge",
+            "href": "main_lounge.html",
+            "text": "Lounge",
+            "levels": "L2"
+          },
+          {
+            "class": "main_investment_studio",
+            "href": "main_investment_studio.html",
+            "text": "Investment Studio",
+            "levels": "L3"
+          },
+          {
+            "class": "main_study_booths",
+            "href": "main_study_booths.html",
+            "text": "Study Booths",
+            "levels": "L3, L4"
+          },
+          {
+            "class": "main_artlevel",
+            "href": "main_artlevel.html",
+            "text": "art@level4",
+            "levels": "L4"
+          },
+          {
+            "class": "main_learning_labs",
+            "href": "main_learning_labs.html",
+            "text": "Learning Labs 1 & 2",
+            "levels": "L5"
+          },
+          {
+            "class": "main_graduate_lounge_suite",
+            "href": "main_graduate_lounge_suite.html",
+            "text": "Graduate Lounge",
+            "levels": "L5"
+          },
+          {
+            "class": "main_rooftop_garden",
+            "href": "main_rooftop_garden.html",
+            "text": "Rooftop Garden",
+            "levels": "L5"
+          },
+          {
+            "class": "main_project_rooms",
+            "href": "main_project_rooms.html",
+            "text": "Project Rooms",
+            "levels": "All"
+          },
+          {
+            "class": "main_quiet_area",
+            "href": "main_quiet_area.html",
+            "text": "Quiet Area",
+            "levels": "All"
+          }
+        ]
+      },
+      {
+        "name": "Kwa Geok Choo Law Library",
+        "menu_kgc": true,
+        "links": [
+          {
+            "class": "kgc_overview",
+            "href": "kgc_overview.html",
+            "text": "Overview"
+          },
+          {
+            "class": "kgc_atrium",
+            "href": "kgc_atrium.html",
+            "text": "Atrium",
+            "levels": "L3"
+          },
+          {
+            "class": "kgc_learning_commons",
+            "href": "kgc_learning_commons.html",
+            "text": "Learning Commons",
+            "levels": "L3"
+          },
+          {
+            "class": "kgc_learning_labs",
+            "href": "kgc_learning_labs.html",
+            "text": "Learning Labs 3 & 4",
+            "levels": "L3"
+          },
+          {
+            "class": "kgc_graduate_lounge",
+            "href": "kgc_graduate_lounge.html",
+            "text": "Graduate Lounge",
+            "levels": "L4"
+          },
+          {
+            "class": "kgc_project_rooms",
+            "href": "kgc_project_rooms.html",
+            "text": "Project Rooms",
+            "levels": "L4"
+          },
+          {
+            "class": "kgc_quiet_area",
+            "href": "kgc_quiet_area.html",
+            "text": "Quiet Area",
+            "levels": "L4, L5"
+          },
+          {
+            "class": "kgc_terrace",
+            "href": "kgc_terrace.html",
+            "text": "Terrace",
+            "levels": "L5"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<amp-sidebar id="sidebar" layout="nodisplay">
+  <a on="tap:sidebar.close">
+    <div class="banner">
+      <amp-img class="close" src="close_left_white.svg" width="auto" height="24px" layout="fixed-height" alt="close sidebar"></amp-img>
+      <amp-img class="logo" src="logo_white.svg" width="160px" height="48px" alt="SMU Libraries"></amp-img>
+    </div>
+  </a>
+  <amp-accordion disable-session-states>
+    {{# libraries }}
+      <section {{# menu_main }}{{# expand_main }}expanded{{/ expand_main }}{{/ menu_main }}{{# menu_kgc }}{{# expand_kgc }}expanded{{/ expand_kgc }}{{/ menu_kgc }}>
+        <h4>
+          <div class="show-more category">{{ name }}</div>
+          <div class="show-less category expanded">{{ name }}</div>
+        </h4>
+        <div>
+          {{# links }}
+            <div class="item">
+              <a class="{{ class }}" href="{{ href }}">
+                <span class="levels">{{ levels }}&nbsp;</span>
+                {{ text }}
+              </a>
+            </div>
+          {{/ links }}
+        </div>
+      </section>
+    {{/ libraries }}
+  </amp-accordion>
+  <section class="footer">
+    <div class="spacer"></div>
+    <div class="item">
+      <a class="about" href="about.html">&nbsp;About &amp; Feedback</a>
+    </div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+  </section>
+</amp-sidebar>
